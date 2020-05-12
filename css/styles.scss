@@ -1,0 +1,10 @@
+@import 'variable';
+
+body {
+  text-align: center;
+  background-color: $bkgd-color;
+}
+
+#hidden {
+  display: none;
+}

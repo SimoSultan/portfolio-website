@@ -1,1 +1,9 @@
-/* first style */
+body {
+  text-align: center;
+  background-color: lightblue;
+}
+
+#hidden {
+  display: none;
+}
+/*# sourceMappingURL=styles.css.map */
