@@ -7,5 +7,4 @@ function pressMainButton() {
     $("#hidden").show()
   }
   
-
 };
