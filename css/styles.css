@@ -1,14 +1,11 @@
-html {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  overflow-x: hidden;
-  height: 100vh;
-  width: 100vw;
-}
-
 body {
   padding: 0;
   margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
 }
 
 div {
