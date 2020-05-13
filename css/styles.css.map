@@ -1,13 +1,15 @@
 {
     "version": 3,
-    "mappings": "AAMA,AAAA,IAAI,CAAC;EACH,UAAU,EAAE,MAAM;EAClB,gBAAgB,ECRL,QAAQ;CDSpB;;AAED,AAAA,OAAO,CAAC;EACN,OAAO,EAAE,IAAI;CACd",
+    "mappings": "AAQA,AAAA,IAAI,CAAC;EACH,UAAU,EAAE,MAAM;EAClB,gBAAgB,ECVL,QAAQ;CDWpB;;AAED,AAAA,OAAO,CAAC;EACN,OAAO,EAAE,IAAI;CACd",
     "sources": [
         "styles.scss",
-        "_variable.scss",
-        "_about.scss",
-        "_blogs.scss",
-        "_contact.scss",
-        "_work.scss"
+        "partials/_variable.scss",
+        "partials/_mixins.scss",
+        "partials/_fonts.scss",
+        "partials/_about.scss",
+        "partials/_blogs.scss",
+        "partials/_contact.scss",
+        "partials/_work.scss"
     ],
     "names": [],
     "file": "styles.css"

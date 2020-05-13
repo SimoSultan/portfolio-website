@@ -1,8 +1,10 @@
-@import 'variable';
-@import 'about';
-@import 'blogs';
-@import 'contact';
-@import 'work';
+@import './partials/variable';
+@import './partials/mixins';
+@import './partials/fonts';
+@import './partials/about';
+@import './partials/blogs';
+@import './partials/contact';
+@import './partials/work';
 
 body {
   text-align: center;
