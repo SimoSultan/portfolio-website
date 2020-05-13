@@ -30,66 +30,97 @@ p {
   width: 70%;
 }
 
-@media only screen and (orientation: portrait) {
+#home-container {
+  -ms-grid-rows: 2fr 1fr;
+      grid-template-rows: 2fr 1fr;
+}
+
+#home-container #profile-container-card {
+  -ms-grid-rows: 15% 75% 10%;
+      grid-template-rows: 15% 75% 10%;
+  border: 1px solid black;
+  margin: 5% auto;
+  width: 70%;
+  height: 90%;
+  text-align: center;
+}
+
+#home-container #profile-container-card h2 {
+  text-align: left;
+  margin-left: 2%;
+}
+
+#home-container #profile-container-card p {
+  text-align: right;
+  margin-right: 2%;
+}
+
+#home-container #profile-container-card img {
+  -ms-grid-row: 2;
+      grid-row-start: 2;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+#home-container #profile-container-card #profile-container-social {
+  -ms-grid-row: 3;
+      grid-row-start: 3;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-row-align: center;
+      align-self: center;
+}
+
+#home-container .nav-container {
+  width: 100%;
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  border: 1px solid red;
+}
+
+#home-container .nav-container .nav-tooltip, #home-container .nav-container .nav-links {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr;
+  border: 1px solid green;
+}
+
+#home-container .nav-container .nav-tooltip .nav-text, #home-container .nav-container .nav-links .nav-text {
+  text-align: left;
+  margin-left: 35%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+#home-container .nav-container .nav-tooltip .text-tooltip, #home-container .nav-container .nav-links .text-tooltip {
+  text-align: right;
+  margin-right: 15%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+@media only screen and (orientation: landscape) {
   #home-container {
-    -ms-grid-rows: 2fr 1fr;
-        grid-template-rows: 2fr 1fr;
-  }
-  #home-container #profile-container-card {
-    -ms-grid-rows: 15% 75% 10%;
-        grid-template-rows: 15% 75% 10%;
-    border: 1px solid black;
-    margin: 5% auto;
-    width: 70%;
-    height: 90%;
-    text-align: center;
-  }
-  #home-container #profile-container-card h2 {
-    text-align: left;
-  }
-  #home-container #profile-container-card p {
-    text-align: right;
-  }
-  #home-container #profile-container-card img {
-    -ms-grid-row: 2;
-        grid-row-start: 2;
-    -ms-grid-column-align: center;
-        justify-self: center;
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
-  }
-  #home-container #profile-container-card #profile-container-social {
-    -ms-grid-row: 3;
-        grid-row-start: 3;
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr 1fr 1fr;
-        grid-template-columns: 1fr 1fr 1fr;
-    -ms-grid-row-align: center;
-        align-self: center;
+    -ms-grid-columns: 40% 60%;
+        grid-template-columns: 40% 60%;
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
   }
   #home-container .nav-container {
-    width: 100%;
-    height: 100%;
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
-    border: 1px solid red;
-  }
-  #home-container .nav-container .nav-tooltip, #home-container .nav-container .nav-links {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-rows: 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
-    border: 1px solid green;
-  }
-  #home-container .nav-container .nav-tooltip .nav-text, #home-container .nav-container .nav-tooltip .text-tooltip, #home-container .nav-container .nav-links .nav-text, #home-container .nav-container .nav-links .text-tooltip {
-    text-align: center;
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
+    height: 50%;
+    width: 90%;
+    margin: auto 5%;
   }
 }
 /*# sourceMappingURL=styles.css.map */
