@@ -130,6 +130,10 @@ p {
   font-size: 20px;
 }
 
+#home-container .nav-container .nav-tooltip .nav-text:hover, #home-container .nav-container .nav-links .nav-text:hover {
+  text-decoration: underline;
+}
+
 #home-container .nav-container .nav-tooltip .text-tooltip, #home-container .nav-container .nav-links .text-tooltip {
   text-align: right;
   margin-right: 10%;

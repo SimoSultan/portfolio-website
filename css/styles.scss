@@ -125,6 +125,9 @@ p {
         color: $icon-light-color;
         letter-spacing: 2px;
         font-size: 20px;
+        &:hover{
+          text-decoration: underline;
+        }
       }
       .text-tooltip {
         text-align: right;
