@@ -1,10 +1,110 @@
-body {
-  text-align: center;
-  background-color: darkblue;
-  color: white;
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  overflow-x: hidden;
+  height: 100vh;
+  width: 100vw;
 }
 
-#hidden {
-  display: none;
+body {
+  padding: 0;
+  margin: 0;
+}
+
+div {
+  display: block;
+}
+
+p {
+  margin: none;
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+}
+
+.body-container {
+  width: 100%;
+  height: 100%;
+}
+
+.circle-img {
+  border-radius: 50%;
+}
+
+.card-profile-img {
+  width: 70%;
+}
+
+#home-container {
+  -ms-grid-rows: 2fr 1fr;
+      grid-template-rows: 2fr 1fr;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#home-container #profile-container-card {
+  -ms-grid-rows: 15% 75% 10%;
+      grid-template-rows: 15% 75% 10%;
+  border: 1px solid red;
+  margin: 5% auto;
+  width: 70%;
+  height: 90%;
+  text-align: center;
+}
+
+#home-container #profile-container-card h2 {
+  text-align: left;
+}
+
+#home-container #profile-container-card p {
+  text-align: right;
+}
+
+#home-container #profile-container-card img {
+  -ms-grid-row: 2;
+      grid-row-start: 2;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+#home-container #profile-container-card #profile-container-social {
+  -ms-grid-row: 3;
+      grid-row-start: 3;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-row-align: center;
+      align-self: center;
+}
+
+#home-container .nav-container {
+  width: 100%;
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  border: 1px solid red;
+}
+
+#home-container .nav-container .nav-tooltip, #home-container .nav-container .nav-links {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr;
+  border: 1px solid green;
+}
+
+#home-container .nav-container .nav-tooltip .nav-text, #home-container .nav-container .nav-tooltip .text-tooltip, #home-container .nav-container .nav-links .nav-text, #home-container .nav-container .nav-links .text-tooltip {
+  text-align: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 /*# sourceMappingURL=styles.css.map */
