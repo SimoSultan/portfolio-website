@@ -5,20 +5,13 @@
 @import './partials/blogs';
 @import './partials/contact';
 @import './partials/work';
+$debug: solid;
+$debugRed: red;
+$debugGreen: green;
+$debugBlue: blue;
 
 
 // GLOBAL STYLES
-// html {
-//   box-sizing: border-box;
-//   overflow: hidden;
-//   height: 100vh;
-//   width: 100vw;
-// }
-
-// * {
-//   box-sizing: border-box;
-//   overflow: hidden;
-// }
 
 body {
   padding: 0;
@@ -29,18 +22,10 @@ body {
   width: 100vw;
 }
 
-div {
-  display: block;
-}
 
 p {
   margin: none;
 }
-
-// section {
-//   overflow-x: hidden;
-// }
-
 
 // HOME PAGE STYLES 
 
@@ -62,55 +47,65 @@ p {
   width: 70%;
 }
 
-#home-container {
-  grid-template-rows: 2fr 1fr;
-  // overflow: hidden;
-  box-sizing: border-box;
 
-  #profile-container-card {
-    grid-template-rows: 15% 75% 10%;
-    border: 1px solid red;
-    margin: 5% auto;
-    width: 70%;
-    height: 90%;
-    text-align: center;
-    h2 {
-      text-align: left;
-    }
-    p {
-      text-align: right;
-    }
-    img {
-      grid-row-start: 2;
-      justify-self: center;
-      align-self: center;
-    }
-    #profile-container-social {
-      grid-row-start: 3;
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      align-self: center;
-    }
-  }
+// MOBILE PORTRAIT 
 
-  .nav-container {
-    width: 100%;
-    height: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    border: 1px solid red;
-    .nav-tooltip, .nav-links {
-      display: grid;
-      grid-template-rows: 1fr 1fr 1fr 1fr;
-      border: 1px solid green;
-      .nav-text, .text-tooltip {
-        text-align: center;
+
+@media only screen and (orientation: portrait) {
+
+  #home-container {
+    grid-template-rows: 2fr 1fr;
+
+    #profile-container-card {
+      grid-template-rows: 15% 75% 10%;
+      border: 1px solid black;
+      margin: 5% auto;
+      width: 70%;
+      height: 90%;
+      text-align: center;
+      h2 {
+        text-align: left;
+      }
+      p {
+        text-align: right;
+      }
+      img {
+        grid-row-start: 2;
+        justify-self: center;
+        align-self: center;
+      }
+      #profile-container-social {
+        grid-row-start: 3;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
         align-self: center;
       }
     }
-  
+
+    .nav-container {
+      width: 100%;
+      height: 100%;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      @include debugBorder($debug, $debugRed);
+      .nav-tooltip, .nav-links {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        @include debugBorder($debug, $debugGreen);
+        .nav-text, .text-tooltip {
+          text-align: center;
+          align-self: center;
+        }
+      }
+    
+    }
   }
+
 }
+
+
+// MOBILE LANDSCAPE
+
 
 
 
