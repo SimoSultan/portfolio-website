@@ -1,7 +1,13 @@
-$bkgd-color: white;
-$primary-dark-color: darkblue;
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;400&display=swap');
+$bkgd-color: rgb(0,154,254);
+$bkgd-img: url(./../img/bkgd-cable.jpg);
+// $bkgd-img: url(./../img/bkgd-cable.jpg) no-repeat -100px/cover;
+// $bkgd-img: url("./../img/bkgd-chair-large.jpg");
+$primary-dark-color: rgb(0,154,254);
 $primary-light-color: lightblue;
 $secondary-dark-color: orange;
 $secondary-light-color: orange;
 $icon-dark-color: black;
 $icon-light-color: white;
+// $font-primary: 'Source Sans Pro, sans-serif';

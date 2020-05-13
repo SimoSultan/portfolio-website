@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;400&display=swap");
 body {
   padding: 0;
   margin: 0;
@@ -6,10 +8,19 @@ body {
   overflow: hidden;
   height: 100vh;
   width: 100vw;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 400;
+  letter-spacing: 1.5px;
 }
 
 p {
   margin: none;
+}
+
+.iconify {
+  width: 42px;
+  height: 42px;
+  color: black;
 }
 
 .grid {
@@ -33,13 +44,22 @@ p {
 #home-container {
   -ms-grid-rows: 2fr 1fr;
       grid-template-rows: 2fr 1fr;
+  background-image: url(./../img/bkgd-cable.jpg);
+  background-repeat: no-repeat;
+  background-position-x: -100px;
+  background-size: cover;
 }
 
 #home-container #profile-container-card {
-  -ms-grid-rows: 15% 75% 10%;
-      grid-template-rows: 15% 75% 10%;
-  border: 1px solid black;
-  margin: 5% auto;
+  -ms-grid-rows: 15% 73% 12%;
+      grid-template-rows: 15% 73% 12%;
+  border-radius: 30px;
+  -webkit-box-shadow: 0px 0px 40px 15px rgba(0, 89, 145, 0.8);
+  box-shadow: 0px 0px 40px 15px rgba(0, 89, 145, 0.8);
+  box-shadow: 0px 0px 40px 15px rgba(0, 89, 145, 0.8);
+  background: #0179b5;
+  background: linear-gradient(145deg, #0179b5 29%, #0297c1 100%);
+  margin: 8% auto;
   width: 70%;
   height: 90%;
   text-align: center;
@@ -47,12 +67,13 @@ p {
 
 #home-container #profile-container-card h2 {
   text-align: left;
-  margin-left: 2%;
+  margin: 10% 0 0% 6%;
+  color: white;
 }
 
 #home-container #profile-container-card p {
   text-align: right;
-  margin-right: 2%;
+  margin: 02% 5% 0 0;
 }
 
 #home-container #profile-container-card img {
@@ -63,6 +84,9 @@ p {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+  border: 0.5px solid #0179b5;
+  -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
 }
 
 #home-container #profile-container-card #profile-container-social {
@@ -78,12 +102,13 @@ p {
 
 #home-container .nav-container {
   width: 100%;
-  height: 100%;
+  height: 80%;
+  margin: auto 0;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
-  border: 1px solid red;
+  border: 1px none red;
 }
 
 #home-container .nav-container .nav-tooltip, #home-container .nav-container .nav-links {
@@ -91,20 +116,23 @@ p {
   display: grid;
   -ms-grid-rows: 1fr 1fr 1fr 1fr;
       grid-template-rows: 1fr 1fr 1fr 1fr;
-  border: 1px solid green;
+  border: 1px none green;
 }
 
 #home-container .nav-container .nav-tooltip .nav-text, #home-container .nav-container .nav-links .nav-text {
   text-align: left;
-  margin-left: 35%;
+  margin-left: 30%;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+  color: white;
+  letter-spacing: 2px;
+  font-size: 20px;
 }
 
 #home-container .nav-container .nav-tooltip .text-tooltip, #home-container .nav-container .nav-links .text-tooltip {
   text-align: right;
-  margin-right: 15%;
+  margin-right: 10%;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -116,6 +144,10 @@ p {
         grid-template-columns: 40% 60%;
     -ms-grid-rows: 1fr;
         grid-template-rows: 1fr;
+    background-position-x: 0;
+  }
+  #home-container #profile-container-card {
+    height: 87%;
   }
   #home-container .nav-container {
     height: 50%;

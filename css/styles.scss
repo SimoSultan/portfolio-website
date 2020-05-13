@@ -5,7 +5,8 @@
 @import './partials/blogs';
 @import './partials/contact';
 @import './partials/work';
-$debug: solid;
+
+$debug: none;
 $debugRed: red;
 $debugGreen: green;
 $debugBlue: blue;
@@ -20,11 +21,19 @@ body {
   overflow: hidden;
   height: 100vh;
   width: 100vw;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 400;
+  letter-spacing: 1.5px;
 }
-
 
 p {
   margin: none;
+}
+
+.iconify { 
+  width: 42px; 
+  height: 42px;
+  color: $icon-dark-color;
 }
 
 // HOME PAGE STYLES 
@@ -50,30 +59,45 @@ p {
 
 // MOBILE PORTRAIT 
 
-
-
 #home-container {
   grid-template-rows: 2fr 1fr;
+  background-image: $bkgd-img;
+  background-repeat: no-repeat;
+  background-position-x: -100px;
+  background-size: cover;
+
 
   #profile-container-card {
-    grid-template-rows: 15% 75% 10%;
-    border: 1px solid black;
-    margin: 5% auto;
+    grid-template-rows: 15% 73% 12%;
+    border-radius: 30px;
+    -webkit-box-shadow: 0px 0px 40px 15px rgba(0, 89, 145, 0.8);
+    -moz-box-shadow: 0px 0px 40px 15px rgba(0, 89, 145, 0.8);
+    box-shadow: 0px 0px 40px 15px rgba(0, 89, 145, 0.8);
+    box-shadow: 0px 0px 40px 15px rgba(0, 89, 145, 0.8);
+    // box-shadow: 0px 0px 40px 15px rgba(0, 0, 0, 0.3)
+
+    background: rgb(1,121,181);
+    background: linear-gradient(145deg, rgba(1,121,181,1) 29%, rgba(2,151,193,1) 100%);
+
+    margin: 8% auto;
     width: 70%;
     height: 90%;
     text-align: center;
     h2 {
       text-align: left;
-      margin-left: 2%;
+      margin: 10% 0 0% 6%;
+      color: $icon-light-color;
     }
     p {
       text-align: right;
-      margin-right: 2%;
+      margin: 02% 5% 0 0;
     }
     img {
       grid-row-start: 2;
       justify-self: center;
       align-self: center;
+      border: 0.5px solid rgb(1,121,181);
+      box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
     }
     #profile-container-social {
       grid-row-start: 3;
@@ -85,7 +109,8 @@ p {
 
   .nav-container {
     width: 100%;
-    height: 100%;
+    height: 80%;
+    margin: auto 0;
     display: grid;
     grid-template-columns: 1fr 1fr;
     @include debugBorder($debug, $debugRed);
@@ -95,12 +120,15 @@ p {
       @include debugBorder($debug, $debugGreen);
       .nav-text {
         text-align: left;
-        margin-left: 35%;
+        margin-left: 30%;
         align-self: center;
+        color: $icon-light-color;
+        letter-spacing: 2px;
+        font-size: 20px;
       }
       .text-tooltip {
         text-align: right;
-        margin-right: 15%;
+        margin-right: 10%;
         align-self: center;
       }
     }
@@ -116,6 +144,11 @@ p {
   #home-container {
     grid-template-columns: 40% 60%;
     grid-template-rows: 1fr;
+    background-position-x: 0;
+
+    #profile-container-card {
+      height: 87%;
+    }
 
     .nav-container {
       height: 50%;
