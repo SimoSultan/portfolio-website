@@ -1,3 +1,4 @@
+
 @import './partials/variable';
 @import './partials/mixins';
 @import './partials/fonts';
@@ -18,7 +19,7 @@ body {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  overflow: hidden;
+  overflow: auto;
   height: 100vh;
   width: 100vw;
   font-family: 'Source Sans Pro', sans-serif;
@@ -38,6 +39,7 @@ a {
 .iconify { 
   width: 42px; 
   height: 42px;
+  margin-bottom: 10px;
   color: $icon-dark-color;
 }
 
@@ -62,6 +64,16 @@ a {
 }
 
 
+footer {
+  text-align: right;
+  margin-right: 3%;
+  margin-bottom: 1%;
+  color: $footer-text-color;
+  grid-row-start: 2;
+  grid-column-start: 1;
+  align-self: flex-end;
+}
+
 // MOBILE PORTRAIT 
 
 #home-container {
@@ -70,45 +82,59 @@ a {
   background-repeat: no-repeat;
   background-position-x: -100px;
   background-size: cover;
+  min-height: 640px;
 
+  #profile-container {
+    height: 75%;
+    align-self: center;
+    min-height: 386px;
+    max-height: 515px;
 
-  #profile-container-card {
-    grid-template-rows: 15% 73% 12%;
-    border-radius: 30px;
-    -webkit-box-shadow: 0px 0px 40px 15px rgba(0, 89, 145, 0.8);
-    -moz-box-shadow: 0px 0px 40px 15px rgba(0, 89, 145, 0.8);
-    box-shadow: 0px 0px 40px 15px rgba(0, 89, 145, 0.8);
-    box-shadow: 0px 0px 40px 15px rgba(0, 89, 145, 0.8);
-    // box-shadow: 0px 0px 40px 15px rgba(0, 0, 0, 0.3)
+    #profile-container-card {
+      grid-template-rows: 15% 73% 12%;
+      border-radius: 30px;
+      -webkit-box-shadow: 0px 0px 40px 15px rgba(0, 89, 145, 0.8);
+      -moz-box-shadow: 0px 0px 40px 15px rgba(0, 89, 145, 0.8);
+      box-shadow: 0px 0px 40px 15px rgba(0, 89, 145, 0.8);
+      box-shadow: 0px 0px 40px 15px rgba(0, 89, 145, 0.8);
+      // box-shadow: 0px 0px 40px 15px rgba(0, 0, 0, 0.3)
 
-    background: rgb(1,121,181);
-    background: linear-gradient(145deg, rgba(1,121,181,1) 29%, rgba(2,151,193,1) 100%);
+      background: rgb(1,121,181);
+      background: linear-gradient(145deg, rgba(1,121,181,1) 29%, rgba(2,151,193,1) 100%);
 
-    margin: 8% auto;
-    width: 70%;
-    height: 90%;
-    text-align: center;
-    h2 {
-      text-align: left;
-      margin: 10% 0 0% 6%;
-      color: $icon-light-color;
-    }
-    p {
-      text-align: right;
-      margin: 02% 5% 0 0;
-    }
-    img {
-      grid-row-start: 2;
-      justify-self: center;
-      align-self: center;
-      border: 0.5px solid rgb(1,121,181);
-      box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
-    }
-    #profile-container-social {
-      grid-row-start: 3;
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      align-self: center;
+      // margin: 10% auto;
+      margin: auto;
+      width: 70%;
+      max-width: 325px;
+      height: 100%;
+      text-align: center;
+      h2 {
+        text-align: left;
+        margin: 7% 0 0% 6%;
+        color: $icon-light-color;
+      }
+      p {
+        text-align: right;
+        margin: 02% 5% 0 0;
+      }
+      img {
+        grid-row-start: 2;
+        justify-self: center;
+        align-self: center;
+        border: 0.5px solid rgb(1,121,181);
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+      }
+      #profile-container-social {
+        grid-row-start: 3;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-self: center;
+        // .social-link {
+        //   &:hover svg {
+        //     text-decoration: underline;
+        //   }
+        // }
+      }
     }
   }
 
@@ -118,6 +144,8 @@ a {
     margin: auto 0;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-row-start: 2;
+    grid-column-start: 1;
     @include debugBorder($debug, $debugRed);
     .nav-tooltip, .nav-links {
       display: grid;
@@ -130,6 +158,7 @@ a {
         color: $icon-light-color;
         letter-spacing: 2px;
         font-size: 20px;
+        cursor: pointer;
         &:hover{
           text-decoration: underline;
         }
@@ -145,23 +174,76 @@ a {
 }
 
 
+@media screen and (min-height: 640px) and (orientation: portrait)  {
+  #home-container {
+    #profile-container {
+      height: 90%;
+    }
+  }
+}
+
+@media screen and (min-height: 800px) and (orientation: portrait)  {
+  #home-container {
+    #profile-container {
+      height: 80%;
+    }
+  }
+}
+
+
 // MOBILE LANDSCAPE
 
 
-@media only screen and (orientation: landscape) {
+@media screen and (min-width: 640px) and (orientation: landscape)  {
   #home-container {
     grid-template-columns: 40% 60%;
     grid-template-rows: 1fr;
     background-position-x: 0;
+    min-height: 360px;
+    #profile-container {
+      height: 85%;
+      max-height: 306px;
+      min-height: 250px;
+      grid-row-start: 1;
+      grid-column-start: 1;
+      #profile-container-card {
+        h2 {
+          font-size: larger;
+        }
+        p {
+          font-size: 0.9rem;
+        }
+      }
 
-    #profile-container-card {
-      height: 87%;
+      .iconify {
+        width: 30px;
+      }
     }
 
     .nav-container {
       height: 50%;
       width: 90%;
+      grid-column-start: 2;
+      grid-row-start: 1;
       margin: auto 5%;
+    }
+
+    footer {
+      grid-column-start: 2;
+      grid-row-start: 1;
+    }
+  }
+}
+
+
+
+@media screen and (min-width: 800px) and (orientation: landscape)  {
+
+  #home-container {
+    #profile-container {
+      height: 85%;
+      max-width: 345px;
+      min-height: 306px;
     }
   }
 }
@@ -169,3 +251,129 @@ a {
 
 
 
+
+// TABLET PORTRAIT
+
+
+@media screen and (min-width: 768px) and (orientation: portrait) {
+
+  #home-container {
+    background-position-x: 0;
+
+    #profile-container {
+      height: 85%;
+      #profile-container-card {
+        width: 55%;
+      }
+    }
+
+    .nav-container {
+      height: 85%;
+    }
+
+    footer {
+      margin-bottom: 1%;
+    }
+  }
+}
+
+
+// TABLET LANDSCAPE
+
+
+@media screen and (min-width: 1024px) and (orientation: landscape) {
+
+  #home-container {
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 1fr;
+    background-position-x: 0;
+
+    #profile-container {
+      height: 60%;
+      min-height: calc(100vh - 350px);
+    }
+
+    .nav-container {
+      height: 50%;
+      width: 90%;
+      margin: auto 5%;
+    }
+
+    footer {
+      grid-column-start: 2;
+    }
+  }
+}
+
+
+
+
+// DESKTOP / lAPTOPS
+
+
+/* ----------- Non-Retina Screens ----------- */
+@media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+
+
+  
+  #home-container {
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 1fr;
+    background-position-x: 0;
+    
+    #profile-container {
+      grid-column-start: 2;
+      height: 60%;
+      min-height: 386px;
+      max-height: calc(100vh - 650px);
+      #profile-container-card {
+        height: 100%;
+        width: 45%;
+      }
+    }
+
+    .nav-container {
+      grid-row-start: 1;
+      grid-column-start: 1;
+      height: 20%;
+      margin: 25% 0;
+      .nav-tooltip {
+        // display: none;
+        grid-row-start: 1;
+        grid-column-start: 2;
+        .text-tooltip {
+          text-align: left;
+          margin: 0;
+        }
+      }
+      .nav-links {
+        grid-row-start: 1;
+        grid-column-start: 1;
+        // &:hover + .nav-tooltip{
+        //   display: block;
+        // }
+      }
+    }
+
+    footer {
+      grid-column-start: 2;
+    }
+
+  }
+
+}
+
+/* ----------- Retina Screens ----------- */
+// @media screen 
+//   and (min-device-width: 1200px) 
+//   and (max-device-width: 1600px) 
+//   and (-webkit-min-device-pixel-ratio: 2)
+//   and (min-resolution: 192dpi) { 
+
+//   .nav-container {
+//     float: left;
+//   }
+// }
