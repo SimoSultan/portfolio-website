@@ -321,8 +321,6 @@ footer {
   // and (max-device-width: 1600px) 
   // and (-webkit-min-device-pixel-ratio: 1) 
 { 
-
-
   
   #home-container {
     grid-template-columns: 40% 60%;
@@ -339,13 +337,23 @@ footer {
         height: 100%;
         width: 45%;
         min-width: 325px;
+        max-width: 35%;
+        h2 {
+          font-size: xx-large;
+        }
+        p {
+          font-size: 1.3rem;
+        }
+      }
+      .iconify {
+        width: inherit;
       }
     }
 
     .nav-container {
       grid-row-start: 1;
       grid-column-start: 1;
-      height: 20%;
+      height: 15%;
       margin: 25% 0;
       .nav-tooltip {
         // display: none;
