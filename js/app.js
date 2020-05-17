@@ -7,14 +7,12 @@
 //     $("#hidden").show()
 //   }
   
-<<<<<<< HEAD
 // };
 
 
 function linkToPage(page) {
   window.location.href = page;
 }
-=======
 };
 
 // function test() {
@@ -76,4 +74,3 @@ function linkToPage(page) {
 //     // $(this).find("span:last").remove();
 //   }
 // );
->>>>>>> contact-page
