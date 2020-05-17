@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="css/styles.css">
   <!-- ADD INTEGRITY TO STYLESHEET BEFORE SUBMITTAL -->
   
-  <!-- jQuery -->
+  <!-- JS & jQuery -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="js/app.js"></script>
 
@@ -16,22 +16,22 @@
   <!-- DEV ICONS -->
   <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
   <!-- MATERIAL ICONS -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"> -->
 
 </head>
 <body>
 
   <div id="home-container" class="grid body-container">
 
-    <section id="profile-container" class="row1 col1">
-      <div id="profile-container-card" class="grid">
-        <div class="profile-container-card-header">
+    <section id="home-profile-container" class="profile-container">
+      <div id="home-profile-container-card" class="grid profile-container-card">
+        <div id="home-profile-container-card-header" class="profile-container-card-header">
           <h2>SIMON CURRAN</h2>
           <p>full stack web dev: loading...</p>
         </div>
 
         <img src="./img/profile-img-square.jpg" alt="" class="circle-img card-profile-img">
-        <div id="profile-container-social" class="grid">
+        <div id="home-profile-container-social" class="grid profile-container-social">
           <a class="social-link" href="https://twitter.com/simo_sultan"><span class="iconify" data-icon="mdi-twitter" data-inline="false"></span></a>
           <a class="social-link" href="https://www.linkedin.com/in/simon-curran-sultan/"><span class="iconify" data-icon="mdi-linkedin" data-inline="false" style="color: white;"></span></a>
           <a class="social-link" href="https://github.com/SimoSultan"><span class="iconify" data-icon="mdi-github" data-inline="false"></span></a>
@@ -40,29 +40,29 @@
       </div>
     </section>
     
-    <section class="nav-container" class="grid row2 col1">
+    <section class="nav-container" class="grid">
       <div class="nav-tooltip">
-        <div class="text-tooltip">find out more</div>
-        <div class="text-tooltip">get in touch</div>
-        <div class="text-tooltip">what I've worked on</div>
-        <div class="text-tooltip">what I've written</div>
+        <div class="text-tooltip">my portfolio</div>
+        <div class="text-tooltip">my blogs</div>
+        <div class="text-tooltip">about me</div>
+        <div class="text-tooltip">with simo_sultan</div>
       </div>
       <nav class="nav-links">
-        <div class="nav-text"><a href="about.html">ABOUT</a></div>
-        <div class="nav-text"><a href="contact.html">CONTACT</a></div>
-        <div class="nav-text"><a href="work.html">WORK</a></div>
-        <div class="nav-text"><a href="blogs.html">BLOGS</a></div>
-        <!-- <div class="nav-text" onclick="linkToPage('about.html')">ABOUT</div>
-        <div class="nav-text" onclick="linkToPage('contact.html')">CONTACT</div>
-        <div class="nav-text" onclick="linkToPage('work.html')">WORK</div>
-        <div class="nav-text" onclick="linkToPage('blogs.html')">BLOGS</div> -->
+        <div class="nav-text"><a href="work.html">STUFF I'VE MADE:</a></div>
+        <div class="nav-links-tooltip">my portfolio</div>
+        <div class="nav-text"><a href="blogs.html">STUFF I'VE WRITTEN:</a></div>
+        <div class="nav-links-tooltip">my blogs</div>
+        <div class="nav-text"><a href="about.html">FIND OUT MORE:</a></div>
+        <div class="nav-links-tooltip">about me</div>
+        <div class="nav-text"><a href="contact.html">GET IN TOUCH:</a></div>
+        <div class="nav-links-tooltip">with simo_sultan</div>
       </nav>
     </section>
 
-
+<!-- 
     <footer>
       © Simon Curran
-    </footer>
+    </footer> -->
   </div>
 
 </body>

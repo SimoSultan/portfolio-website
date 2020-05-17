@@ -7,11 +7,16 @@ $bkgd-img: url(./../img/bkgd-cable.jpg);
 // $bkgd-img: url("./../img/bkgd-chair-large.jpg");
 $primary-dark-color: rgb(0,154,254);
 $primary-light-color: lightblue;
-$secondary-dark-color: orange;
-$secondary-light-color: orange;
+$secondary-dark-color: #f5bc00;
+$secondary-light-color: #ffd100;
 $icon-dark-color: black;
 $icon-light-color: white;
 $font-dark-color: black;
 $font-light-color: white;
 $footer-text-color: #acb5be;
 // $font-primary: 'Source Sans Pro, sans-serif';
+
+$debug: none;
+$debugRed: red;
+$debugGreen: green;
+$debugBlue: blue;
