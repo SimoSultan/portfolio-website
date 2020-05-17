@@ -177,7 +177,7 @@ footer {
 
 @media screen and (min-height: 640px) and (orientation: portrait)  {
   #home-container {
-    #profile-container {
+    .profile-container {
       height: 90%;
       min-width: 356px;
     }
@@ -186,7 +186,7 @@ footer {
 
 @media screen and (min-height: 800px) and (orientation: portrait)  {
   #home-container {
-    #profile-container {
+    .profile-container {
       height: 80%;
     }
   }
@@ -202,13 +202,13 @@ footer {
     grid-template-rows: 1fr;
     background-position-x: 0;
     min-height: 360px;
-    #profile-container {
+    .profile-container {
       height: 85%;
       max-height: 306px;
       min-height: 250px;
       grid-row-start: 1;
       grid-column-start: 1;
-      #profile-container-card {
+      .profile-container-card {
         h2 {
           font-size: larger;
         }
@@ -242,7 +242,7 @@ footer {
 @media screen and (min-width: 800px) and (orientation: landscape)  {
 
   #home-container {
-    #profile-container {
+    .profile-container {
       height: 85%;
       max-width: 345px;
       min-height: 306px;
@@ -262,9 +262,9 @@ footer {
   #home-container {
     background-position-x: 0;
 
-    #profile-container {
+    .profile-container {
       height: 85%;
-      #profile-container-card {
+      .profile-container-card {
         width: 55%;
       }
     }
@@ -290,7 +290,7 @@ footer {
     grid-template-rows: 1fr;
     background-position-x: 0;
 
-    #profile-container {
+    .profile-container {
       height: 60%;
       min-height: calc(100vh - 350px);
     }
@@ -325,13 +325,13 @@ footer {
     grid-template-rows: 1fr;
     background-position-x: 0;
     
-    #profile-container {
+    .profile-container {
       grid-column-start: 2;
       height: 60%;
       min-height: 430px;
       max-height: calc(100vh - 650px);
       max-width: inherit;
-      #profile-container-card {
+      .profile-container-card {
         height: 100%;
         width: 45%;
         min-width: 325px;
