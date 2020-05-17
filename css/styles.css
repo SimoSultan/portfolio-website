@@ -20,6 +20,8 @@ p {
 a {
   padding: 0;
   margin: 0;
+  text-decoration: none;
+  color: white;
 }
 
 .iconify {
@@ -285,7 +287,7 @@ footer {
 }
 
 /* ----------- Non-Retina Screens ----------- */
-@media screen and (min-device-width: 1200px) and (-webkit-min-device-pixel-ratio: 1) {
+@media screen and (min-device-width: 1200px) {
   #home-container {
     -ms-grid-columns: 40% 60%;
         grid-template-columns: 40% 60%;
