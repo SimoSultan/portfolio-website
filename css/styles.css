@@ -1,5 +1,123 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;400&display=swap");
+#contact-container {
+  -ms-grid-rows: 2fr 1fr;
+      grid-template-rows: 2fr 1fr;
+  background-image: url(./../img/bkgd-cable.jpg);
+  background-repeat: no-repeat;
+  background-position-x: -100px;
+  background-size: cover;
+  min-height: 640px;
+  min-width: 360px;
+}
+
+#contact-container .profile-container {
+  height: 75%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  min-height: 386px;
+  max-height: 515px;
+}
+
+#contact-container .profile-container .profile-container-card {
+  -ms-grid-rows: 15% 73% 12%;
+      grid-template-rows: 15% 73% 12%;
+  border-radius: 30px;
+  -webkit-box-shadow: 0px 0px 40px 15px rgba(0, 89, 145, 0.8);
+  box-shadow: 0px 0px 40px 15px rgba(0, 89, 145, 0.8);
+  box-shadow: 0px 0px 40px 15px rgba(0, 89, 145, 0.8);
+  background: #0179b5;
+  background: linear-gradient(145deg, #0179b5 29%, #0297c1 100%);
+  margin: auto;
+  width: 70%;
+  max-width: 325px;
+  height: 100%;
+  text-align: center;
+}
+
+#contact-container .profile-container .profile-container-card h2 {
+  text-align: left;
+  margin: 7% 0 0% 6%;
+  color: white;
+}
+
+#contact-container .profile-container .profile-container-card p {
+  text-align: right;
+  margin: 02% 5% 0 0;
+}
+
+#contact-container .profile-container .profile-container-card img {
+  -ms-grid-row: 2;
+      grid-row-start: 2;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  border: 0.5px solid #0179b5;
+  -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+}
+
+#contact-container .profile-container .profile-container-card .profile-container-social {
+  -ms-grid-row: 3;
+      grid-row-start: 3;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  -ms-grid-row-align: center;
+      align-self: center;
+}
+
+#contact-container .nav-container {
+  width: 100%;
+  height: 80%;
+  margin: auto 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-row: 2;
+      grid-row-start: 2;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  border: 1px none red;
+}
+
+#contact-container .nav-container .nav-tooltip, #contact-container .nav-container .nav-links {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr;
+  border: 1px none green;
+}
+
+#contact-container .nav-container .nav-tooltip .nav-text, #contact-container .nav-container .nav-links .nav-text {
+  text-align: left;
+  margin-left: 30%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  color: white;
+  letter-spacing: 2px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+#contact-container .nav-container .nav-tooltip .nav-text:hover, #contact-container .nav-container .nav-links .nav-text:hover {
+  text-decoration: underline;
+}
+
+#contact-container .nav-container .nav-tooltip .text-tooltip, #contact-container .nav-container .nav-links .text-tooltip {
+  text-align: right;
+  margin-right: 10%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
 body {
   padding: 0;
   margin: 0;
@@ -20,6 +138,8 @@ p {
 a {
   padding: 0;
   margin: 0;
+  text-decoration: none;
+  color: white;
 }
 
 .iconify {
@@ -71,7 +191,7 @@ footer {
   min-width: 360px;
 }
 
-#home-container #profile-container {
+#home-container .profile-container {
   height: 75%;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
@@ -80,7 +200,7 @@ footer {
   max-height: 515px;
 }
 
-#home-container #profile-container #profile-container-card {
+#home-container .profile-container .profile-container-card {
   -ms-grid-rows: 15% 73% 12%;
       grid-template-rows: 15% 73% 12%;
   border-radius: 30px;
@@ -96,18 +216,18 @@ footer {
   text-align: center;
 }
 
-#home-container #profile-container #profile-container-card h2 {
+#home-container .profile-container .profile-container-card h2 {
   text-align: left;
   margin: 7% 0 0% 6%;
   color: white;
 }
 
-#home-container #profile-container #profile-container-card p {
+#home-container .profile-container .profile-container-card p {
   text-align: right;
   margin: 02% 5% 0 0;
 }
 
-#home-container #profile-container #profile-container-card img {
+#home-container .profile-container .profile-container-card img {
   -ms-grid-row: 2;
       grid-row-start: 2;
   -ms-grid-column-align: center;
@@ -120,7 +240,7 @@ footer {
           box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
 }
 
-#home-container #profile-container #profile-container-card #profile-container-social {
+#home-container .profile-container .profile-container-card .profile-container-social {
   -ms-grid-row: 3;
       grid-row-start: 3;
   display: -ms-grid;
@@ -305,7 +425,7 @@ footer {
     height: 100%;
     width: 45%;
     min-width: 325px;
-    max-width: 35%;
+    max-width: 420px;
   }
   #home-container #profile-container #profile-container-card h2 {
     font-size: xx-large;

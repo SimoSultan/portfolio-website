@@ -7,10 +7,7 @@
 @import './partials/contact';
 @import './partials/work';
 
-$debug: none;
-$debugRed: red;
-$debugGreen: green;
-$debugBlue: blue;
+
 
 
 // GLOBAL STYLES
@@ -34,6 +31,8 @@ p {
 a {
   padding: 0;
   margin: 0;
+  text-decoration: none;
+  color: $font-light-color;
 }
 
 .iconify { 
@@ -43,12 +42,9 @@ a {
   color: $icon-dark-color;
 }
 
-// HOME PAGE STYLES 
-
 .grid {
   display: grid;
 }
-
 
 .body-container {
   width: 100%;
@@ -62,6 +58,10 @@ a {
 .card-profile-img {
   width: 70%;
 }
+
+
+
+// HOME PAGE STYLES 
 
 
 footer {
@@ -85,13 +85,13 @@ footer {
   min-height: 640px;
   min-width: 360px;
 
-  #profile-container {
+  .profile-container {
     height: 75%;
     align-self: center;
     min-height: 386px;
     max-height: 515px;
 
-    #profile-container-card {
+    .profile-container-card {
       grid-template-rows: 15% 73% 12%;
       border-radius: 30px;
       -webkit-box-shadow: 0px 0px 40px 15px rgba(0, 89, 145, 0.8);
@@ -112,7 +112,7 @@ footer {
       h2 {
         text-align: left;
         margin: 7% 0 0% 6%;
-        color: $icon-light-color;
+        color: $font-light-color;
       }
       p {
         text-align: right;
@@ -125,7 +125,7 @@ footer {
         border: 0.5px solid rgb(1,121,181);
         box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
       }
-      #profile-container-social {
+      .profile-container-social {
         grid-row-start: 3;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -156,7 +156,7 @@ footer {
         text-align: left;
         margin-left: 30%;
         align-self: center;
-        color: $icon-light-color;
+        color: $font-light-color;
         letter-spacing: 2px;
         font-size: 20px;
         cursor: pointer;
@@ -310,7 +310,7 @@ footer {
 
 
 
-// DESKTOP / lAPTOPS
+// DESKTOP & lAPTOPS
 
 
 /* ----------- Non-Retina Screens ----------- */
@@ -318,9 +318,7 @@ footer {
   and (min-device-width: 1200px) 
   // and (max-device-width: 1600px) 
   // and (-webkit-min-device-pixel-ratio: 1) 
-  { 
-
-
+{ 
   
   #home-container {
     grid-template-columns: 40% 60%;
@@ -337,7 +335,7 @@ footer {
         height: 100%;
         width: 45%;
         min-width: 325px;
-        max-width: 35%;
+        max-width: 420px;
         h2 {
           font-size: xx-large;
         }
@@ -378,7 +376,6 @@ footer {
     }
 
   }
-
 }
 
 /* ----------- Retina Screens ----------- */
