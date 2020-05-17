@@ -83,6 +83,7 @@ footer {
   background-position-x: -100px;
   background-size: cover;
   min-height: 640px;
+  min-width: 360px;
 
   #profile-container {
     height: 75%;
@@ -127,7 +128,7 @@ footer {
       #profile-container-social {
         grid-row-start: 3;
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
         align-self: center;
         // .social-link {
         //   &:hover svg {
@@ -178,6 +179,7 @@ footer {
   #home-container {
     #profile-container {
       height: 90%;
+      min-width: 356px;
     }
   }
 }
@@ -194,7 +196,7 @@ footer {
 // MOBILE LANDSCAPE
 
 
-@media screen and (min-width: 640px) and (orientation: landscape)  {
+@media screen and (min-width: 568px) and (orientation: landscape)  {
   #home-container {
     grid-template-columns: 40% 60%;
     grid-template-rows: 1fr;
@@ -314,7 +316,7 @@ footer {
 /* ----------- Non-Retina Screens ----------- */
 @media screen 
   and (min-device-width: 1200px) 
-  and (max-device-width: 1600px) 
+  // and (max-device-width: 1600px) 
   and (-webkit-min-device-pixel-ratio: 1) { 
 
 
@@ -327,11 +329,13 @@ footer {
     #profile-container {
       grid-column-start: 2;
       height: 60%;
-      min-height: 386px;
+      min-height: 430px;
       max-height: calc(100vh - 650px);
+      max-width: inherit;
       #profile-container-card {
         height: 100%;
         width: 45%;
+        min-width: 325px;
       }
     }
 

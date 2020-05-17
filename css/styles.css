@@ -68,6 +68,7 @@ footer {
   background-position-x: -100px;
   background-size: cover;
   min-height: 640px;
+  min-width: 360px;
 }
 
 #home-container #profile-container {
@@ -124,8 +125,8 @@ footer {
       grid-row-start: 3;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
   -ms-grid-row-align: center;
       align-self: center;
 }
@@ -180,6 +181,7 @@ footer {
 @media screen and (min-height: 640px) and (orientation: portrait) {
   #home-container #profile-container {
     height: 90%;
+    min-width: 356px;
   }
 }
 
@@ -189,7 +191,7 @@ footer {
   }
 }
 
-@media screen and (min-width: 640px) and (orientation: landscape) {
+@media screen and (min-width: 568px) and (orientation: landscape) {
   #home-container {
     -ms-grid-columns: 40% 60%;
         grid-template-columns: 40% 60%;
@@ -283,7 +285,7 @@ footer {
 }
 
 /* ----------- Non-Retina Screens ----------- */
-@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
+@media screen and (min-device-width: 1200px) and (-webkit-min-device-pixel-ratio: 1) {
   #home-container {
     -ms-grid-columns: 40% 60%;
         grid-template-columns: 40% 60%;
@@ -295,12 +297,14 @@ footer {
     -ms-grid-column: 2;
         grid-column-start: 2;
     height: 60%;
-    min-height: 386px;
+    min-height: 430px;
     max-height: calc(100vh - 650px);
+    max-width: inherit;
   }
   #home-container #profile-container #profile-container-card {
     height: 100%;
     width: 45%;
+    min-width: 325px;
   }
   #home-container .nav-container {
     -ms-grid-row: 1;
