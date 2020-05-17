@@ -1,5 +1,152 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;400&display=swap");
+@-webkit-keyframes animateRightIn {
+  from {
+    opacity: 0%;
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+  }
+  to {
+    opacity: 100%;
+    -webkit-transform: translateX(-20px);
+            transform: translateX(-20px);
+  }
+}
+@keyframes animateRightIn {
+  from {
+    opacity: 0%;
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+  }
+  to {
+    opacity: 100%;
+    -webkit-transform: translateX(-20px);
+            transform: translateX(-20px);
+  }
+}
+
+@-webkit-keyframes animateRightOut {
+  from {
+    opacity: 100%;
+    -webkit-transform: translateX(-20px);
+            transform: translateX(-20px);
+  }
+  to {
+    opacity: 0%;
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+  }
+}
+
+@keyframes animateRightOut {
+  from {
+    opacity: 100%;
+    -webkit-transform: translateX(-20px);
+            transform: translateX(-20px);
+  }
+  to {
+    opacity: 0%;
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+  }
+}
+
+@-webkit-keyframes fadeImgShadowIn {
+  from {
+    -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+  }
+  to {
+    -webkit-box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.3);
+            box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.3);
+  }
+}
+
+@keyframes fadeImgShadowIn {
+  from {
+    -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+  }
+  to {
+    -webkit-box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.3);
+            box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.3);
+  }
+}
+
+@-webkit-keyframes fadeImgShadowOut {
+  from {
+    -webkit-box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.3);
+            box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.3);
+  }
+  to {
+    -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+  }
+}
+
+@keyframes fadeImgShadowOut {
+  from {
+    -webkit-box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.3);
+            box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.3);
+  }
+  to {
+    -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+  }
+}
+
+@-webkit-keyframes fadeCardShadowIn {
+  from {
+    -webkit-box-shadow: 0px 0px 40px 15px rgba(0, 89, 145, 0.8);
+    box-shadow: 0px 0px 40px 15px rgba(0, 89, 145, 0.8);
+    box-shadow: 0px 0px 40px 15px rgba(0, 89, 145, 0.8);
+  }
+  to {
+    -webkit-box-shadow: 0px 0px 60px 30px rgba(0, 89, 145, 0.8);
+    box-shadow: 0px 0px 60px 30px rgba(0, 89, 145, 0.8);
+    box-shadow: 0px 0px 60px 30px rgba(0, 89, 145, 0.8);
+  }
+}
+
+@keyframes fadeCardShadowIn {
+  from {
+    -webkit-box-shadow: 0px 0px 40px 15px rgba(0, 89, 145, 0.8);
+    box-shadow: 0px 0px 40px 15px rgba(0, 89, 145, 0.8);
+    box-shadow: 0px 0px 40px 15px rgba(0, 89, 145, 0.8);
+  }
+  to {
+    -webkit-box-shadow: 0px 0px 60px 30px rgba(0, 89, 145, 0.8);
+    box-shadow: 0px 0px 60px 30px rgba(0, 89, 145, 0.8);
+    box-shadow: 0px 0px 60px 30px rgba(0, 89, 145, 0.8);
+  }
+}
+
+@-webkit-keyframes fadeCardShadowOut {
+  from {
+    -webkit-box-shadow: 0px 0px 60px 30px rgba(0, 89, 145, 0.8);
+    box-shadow: 0px 0px 60px 30px rgba(0, 89, 145, 0.8);
+    box-shadow: 0px 0px 60px 30px rgba(0, 89, 145, 0.8);
+  }
+  to {
+    -webkit-box-shadow: 0px 0px 40px 15px rgba(0, 89, 145, 0.8);
+    box-shadow: 0px 0px 40px 15px rgba(0, 89, 145, 0.8);
+    box-shadow: 0px 0px 40px 15px rgba(0, 89, 145, 0.8);
+  }
+}
+
+@keyframes fadeCardShadowOut {
+  from {
+    -webkit-box-shadow: 0px 0px 60px 30px rgba(0, 89, 145, 0.8);
+    box-shadow: 0px 0px 60px 30px rgba(0, 89, 145, 0.8);
+    box-shadow: 0px 0px 60px 30px rgba(0, 89, 145, 0.8);
+  }
+  to {
+    -webkit-box-shadow: 0px 0px 40px 15px rgba(0, 89, 145, 0.8);
+    box-shadow: 0px 0px 40px 15px rgba(0, 89, 145, 0.8);
+    box-shadow: 0px 0px 40px 15px rgba(0, 89, 145, 0.8);
+  }
+}
+
 #contact-container {
   -ms-grid-rows: 2fr 1fr;
       grid-template-rows: 2fr 1fr;
@@ -129,6 +276,7 @@ body {
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 400;
   letter-spacing: 1.5px;
+  cursor: default;
 }
 
 p {
@@ -207,6 +355,12 @@ footer {
   -webkit-box-shadow: 0px 0px 40px 15px rgba(0, 89, 145, 0.8);
   box-shadow: 0px 0px 40px 15px rgba(0, 89, 145, 0.8);
   box-shadow: 0px 0px 40px 15px rgba(0, 89, 145, 0.8);
+  -webkit-animation-name: fadeCardShadowOut;
+          animation-name: fadeCardShadowOut;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
   background: #0179b5;
   background: linear-gradient(145deg, #0179b5 29%, #0297c1 100%);
   margin: auto;
@@ -214,6 +368,15 @@ footer {
   max-width: 325px;
   height: 100%;
   text-align: center;
+}
+
+#home-container .profile-container .profile-container-card:hover {
+  -webkit-animation-name: fadeCardShadowIn;
+          animation-name: fadeCardShadowIn;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
 #home-container .profile-container .profile-container-card h2 {
@@ -238,6 +401,21 @@ footer {
   border: 0.5px solid #0179b5;
   -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
           box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+  -webkit-animation-name: fadeImgShadowOut;
+          animation-name: fadeImgShadowOut;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+#home-container .profile-container .profile-container-card img:hover {
+  -webkit-animation-name: fadeImgShadowIn;
+          animation-name: fadeImgShadowIn;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
 #home-container .profile-container .profile-container-card .profile-container-social {
@@ -257,8 +435,8 @@ footer {
   margin: auto 0;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
+  -ms-grid-columns: 30% 70%;
+      grid-template-columns: 30% 70%;
   -ms-grid-row: 2;
       grid-row-start: 2;
   -ms-grid-column: 1;
@@ -275,19 +453,20 @@ footer {
 }
 
 #home-container .nav-container .nav-tooltip .nav-text, #home-container .nav-container .nav-links .nav-text {
-  text-align: left;
-  margin-left: 30%;
+  text-align: right;
+  margin-right: 12%;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
   color: white;
   letter-spacing: 2px;
-  font-size: 20px;
+  font-size: 1rem;
   cursor: pointer;
 }
 
-#home-container .nav-container .nav-tooltip .nav-text:hover, #home-container .nav-container .nav-links .nav-text:hover {
-  text-decoration: underline;
+#home-container .nav-container .nav-tooltip .nav-links-tooltip, #home-container .nav-container .nav-links .nav-links-tooltip {
+  opacity: 0%;
+  display: none;
 }
 
 #home-container .nav-container .nav-tooltip .text-tooltip, #home-container .nav-container .nav-links .text-tooltip {
@@ -296,6 +475,7 @@ footer {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+  display: none;
 }
 
 @media screen and (min-height: 640px) and (orientation: portrait) {
@@ -416,9 +596,8 @@ footer {
   #home-container .profile-container {
     -ms-grid-column: 2;
         grid-column-start: 2;
-    height: 60%;
     min-height: 430px;
-    max-height: calc(100vh - 650px);
+    max-height: 650px;
     max-width: inherit;
   }
   #home-container .profile-container .profile-container-card {
@@ -433,10 +612,36 @@ footer {
   #home-container .profile-container .profile-container-card p {
     font-size: 1.3rem;
   }
+  #home-container .profile-container .profile-container-card .profile-container-social > * {
+    position: relative;
+  }
+  #home-container .profile-container .profile-container-card .profile-container-social > *:before {
+    content: "";
+    position: absolute;
+    width: 60%;
+    height: 3px;
+    bottom: 5px;
+    left: 16px;
+    background: #ffd100;
+    visibility: hidden;
+    border-radius: 5px;
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+    -webkit-transition: .25s ease-out;
+    transition: .25s ease-out;
+  }
+  #home-container .profile-container .profile-container-card .profile-container-social > *:hover:before,
+  #home-container .profile-container .profile-container-card .profile-container-social > *:focus:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
   #home-container .profile-container .iconify {
     width: inherit;
   }
   #home-container .nav-container {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
     -ms-grid-row: 1;
         grid-row-start: 1;
     -ms-grid-column: 1;
@@ -444,21 +649,69 @@ footer {
     height: 15%;
     margin: 25% 0;
   }
-  #home-container .nav-container .nav-tooltip {
-    -ms-grid-row: 1;
-        grid-row-start: 1;
-    -ms-grid-column: 2;
-        grid-column-start: 2;
-  }
   #home-container .nav-container .nav-tooltip .text-tooltip {
+    display: none;
     text-align: left;
     margin: 0;
+  }
+  #home-container .nav-container .nav-tooltip .text-tooltip .active {
+    display: block;
   }
   #home-container .nav-container .nav-links {
     -ms-grid-row: 1;
         grid-row-start: 1;
     -ms-grid-column: 1;
         grid-column-start: 1;
+  }
+  #home-container .nav-container .nav-links .nav-text {
+    text-align: left;
+    margin: 10px 0 10px 10%;
+    position: relative;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+  }
+  #home-container .nav-container .nav-links .nav-links-tooltip {
+    display: block;
+    opacity: 0%;
+    margin-top: 10px;
+    -ms-grid-column: 2;
+        grid-column-start: 2;
+    -webkit-animation-name: animateRightOut;
+            animation-name: animateRightOut;
+    -webkit-animation-duration: 0.5s;
+            animation-duration: 0.5s;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+  }
+  #home-container .nav-container .nav-links .nav-text:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    bottom: -5px;
+    left: 0;
+    background: #ffd100;
+    visibility: hidden;
+    border-radius: 5px;
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+    -webkit-transition: .25s ease-out;
+    transition: .25s ease-out;
+  }
+  #home-container .nav-container .nav-links .nav-text:hover:before,
+  #home-container .nav-container .nav-links .nav-text:focus:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+  #home-container .nav-container .nav-links .nav-text:hover + .nav-links-tooltip {
+    -webkit-animation-name: animateRightIn;
+            animation-name: animateRightIn;
+    -webkit-animation-duration: 0.5s;
+            animation-duration: 0.5s;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
   }
   #home-container footer {
     -ms-grid-column: 2;

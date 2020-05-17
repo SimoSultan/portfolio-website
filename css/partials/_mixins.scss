@@ -1,3 +1,22 @@
 @mixin debugBorder($stroke, $strokeColour){
   border: 1px $stroke $strokeColour;
 }
+
+@mixin underlineProperties($width, $bottom, $left) {
+  content: "";
+  position: absolute;
+  width: $width;
+  height: 3px;
+  bottom: $bottom;
+  left: $left;
+  background: $secondary-light-color;
+  visibility: hidden;
+  border-radius: 5px;
+  transform: scaleX(0);
+  transition: .25s ease-out;
+}
+
+@mixin underlineHover() {
+  visibility: visible;
+  transform: scaleX(1);
+}
