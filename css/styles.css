@@ -285,7 +285,7 @@ footer {
 }
 
 /* ----------- Non-Retina Screens ----------- */
-@media screen and (min-device-width: 1200px) and (-webkit-min-device-pixel-ratio: 1) {
+@media screen and (min-device-width: 1200px) {
   #home-container {
     -ms-grid-columns: 40% 60%;
         grid-template-columns: 40% 60%;
@@ -305,13 +305,23 @@ footer {
     height: 100%;
     width: 45%;
     min-width: 325px;
+    max-width: 35%;
+  }
+  #home-container #profile-container #profile-container-card h2 {
+    font-size: xx-large;
+  }
+  #home-container #profile-container #profile-container-card p {
+    font-size: 1.3rem;
+  }
+  #home-container #profile-container .iconify {
+    width: inherit;
   }
   #home-container .nav-container {
     -ms-grid-row: 1;
         grid-row-start: 1;
     -ms-grid-column: 1;
         grid-column-start: 1;
-    height: 20%;
+    height: 15%;
     margin: 25% 0;
   }
   #home-container .nav-container .nav-tooltip {
