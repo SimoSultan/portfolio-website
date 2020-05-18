@@ -147,6 +147,97 @@
   }
 }
 
+@-webkit-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+
+i {
+  display: block;
+  z-index: 10;
+  color: #fff;
+}
+
+.arrow {
+  position: absolute;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  bottom: 2%;
+  margin-left: 8%;
+  width: 40px;
+  height: 40px;
+  /*   background-image: url(); */
+  /*   background-size: contain; */
+}
+
+.bounce {
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
+}
+
+.fa {
+  color: #ffd100;
+}
+
+@media screen and (min-height: 560px) and (orientation: portrait) {
+  .arrow {
+    bottom: -14%;
+  }
+}
+
+@media screen and (min-height: 640px) and (orientation: portrait) {
+  .arrow {
+    bottom: 0%;
+  }
+}
+
+@media screen and (min-width: 768px) and (orientation: portrait) {
+  .arrow {
+    bottom: 1%;
+  }
+}
+
+@media screen and (min-width: 568px) and (orientation: landscape) {
+  .arrow {
+    -ms-grid-column: 2;
+        grid-column-start: 2;
+    margin-left: 4.4%;
+  }
+}
+
+#about-container .nav-text > * {
+  color: #202020;
+}
+
+#blogs-container .nav-text > * {
+  color: #202020;
+}
+
 .input {
   width: 80%;
   height: 30px;
@@ -170,7 +261,6 @@
   height: -moz-max-content;
   height: max-content;
   place-self: end;
-  margin: 20px;
   background: none;
   border: 2px solid #ffd100;
   border-radius: 5px;
@@ -185,6 +275,30 @@
       grid-template-rows: 70% 30%;
 }
 
+#contact-container .profile-container-card {
+  -ms-grid-rows: 15% 65% 20%;
+      grid-template-rows: 15% 65% 20%;
+}
+
+#contact-container .profile-container-card .contact-form {
+  text-align: left;
+}
+
+#contact-container .profile-container-card .contact-form label {
+  display: block;
+  margin-left: 12%;
+  color: #202020;
+  margin-top: 7px;
+  font-weight: 600;
+}
+
+#contact-container .profile-container-card button {
+  -ms-grid-row: 3;
+      grid-row-start: 3;
+  margin-right: 9%;
+  margin-bottom: 4%;
+}
+
 #contact-container .footer-container {
   -ms-grid-row: 2;
       grid-row-start: 2;
@@ -192,14 +306,16 @@
       grid-column-start: 1;
   -ms-grid-columns: 2fr 1fr;
       grid-template-columns: 2fr 1fr;
+  width: 100%;
   -webkit-box-shadow: 0px -5px 20px 7px rgba(0, 89, 145, 0.8);
           box-shadow: 0px -5px 20px 7px rgba(0, 89, 145, 0.8);
-  background-color: #003966;
+  background: #003966;
+  background: linear-gradient(145deg, #003966 29%, #0072a9 100%);
 }
 
 #contact-container .footer-container .footer-resume-social-container {
-  -ms-grid-rows: 80% 20%;
-      grid-template-rows: 80% 20%;
+  -ms-grid-rows: 75% 25%;
+      grid-template-rows: 75% 25%;
 }
 
 #contact-container .footer-container .footer-resume-social-container .resume-container * {
@@ -207,13 +323,23 @@
   display: block;
 }
 
+#contact-container .footer-container .footer-resume-social-container .resume-container label {
+  font-weight: 300;
+  margin-left: 20px;
+  margin-top: 5%;
+  font-size: 1.5rem;
+}
+
+#contact-container .footer-container .footer-resume-social-container .resume-container button {
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
 #contact-container .footer-container .footer-resume-social-container .profile-container-social {
   -ms-grid-columns: 1fr 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr 1fr;
   place-items: center;
-  width: 90%;
-  -ms-grid-column-align: center;
-      justify-self: center;
+  width: 80%;
 }
 
 #contact-container .footer-container .footer-resume-social-container .profile-container-social .social-link {
@@ -227,9 +353,11 @@
 #contact-container .footer-container .nav-links {
   -ms-grid-column: 2;
       grid-column-start: 2;
+  height: 93%;
 }
 
 #contact-container .footer-container .nav-links .nav-text {
+  font-weight: 600;
   text-align: right;
   margin-right: 20%;
   -ms-flex-item-align: center;
@@ -239,6 +367,10 @@
   letter-spacing: 2px;
   font-size: 1rem;
   cursor: pointer;
+}
+
+#work-container .nav-text > * {
+  color: #202020;
 }
 
 body {
@@ -256,7 +388,7 @@ body {
 }
 
 p {
-  margin: none;
+  margin: 0;
 }
 
 a {
@@ -266,11 +398,17 @@ a {
   color: white;
 }
 
-.iconify {
-  width: 42px;
-  height: 42px;
-  margin-bottom: 10px;
+.social-icons {
   color: black;
+}
+
+.social-link {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.social-link:nth-child(even) i {
+  color: white;
 }
 
 .grid {
@@ -364,6 +502,7 @@ footer {
 .page-container .profile-container .profile-container-card p {
   text-align: right;
   margin: 02% 5% 0 0;
+  color: #202020;
 }
 
 .page-container .profile-container .profile-container-card img {
@@ -418,9 +557,21 @@ footer {
 }
 
 .page-container .nav-container .nav-tooltip, .page-container .nav-container .nav-links {
-  -ms-grid-rows: 1fr 1fr 1fr 1fr;
-      grid-template-rows: 1fr 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
   border: 1px none green;
+}
+
+.page-container .nav-container .nav-tooltip #downArrow-tooltip, .page-container .nav-container .nav-links #downArrow-tooltip {
+  -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+          writing-mode: vertical-lr;
+  text-orientation: mixed;
+  letter-spacing: 6px;
+  margin-left: 32%;
+  margin-top: 0;
+  font-size: small;
+  color: #202020;
 }
 
 .page-container .nav-container .nav-tooltip .nav-text, .page-container .nav-container .nav-links .nav-text {
@@ -438,6 +589,7 @@ footer {
 .page-container .nav-container .nav-tooltip .nav-links-tooltip, .page-container .nav-container .nav-links .nav-links-tooltip {
   opacity: 0%;
   display: none;
+  color: #202020;
 }
 
 .page-container .nav-container .nav-tooltip .text-tooltip, .page-container .nav-container .nav-links .text-tooltip {
@@ -449,10 +601,23 @@ footer {
   display: none;
 }
 
+.page-container .below-about-page {
+  height: 100vh;
+}
+
+@media screen and (min-height: 560px) and (orientation: portrait) {
+  .nav-container .nav-tooltip #downArrow-tooltip {
+    margin-top: -19px;
+  }
+}
+
 @media screen and (min-height: 640px) and (orientation: portrait) {
   .page-container .profile-container {
     height: 90%;
     min-width: 356px;
+  }
+  .page-container #downArrow-tooltip {
+    margin-top: -25px;
   }
 }
 
@@ -480,14 +645,17 @@ footer {
     -ms-grid-column: 1;
         grid-column-start: 1;
   }
+  .page-container .profile-container .profile-container-card {
+    width: 77%;
+  }
   .page-container .profile-container .profile-container-card h2 {
     font-size: larger;
   }
   .page-container .profile-container .profile-container-card p {
     font-size: 0.9rem;
   }
-  .page-container .profile-container .iconify {
-    width: 30px;
+  .page-container .profile-container .social-link {
+    font-size: 28px;
   }
   .page-container .nav-container {
     height: 50%;
@@ -527,8 +695,25 @@ footer {
   .page-container .nav-container {
     height: 85%;
   }
+  .page-container .nav-container .nav-links .nav-text {
+    font-size: 1.5em;
+  }
+  .page-container .nav-container .nav-tooltip #downArrow-tooltip {
+    margin-top: 3%;
+    margin-left: 27%;
+    font-size: 1.5em;
+  }
   .page-container footer {
     margin-bottom: 1%;
+  }
+}
+
+@media screen and (min-width: 1024px) and (orientation: portrait) {
+  .page-container {
+    background-position-x: 0;
+  }
+  .page-container .nav-container .nav-tooltip #downArrow-tooltip {
+    margin-top: 26%;
   }
 }
 
@@ -607,8 +792,11 @@ footer {
     -webkit-transform: scaleX(1);
             transform: scaleX(1);
   }
-  .page-container .profile-container .iconify {
+  .page-container .profile-container .social-icons {
     width: inherit;
+  }
+  .page-container .profile-container .social-link {
+    font-size: 43px;
   }
   .page-container .nav-container {
     -ms-grid-columns: 1fr;
@@ -619,6 +807,12 @@ footer {
         grid-column-start: 1;
     height: 15%;
     margin: 25% 0;
+  }
+  .page-container .nav-container .nav-tooltip #downArrow-tooltip {
+    font-size: 1.6em;
+    position: absolute;
+    bottom: 110px;
+    margin-left: 4.5%;
   }
   .page-container .nav-container .nav-tooltip .text-tooltip {
     display: none;

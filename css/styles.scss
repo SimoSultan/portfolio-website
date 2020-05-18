@@ -2,6 +2,7 @@
 @import './partials/variable';
 @import './partials/mixins';
 @import './partials/animations';
+@import './partials/downarrow';
 @import './partials/fonts';
 @import './partials/about';
 @import './partials/blogs';
@@ -27,7 +28,7 @@ body {
 }
 
 p {
-  margin: none;
+  margin: 0;
 }
 
 a {
@@ -37,11 +38,16 @@ a {
   color: $font-light-color;
 }
 
-.iconify { 
-  width: 42px; 
-  height: 42px;
-  margin-bottom: 10px;
+.social-icons { 
   color: $icon-dark-color;
+}
+
+.social-link {
+  font-size: 36px;
+  margin-bottom: 10px;
+  &:nth-child(even) i {
+    color: $icon-light-color;
+  }
 }
 
 .grid {
@@ -127,6 +133,7 @@ footer {
       p {
         text-align: right;
         margin: 02% 5% 0 0;
+        color: $font-dark-color;
       }
       img {
         grid-row-start: 2;
@@ -148,6 +155,7 @@ footer {
         // display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         align-self: center;
+        // place-self: center;
       }
     }
   }
@@ -161,8 +169,21 @@ footer {
     grid-column-start: 1;
     @include debugBorder($debug, $debugRed);
     .nav-tooltip, .nav-links {
-      grid-template-rows: 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      // grid-template-rows: 1fr 1fr 1fr 1fr;
       @include debugBorder($debug, $debugGreen);
+
+      #downArrow-tooltip {
+        writing-mode: vertical-lr;
+        text-orientation: mixed;
+        letter-spacing: 6px;
+        margin-left: 32%;
+        margin-top: 0;
+        // margin-top: -10px;
+        font-size: small;
+        color: $font-dark-color;
+      }
+
       .nav-text {
         text-align: right;
         margin-right: 12%;
@@ -175,6 +196,7 @@ footer {
       .nav-links-tooltip {
         opacity: 0%;
         display: none;
+        color: $font-dark-color;
       }
       .text-tooltip {
         text-align: right;
@@ -183,7 +205,21 @@ footer {
         display: none;
       }
     }
-  
+  }
+
+  .below-about-page {
+    height: 100vh;
+  }
+}
+
+
+@media screen and (min-height: 560px) and (orientation: portrait)  {
+  .nav-container {
+    .nav-tooltip {
+      #downArrow-tooltip {
+        margin-top: -19px;
+      }
+    }
   }
 }
 
@@ -193,6 +229,9 @@ footer {
     .profile-container {
       height: 90%;
       min-width: 356px;
+    }
+    #downArrow-tooltip {
+      margin-top: -25px;
     }
   }
 }
@@ -222,6 +261,7 @@ footer {
       grid-row-start: 1;
       grid-column-start: 1;
       .profile-container-card {
+        width: 77%;
         h2 {
           font-size: larger;
         }
@@ -230,8 +270,8 @@ footer {
         }
       }
 
-      .iconify {
-        width: 30px;
+      .social-link {
+        font-size: 28px;
       }
     }
 
@@ -284,10 +324,40 @@ footer {
 
     .nav-container {
       height: 85%;
+      .nav-links {
+        .nav-text {
+          font-size: 1.5em;
+        }
+      }
+      .nav-tooltip {
+        #downArrow-tooltip {
+          margin-top: 3%;
+          margin-left: 27%;
+          font-size: 1.5em;
+        }
+      }
     }
 
     footer {
       margin-bottom: 1%;
+    }
+  }
+}
+
+
+
+
+@media screen and (min-width: 1024px) and (orientation: portrait) {
+
+  .page-container {
+    background-position-x: 0;
+
+    .nav-container {
+      .nav-tooltip {
+        #downArrow-tooltip {
+          margin-top: 26%;
+        }
+      }
     }
   }
 }
@@ -366,8 +436,12 @@ footer {
           @include underlineHover()
         }
       }
-      .iconify {
+      .social-icons {
         width: inherit;
+      }
+
+      .social-link {
+        font-size: 43px;
       }
     }
 
@@ -380,6 +454,12 @@ footer {
       .nav-tooltip {
         // grid-row-start: 1;
         // grid-column-start: 2;
+        #downArrow-tooltip {
+          font-size: 1.6em;
+          position: absolute;
+          bottom: 110px;
+          margin-left: 4.5%;
+        }
         .text-tooltip {
           display: none;
           text-align: left;
