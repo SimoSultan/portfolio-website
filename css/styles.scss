@@ -78,7 +78,7 @@ footer {
 
 // MOBILE PORTRAIT 
 
-#home-container {
+.page-container {
   grid-template-rows: 2fr 1fr;
   background-image: $bkgd-img;
   background-repeat: no-repeat;
@@ -145,7 +145,7 @@ footer {
       }
       .profile-container-social {
         grid-row-start: 3;
-        display: grid;
+        // display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         align-self: center;
       }
@@ -156,13 +156,11 @@ footer {
     width: 100%;
     height: 80%;
     margin: auto 0;
-    display: grid;
     grid-template-columns: 30% 70%;
     grid-row-start: 2;
     grid-column-start: 1;
     @include debugBorder($debug, $debugRed);
     .nav-tooltip, .nav-links {
-      display: grid;
       grid-template-rows: 1fr 1fr 1fr 1fr;
       @include debugBorder($debug, $debugGreen);
       .nav-text {
@@ -191,7 +189,7 @@ footer {
 
 
 @media screen and (min-height: 640px) and (orientation: portrait)  {
-  #home-container {
+  .page-container {
     .profile-container {
       height: 90%;
       min-width: 356px;
@@ -200,7 +198,7 @@ footer {
 }
 
 @media screen and (min-height: 800px) and (orientation: portrait)  {
-  #home-container {
+  .page-container {
     .profile-container {
       height: 80%;
     }
@@ -212,7 +210,7 @@ footer {
 
 
 @media screen and (min-width: 568px) and (orientation: landscape)  {
-  #home-container {
+  .page-container {
     grid-template-columns: 40% 60%;
     grid-template-rows: 1fr;
     background-position-x: 0;
@@ -256,7 +254,7 @@ footer {
 
 @media screen and (min-width: 800px) and (orientation: landscape)  {
 
-  #home-container {
+  .page-container {
     .profile-container {
       height: 85%;
       max-width: 345px;
@@ -274,7 +272,7 @@ footer {
 
 @media screen and (min-width: 768px) and (orientation: portrait) {
 
-  #home-container {
+  .page-container {
     background-position-x: 0;
 
     .profile-container {
@@ -300,7 +298,7 @@ footer {
 
 @media screen and (min-width: 1024px) and (orientation: landscape) {
 
-  #home-container {
+  .page-container {
     grid-template-columns: 40% 60%;
     grid-template-rows: 1fr;
     background-position-x: 0;
@@ -335,7 +333,7 @@ footer {
   // and (-webkit-min-device-pixel-ratio: 1) 
 { 
   
-  #home-container {
+  .page-container {
     grid-template-columns: 40% 60%;
     grid-template-rows: 1fr;
     background-position-x: 0;
@@ -361,7 +359,7 @@ footer {
           position: relative;
         }
         .profile-container-social > *:before {
-          @include underlineProperties(60%, 5px, 16px)
+          @include underlineProperties(50%, 5px, 23px)
         }
         .profile-container-social > *:hover:before,
         .profile-container-social > *:focus:before {

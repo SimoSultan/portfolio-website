@@ -12,7 +12,6 @@
 
 function linkToPage(page) {
   window.location.href = page;
-}
 };
 
 // function test() {

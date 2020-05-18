@@ -5,8 +5,8 @@ $bkgd-color: rgb(0,154,254);
 $bkgd-img: url(./../img/bkgd-cable.jpg);
 // $bkgd-img: url(./../img/bkgd-cable.jpg) no-repeat -100px/cover;
 // $bkgd-img: url("./../img/bkgd-chair-large.jpg");
-$primary-dark-color: rgb(0,154,254);
-$primary-light-color: lightblue;
+$primary-dark-color: #003966;
+$primary-light-color: #01a6d6;
 $secondary-dark-color: #f5bc00;
 $secondary-light-color: #ffd100;
 $icon-dark-color: black;
@@ -14,6 +14,7 @@ $icon-light-color: white;
 $font-dark-color: black;
 $font-light-color: white;
 $footer-text-color: #acb5be;
+$input-background-color: whitesmoke;
 // $font-primary: 'Source Sans Pro, sans-serif';
 
 $debug: none;

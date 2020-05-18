@@ -3,20 +3,62 @@
 <head>
   <title>s_s Contact</title>
   <meta charset="UTF-8">
+  <!-- <meta http-equiv="Refresh" content="0"; url="https://www.simonmcurran.com/" /> -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/styles.css">
+  <!-- ADD INTEGRITY TO STYLESHEET BEFORE SUBMITTAL -->
+  
+  <!-- JS & jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="js/app.js"></script>
+
+  <!-- SOCIAL ICONS -->
+  <script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
+  <!-- DEV ICONS -->
+  <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+  <!-- MATERIAL ICONS -->
+  <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"> -->
+
 </head>
 <body>
-  <div id="contact-container" class="grid body-container">
+  <div id="contact-container" class="grid body-container page-container">
 
     <section id="contact-profile-container" class="card profile-container">
       <div id="contact-profile-container-card" class="grid profile-container-card">
         <div id="contact-profile-container-card-header"class="profile-container-card-header">
-          <!-- <h2>SIMON CURRAN</h2> -->
-          <!-- <p>full stack web dev: loading...</p> -->
+          <h2>MAKING CONTACT:</h2>
+        </div>
+        <div class="contact-form">
+          <label for="contact-input-name" class="input-label">Name</label>
+          <input type="text" id="contact-input-name" class="input input-name" placeholder="name">
+          
+          <label for="contact-input-email" class="input-label">Email</label>
+          <input type="email" id="contact-input-email"class="input input-email" placeholder="email">
+          
+          <label for="contact-input-message" class="input-label">Message</label>
+          <textarea type="text" id="contact-input-message"class="input input-message" placeholder="your message to simo_sultan"></textarea>
         </div>
 
+        
+        <button id="" class="button button-submit">SUBMIT</button>
+
         <!-- <img src="./img/profile-img-square.jpg" alt="" class="circle-img card-profile-img"> -->
+
+      </div>
+    </section>
+    
+    <section id="" class="grid footer-container">
+
+      <div class="grid footer-resume-social-container">
+        <div class="resume-container">
+          <label for="resume-download-button">Resume:</label>
+          <button class="button button-download">
+            <a href="./../docs/resume-template.pdf" download>
+              DOWNLOAD
+            </a>
+          </button>
+        </div>
+  
         <div id="contact-profile-container-social" class="grid profile-container-social">
           <a class="social-link" href="https://twitter.com/simo_sultan"><span class="iconify" data-icon="mdi-twitter" data-inline="false"></span></a>
           <a class="social-link" href="https://www.linkedin.com/in/simon-curran-sultan/"><span class="iconify" data-icon="mdi-linkedin" data-inline="false" style="color: white;"></span></a>
@@ -24,27 +66,19 @@
           <a class="social-link" href="https://open.spotify.com/user/1231189291"><span class="iconify" data-icon="mdi:spotify" data-inline="false" style="color: white;"></span></a>
         </div>
       </div>
-    </section>
-    
-    <section class="nav-container" class="grid row2 col1">
-      <!-- <div class="nav-tooltip">
-        <div class="text-tooltip">what I've worked on</div>
-        <div class="text-tooltip">what I've written</div>
-        <div class="text-tooltip">find out more</div>
-        <div class="text-tooltip">get in touch</div>
-      </div>
-      <nav class="nav-links">
+
+      <nav class="grid nav-links">
+        <div class="nav-text"><a href="index.html">HOME</a></div>
+        <div class="nav-text"><a href="about.html">ABOUT</a></div>
         <div class="nav-text"><a href="work.html">PORTFOLIO</a></div>
         <div class="nav-text"><a href="blogs.html">BLOGS</a></div>
-        <div class="nav-text"><a href="about.html">ABOUT</a></div>
-        <div class="nav-text"><a href="contact.html">CONTACT</a></div>
-      </nav> -->
+      </nav>
     </section>
 
 
-    <footer>
+    <!-- <footer>
       © Simon Curran
-    </footer>
+    </footer> -->
   </div>
 </body>
 </html>
