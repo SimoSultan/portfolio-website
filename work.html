@@ -1,21 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <title>S.C. Work</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/styles.css">
-</head>
+  <head>
+    <title>Simon M Curran</title>
+    <meta charset="UTF-8">
+    <!-- <meta http-equiv="Refresh" content="0"; url="https://www.simonmcurran.com/" /> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- ADD INTEGRITY TO STYLESHEET BEFORE SUBMITTAL -->
+    
+    <!-- JS & jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/app.js"></script>
+  
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="./img/favicon/favicon.ico" type="image/x-icon"/>
+    <!-- SOCIAL ICONS -->
+    <script src="https://kit.fontawesome.com/7f09184100.js" crossorigin="anonymous"></script>
+  
+  </head>
 <body>
-  Portfolio Page in development
+  <div id="blogs-container" class="grid body-container page-container">
 
-  <div id="work-container" class="grid body-container page-container">
-    <nav class="grid nav-links">
-      <div class="nav-text"><a href="index.html">HOME</a></div>
-      <div class="nav-text"><a href="contact.html">CONTACT</a></div>
-      <div class="nav-text"><a href="work.html">PORTFOLIO</a></div>
-      <div class="nav-text"><a href="blogs.html">BLOGS</a></div>
-    </nav>
+
+    <section id="blog-list-container" class="blog-list-container list-container">
+      <ul id="blog-list" class="list">
+
+        <li class="blog-item list-item">
+          <div class="blog-item-img list-item-img">
+            <a target="_blank" href="https://github.com/SimoSultan/portfolio">
+              <img src="./img/work/portfolio.jpg" alt="">
+            </a>
+          </div>
+          <h2 class="blog-item-header list-item-header">My Portfolio Website</h2>
+          <div class="blog-item-content list-item-content">
+            Clicking the image will send you to the GitHub repo where you can check out the code
+            <div class="blog-item-date list-item-date">
+              Ongoing
+            </div>
+          </div>
+        </li>
+
+        <li class="blog-item list-item">
+          <div class="blog-item-img list-item-img">
+            <a target="_blank" href="https://github.com/xxKeefer/TronClone">
+              <img src="./img/work/tron-logo.png" alt="">
+            </a>
+          </div>
+          <h2 class="blog-item-header list-item-header">Pair Programming Tron Clone</h2>
+          <div class="blog-item-content list-item-content">
+            Working with <a class="name-link" href="https://www.danielkeefer.com/">Daniel J Keefer</a>
+            on a Tron Light Cycle Game. Clicking the image will send you
+            to the GitHub repo where you can check out the code
+            <div class="blog-item-date list-item-date">
+              Ongoing
+            </div>
+          </div>
+        </li>
+
+        <li class="blog-item list-item">
+          <div class="blog-item-img list-item-img">
+            <a target="_blank" href="https://github.com/SimoSultan/coding-bootcamp-text-adventure">
+              <img src="./img/work/in-game-header-logo.jpg" alt="">
+            </a>
+          </div>
+          <h2 class="blog-item-header list-item-header">Ruby MCQ Text Based Adventure</h2>
+          <div class="blog-item-content list-item-content">
+            Clicking the image will send you to the GitHub repo where you can clone and download
+            <div class="blog-item-date list-item-date">
+              Apr 27 2020
+            </div>
+          </div>
+        </li>
+
+        <li class="blog-item list-item">
+          <div class="blog-item-img list-item-img">
+            <a target="_blank" href="https://github.com/SimoSultan/ca-fun-fact-generator">
+              <img src="./img/work/cafe-app.jpg" alt="">
+            </a>
+          </div>
+          <h3 class="blog-item-header list-item-header">Chuck Norris Fun Fact Generator</h3>
+          <div class="blog-item-content list-item-content">
+            Clicking the image will send you to the GitHub repo where you can clone and download
+            <div class="blog-item-date list-item-date">
+              Apr 6 2020
+            </div>
+          </div>
+        </li>
+
+        <li class="blog-item list-item">
+          <div class="blog-item-img list-item-img">
+            <a target="_blank" href="https://github.com/SimoSultan/ca-cafe-terminal-app">
+              <img src="./img/work/cafe-app.jpg" alt="">
+            </a>
+          </div>
+          <h3 class="blog-item-header list-item-header">My First Coherent Ruby App</h3>
+          <div class="blog-item-content list-item-content">
+            Clicking the image will send you to the GitHub repo where you can clone and download
+            <div class="blog-item-date list-item-date">
+              Apr 6 2020
+            </div>
+          </div>
+        </li>
+
+      </ul>
+    </section>
+
+    <footer>
+      <section id="" class="grid footer-container">
+
+        <div class="grid footer-resume-social-container">
+  
+          <div class="resume-container">
+            <label for="resume-download-button">Resume:</label>
+            <button class="button button-download">
+              <a href="./download/simo_sultan-resume-template.pdf" download>
+                DOWNLOAD
+              </a>
+            </button>
+          </div>
+    
+          <div id="contact-profile-container-social" class="grid profile-container-social">
+            <a target="_blank" class="social-link" href="https://twitter.com/simo_sultan"><i class="icons social-icons fab fa-twitter"></i></a>
+            <a target="_blank" class="social-link" href="https://www.linkedin.com/in/simon-curran-sultan/"><i class="icons social-icons fab fa-linkedin"></i></a>
+            <a target="_blank" class="social-link" href="https://github.com/SimoSultan"><i class="icons social-icons fab fa-github"></i></a>
+            <a target="_blank" class="social-link" href="https://medium.com/@simo_sultan"><i class="icons social-icons fab fa-medium"></i></a>
+          </div>
+        </div>
+  
+        <nav class="grid nav-links">
+          <a class="nav-text" href="index.html">HOME</a>
+          <a class="nav-text" href="about.html">ABOUT</a>
+          <a class="nav-text" href="blogs.html">BLOGS</a>
+          <a class="nav-text" href="contact.html">CONTACT</a>
+        </nav>
+      </section>
+
+      <!-- <div class="footer-copyright">© Simon Curran</div> -->
+
+    </footer>
   </div>
 </body>
 </html>

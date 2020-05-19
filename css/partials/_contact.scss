@@ -25,13 +25,22 @@
   place-self: end;
   // margin: 20px;
   // margin: 0px 20px 20px 0;
-  background: none;
-  border: 2px solid $secondary-light-color;
+  // background: $card-bkgd-color;
+  background: $secondary-dark-color;
+  // border: 2px solid $secondary-light-color;
+  border: 2px solid black;
+  // border: 2px solid $card-bkgd-color;
+  // border: 2px solid $primary-dark-color;
+  
   border-radius: 5px;
   color: $font-light-color;
+  color: $font-dark-color;
   cursor: pointer;
   letter-spacing: 1px;
   font-size: 1rem;
+  a {
+    color: black;
+  }
 }
 
 // .button {
@@ -48,10 +57,12 @@
 
 
 #contact-container {
-  grid-template-rows: 70% 30%;
+  grid-template-rows: 80% 20%;
 
   .profile-container-card {
-    grid-template-rows: 15% 65% 20%;
+    // grid-template-rows: 15% 65% 20%;
+    grid-template-rows: 15% 85%;
+    width: 80%;
     .contact-form {
       text-align: left;
       label {
@@ -61,82 +72,102 @@
         margin-top: 7px;
         font-weight: 600;
       }
-    }
-    button {
-      grid-row-start: 3;
-      margin-right: 9%;
-      margin-bottom: 4%;
-    }
-  }
-
-  .footer-container {
-    grid-row-start: 2;
-    grid-column-start: 1;
-    grid-template-columns: 2fr 1fr;
-    width: 100%;
-
-    box-shadow: 0px -5px 20px 7px rgba(0, 89, 145, 0.8);
-    // background-color: $primary-dark-color;
-    background: rgb(0,57,102);
-    background: linear-gradient(145deg, rgba(0,57,102,1) 29%, rgba(0,114,169,1) 100%);
-    
-
-    .footer-resume-social-container {
-      grid-template-rows: 75% 25%;
-      .resume-container {
-        * {
-          color: $font-light-color;
-          display: block;
-        }
-        label {
-          font-weight: 300;
-          margin-left: 20px;
-          margin-top: 5%;
-          font-size: 1.5rem;
-
-        }
+      div {
+        grid-row-start: 2;
+        display: flex;
+        justify-content: flex-end;
         button {
-          margin-top: 10px;
-          margin-left: 20px;
+          margin-top: 7%;
+          margin-right: 9%;
         }
       }
-  
-      .profile-container-social {
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        // align-self: flex-end;
-        // grid-column-start: 1;
-        place-items: center;
-        width: 80%;
-        // height: 20%;
-        .social-link {
-          height: 90%;
-          .iconify {
-            width: 30px;
-          }
-        }
-      }
-    }
- 
 
-    .nav-links {
-      grid-column-start: 2;
-      height: 93%;
-      .nav-text {
-        font-weight: 600;
-        text-align: right;
-        margin-right: 20%;
-        align-self: center;
-        color: $font-light-color;
-        letter-spacing: 2px;
-        font-size: 1rem;
-        cursor: pointer;
-      }
     }
+
   }
-
   // footer {
   //   background-color: $primary-dark-color;
   // }
 }
 
 
+.footer-container {
+  grid-row-start: 2;
+  grid-column-start: 1;
+  grid-template-columns: 2fr 1fr;
+  width: 100%;
+  height: 100%;
+
+  box-shadow: $footer-box-shadow;
+  background: $footer-bkgd-color;
+  background: $footer-linear-gradient;
+  
+
+  .footer-resume-social-container {
+    grid-template-rows: 70% 30%;
+    .resume-container {
+      // * {
+      //   color: $font-light-color;
+      //   display: block;
+      // }
+      label {
+        font-weight: 300;
+        margin-left: 20px;
+        margin-top: 5%;
+        font-size: 1.3rem;
+        color: $font-light-color;
+      }
+      button {
+        margin-top: 10px;
+        margin-left: 20px;
+
+        background: $card-bkgd-color;
+        // background: $footer-bkgd-color;
+        // background: $secondary-dark-color;
+        // border: 2px solid $secondary-light-color;
+        // border: 2px solid black;
+        // border: 2px solid white;
+        // border: 2px solid $card-bkgd-color;
+        // border: 2px solid $primary-dark-color;
+        a {
+          color: black;
+        }
+      }
+    }
+
+    .profile-container-social {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      // align-self: flex-end;
+      // grid-column-start: 1;
+      place-items: center;
+      width: 80%;
+      // height: 20%;
+      .social-link {
+        height: 90%;
+        .social-icons {
+          color: $card-bkgd-color;
+        }
+        // .iconify {
+        //   width: 30px;
+        // }
+      }
+    }
+  }
+
+
+  .nav-links {
+    grid-column-start: 2;
+    height: 100%;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    .nav-text {
+      font-weight: 600;
+      text-align: right;
+      margin-right: 20%;
+      align-self: center;
+      // color: $font-light-color;
+      letter-spacing: 2px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+  }
+}

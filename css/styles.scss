@@ -4,9 +4,9 @@
 @import './partials/animations';
 @import './partials/downarrow';
 @import './partials/fonts';
+@import './partials/contact';
 @import './partials/about';
 @import './partials/blogs';
-@import './partials/contact';
 @import './partials/work';
 
 
@@ -39,15 +39,18 @@ a {
 }
 
 .social-icons { 
-  color: $icon-dark-color;
+  // color: $icon-dark-color;
+  color: $primary-dark-color;
+  // color: $secondary-light-color;
+  // color: $secondary-dark-color;
 }
 
 .social-link {
   font-size: 36px;
-  margin-bottom: 10px;
-  &:nth-child(even) i {
-    color: $icon-light-color;
-  }
+  margin-bottom: 15px;
+  // &:nth-child(even) i {
+  //   color: $icon-light-color;
+  // }
 }
 
 .grid {
@@ -67,29 +70,45 @@ a {
   width: 70%;
 }
 
-
-
-// HOME PAGE STYLES 
-
-
 footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 20%;
+}
+
+.footer-copyright {
   text-align: right;
   margin-right: 3%;
   margin-bottom: 1%;
   color: $footer-text-color;
+  // color: $secondary-light-color;
   grid-row-start: 2;
   grid-column-start: 1;
   align-self: flex-end;
+  z-index: 5;
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
+
+.name-link {
+  color: black;
+  font-style: normal;
+  font-weight: 600;
+}
+
+// HOME PAGE STYLES 
+
+
+
 
 // MOBILE PORTRAIT 
 
 .page-container {
   grid-template-rows: 2fr 1fr;
-  background-image: $bkgd-img;
-  background-repeat: no-repeat;
-  background-position-x: -100px;
-  background-size: cover;
+  @include addBackground();
+
   min-height: 640px;
   min-width: 360px;
 
@@ -101,23 +120,18 @@ footer {
 
     .profile-container-card {
       grid-template-rows: 15% 73% 12%;
-      border-radius: 30px;
-      -webkit-box-shadow: 0px 0px 40px 15px rgba(0, 89, 145, 0.8);
-      -moz-box-shadow: 0px 0px 40px 15px rgba(0, 89, 145, 0.8);
-      box-shadow: 0px 0px 40px 15px rgba(0, 89, 145, 0.8);
-      box-shadow: 0px 0px 40px 15px rgba(0, 89, 145, 0.8);
-      animation-name: fadeCardShadowOut;
-      animation-duration: 1s;
-      animation-fill-mode: forwards;
+      @include cardBorderRadius();
+      -webkit-box-shadow: $card-box-shadow;
+      -moz-box-shadow: $card-box-shadow;
+      box-shadow: $card-box-shadow;
+      animation: fadeCardShadowOut 1s forwards;
       &:hover {
-        animation-name: fadeCardShadowIn;
-        animation-duration: 0.5s;
-        animation-fill-mode: forwards;
+        animation: fadeCardShadowIn 0.5s forwards;
       }
 
 
-      background: rgb(1,121,181);
-      background: linear-gradient(145deg, rgba(1,121,181,1) 29%, rgba(2,151,193,1) 100%);
+      background: $card-bkgd-color;
+      background: $card-linear-gradient;
 
       // margin: 10% auto;
       margin: auto;
@@ -141,19 +155,15 @@ footer {
         align-self: center;
         border: 0.5px solid rgb(1,121,181);
         box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
-        animation-name: fadeImgShadowOut;
-        animation-duration: 1s;
-        animation-fill-mode: forwards;
+        animation: fadeImgShadowOut 1s forwards;
         &:hover {
-          animation-name: fadeImgShadowIn;
-          animation-duration: 0.5s;
-          animation-fill-mode: forwards;
+          animation: fadeImgShadowIn 0.5s forwards;
         }
       }
       .profile-container-social {
         grid-row-start: 3;
         // display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
         align-self: center;
         // place-self: center;
       }
@@ -211,6 +221,8 @@ footer {
     height: 100vh;
   }
 }
+
+
 
 
 @media screen and (min-height: 560px) and (orientation: portrait)  {
@@ -283,7 +295,7 @@ footer {
       margin: auto 5%;
     }
 
-    footer {
+    .footer-copyright {
       grid-column-start: 2;
       grid-row-start: 1;
     }
@@ -338,7 +350,7 @@ footer {
       }
     }
 
-    footer {
+    .footer-copyright {
       margin-bottom: 1%;
     }
   }
@@ -384,7 +396,7 @@ footer {
       margin: auto 5%;
     }
 
-    footer {
+    .footer-copyright {
       grid-column-start: 2;
     }
   }
@@ -429,7 +441,7 @@ footer {
           position: relative;
         }
         .profile-container-social > *:before {
-          @include underlineProperties(50%, 5px, 23px)
+          @include underlineProperties(63%, 1px, 14px)
         }
         .profile-container-social > *:hover:before,
         .profile-container-social > *:focus:before {
@@ -483,9 +495,7 @@ footer {
           opacity: 0%;
           margin-top: 10px;
           grid-column-start: 2;
-          animation-name: animateRightOut;
-          animation-duration: 0.5s;
-          animation-fill-mode: forwards;
+          animation: animateRightOut 0.5s forwards;
         }
         .nav-text:before {
           @include underlineProperties(100%, -5px, 0)
@@ -496,14 +506,12 @@ footer {
         }
 
         .nav-text:hover + .nav-links-tooltip {
-          animation-name: animateRightIn;
-          animation-duration: 0.5s;
-          animation-fill-mode: forwards;
+          animation: animateRightIn 0.5s forwards;
         }
       }
     }
 
-    footer {
+    .footer-copyright {
       grid-column-start: 2;
     }
 

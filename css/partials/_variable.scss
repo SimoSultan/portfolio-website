@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;400&display=swap');
 $bkgd-color: rgb(0,154,254);
-$bkgd-img: url(./../img/bkgd-cable.jpg);
+$bkgd-img: url(./../img/bkgds/bkgd-cable.jpg);
 // $bkgd-img: url(./../img/bkgd-cable.jpg) no-repeat -100px/cover;
 // $bkgd-img: url("./../img/bkgd-chair-large.jpg");
 $primary-dark-color: #003966;
@@ -21,3 +21,13 @@ $debug: none;
 $debugRed: red;
 $debugGreen: green;
 $debugBlue: blue;
+
+
+$card-box-shadow: 0px 0px 40px 15px rgba(0, 89, 145, 0.8);
+$card-border-radius: 30px;
+$card-bkgd-color: #0179b5;
+$card-linear-gradient: linear-gradient(145deg, rgba(1,121,181,1) 29%, rgba(2,151,193,1) 100%);
+
+$footer-box-shadow: 0px -5px 20px 7px rgba(0, 89, 145, 0.8);
+$footer-bkgd-color: rgb(1,59,105);
+$footer-linear-gradient: linear-gradient(135deg, rgba(1,59,105,1) 0%, rgba(0,85,142,1) 100%);
