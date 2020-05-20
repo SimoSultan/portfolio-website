@@ -230,10 +230,6 @@ i {
   }
 }
 
-body {
-  height: 100vh;
-}
-
 .input {
   width: 80%;
   height: 30px;
@@ -315,8 +311,6 @@ body {
       grid-row-start: 2;
   -ms-grid-column: 1;
       grid-column-start: 1;
-  -ms-grid-columns: 60% 40%;
-      grid-template-columns: 60% 40%;
   width: 100%;
   height: 100%;
   -webkit-box-shadow: 0px -5px 20px 7px rgba(0, 89, 145, 0.8);
@@ -326,8 +320,38 @@ body {
 }
 
 .footer-container .footer-resume-social-container {
-  -ms-grid-rows: 70% 30%;
-      grid-template-rows: 70% 30%;
+  -ms-grid-rows: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+}
+
+.footer-container .footer-resume-social-container .resume-container {
+  -ms-grid-row: 2;
+      grid-row-start: 2;
+}
+
+.footer-container .footer-resume-social-container .resume-container .email-helper-text {
+  margin-left: 4%;
+}
+
+.footer-container .footer-resume-social-container .resume-container .resume-helper-text {
+  text-align: right;
+  margin-right: 9%;
+  margin-top: -7px;
+}
+
+.footer-container .footer-resume-social-container .resume-container .resume-container-icons {
+  font-size: 1.2em;
+  color: #ffd100;
+}
+
+.footer-container .footer-resume-social-container .resume-container .email-icon {
+  margin-right: 5%;
+  cursor: pointer;
+}
+
+.footer-container .footer-resume-social-container .resume-container .arrow-icon {
+  margin-top: 10px;
+  margin-left: 9%;
 }
 
 .footer-container .footer-resume-social-container .resume-container label {
@@ -349,8 +373,10 @@ body {
 }
 
 .footer-container .footer-resume-social-container .profile-container-social {
-  -ms-grid-columns: 1fr 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  -ms-grid-row: 3;
+      grid-row-start: 3;
   place-items: center;
   width: 100%;
 }
@@ -364,23 +390,27 @@ body {
 }
 
 .footer-container .nav-links {
-  -ms-grid-column: 2;
-      grid-column-start: 2;
   height: 100%;
-  -ms-grid-rows: 1fr 1fr 1fr 1fr;
-      grid-template-rows: 1fr 1fr 1fr 1fr;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  -ms-grid-row: 1;
+      grid-row-start: 1;
 }
 
 .footer-container .nav-links .nav-text {
   font-weight: 600;
-  text-align: right;
-  margin-right: 20%;
+  text-align: center;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
   letter-spacing: 2px;
-  font-size: 1rem;
+  font-size: 1.2rem;
   cursor: pointer;
+  border-right: 2px solid #ffd100;
+}
+
+.footer-container .nav-links .nav-text:last-child {
+  border: none;
 }
 
 #about-container {
@@ -490,6 +520,17 @@ a {
   margin-bottom: 15px;
 }
 
+.dev-icons {
+  font-size: 3em;
+  margin: 2%;
+  color: #003966;
+}
+
+.dev-icon-text {
+  text-align: center;
+  color: #003966;
+}
+
 .grid {
   display: -ms-grid;
   display: grid;
@@ -541,6 +582,13 @@ footer {
 .header {
   color: white;
   margin: 3% 0 -3% 4%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+#home-container {
+  height: 100vh;
 }
 
 .page-container {
@@ -550,6 +598,7 @@ footer {
   background-repeat: no-repeat;
   background-position-x: -100px;
   background-size: cover;
+  background-attachment: fixed;
   min-height: 640px;
   min-width: 360px;
 }
@@ -591,7 +640,7 @@ footer {
   color: white;
 }
 
-.page-container .profile-container .profile-container-card p {
+.page-container .profile-container .profile-container-card #home-profile-container-card-header-subtext {
   text-align: right;
   margin: 02% 5% 0 0;
   color: #202020;
@@ -629,7 +678,7 @@ footer {
 
 .page-container .nav-container {
   width: 100%;
-  height: 80%;
+  height: 100%;
   margin: auto 0;
   -ms-grid-columns: 30% 70%;
       grid-template-columns: 30% 70%;
@@ -668,6 +717,7 @@ footer {
   letter-spacing: 2px;
   font-size: 1rem;
   cursor: pointer;
+  height: 100%;
 }
 
 .page-container .nav-container .nav-tooltip .nav-links-tooltip, .page-container .nav-container .nav-links .nav-links-tooltip {
@@ -685,8 +735,60 @@ footer {
   display: none;
 }
 
-.page-container .below-about-page {
+#about-container {
   height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 8% 1fr 1fr;
+      grid-template-rows: 8% 1fr 1fr;
+}
+
+#about-container .header {
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  margin: unset;
+  margin-left: 4%;
+  z-index: 2;
+}
+
+#about-container #about-skills-container {
+  -ms-grid-row: 2;
+      grid-row-start: 2;
+}
+
+#about-container #about-skills-container .profile-container-card {
+  width: 80%;
+  height: unset;
+  -ms-grid-rows: unset;
+      grid-template-rows: unset;
+  padding: 2%;
+}
+
+#about-container #about-skills-container .profile-container-card .about-profile-container-card-header h2 {
+  font-size: 1em;
+  margin: 3% 0 3% 3%;
+}
+
+#about-container #about-skills-container .profile-container-card .about-profile-container-card-icons {
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+#about-container #about-skills-container .profile-container-card .about-profile-container-card-icons .dev-icon-text-container {
+  margin-top: 2%;
+}
+
+#about-container #about-me-text {
+  -ms-grid-row: 3;
+      grid-row-start: 3;
+  -ms-grid-rows: 20% 1fr;
+      grid-template-rows: 20% 1fr;
+}
+
+#about-container #about-me-text #about-me-text-content {
+  text-align: justify;
+  padding: 0 9%;
+  color: black;
 }
 
 @media screen and (min-height: 560px) and (orientation: portrait) {

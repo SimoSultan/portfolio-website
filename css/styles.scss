@@ -39,18 +39,23 @@ a {
 }
 
 .social-icons { 
-  // color: $icon-dark-color;
   color: $primary-dark-color;
-  // color: $secondary-light-color;
-  // color: $secondary-dark-color;
 }
 
 .social-link {
   font-size: 36px;
   margin-bottom: 15px;
-  // &:nth-child(even) i {
-  //   color: $icon-light-color;
-  // }
+}
+
+.dev-icons {
+  font-size: 3em;
+  margin: 2%;
+  color: $primary-dark-color;
+}
+.dev-icon-text {
+  text-align: center;
+  color: $primary-dark-color;
+  // color: $font-light-color;
 }
 
 .grid {
@@ -82,7 +87,6 @@ footer {
   margin-right: 3%;
   margin-bottom: 1%;
   color: $footer-text-color;
-  // color: $secondary-light-color;
   grid-row-start: 2;
   grid-column-start: 1;
   align-self: flex-end;
@@ -101,19 +105,18 @@ footer {
 .header {
   color: $font-light-color;
   margin: 3% 0 -3% 4%;
+  height: fit-content;
 }
 
 
 
 // HOME PAGE STYLES 
 
-// body {
-//   height: 200vh;
-// }
-// #home-container {
-//   height: 100vh;
-//   // width: 100vw;
-// }
+
+#home-container {
+  height: 100vh;
+  // @include addBackground();
+}
 
 
 // MOBILE PORTRAIT 
@@ -156,7 +159,7 @@ footer {
         margin: 7% 0 0% 6%;
         color: $font-light-color;
       }
-      p {
+      #home-profile-container-card-header-subtext {
         text-align: right;
         margin: 02% 5% 0 0;
         color: $font-dark-color;
@@ -184,7 +187,7 @@ footer {
 
   .nav-container {
     width: 100%;
-    height: 80%;
+    height: 100%;
     margin: auto 0;
     grid-template-columns: 30% 70%;
     grid-row-start: 2;
@@ -214,6 +217,7 @@ footer {
         letter-spacing: 2px;
         font-size: 1rem;
         cursor: pointer;
+        height: 100%;
       }
       .nav-links-tooltip {
         opacity: 0%;
@@ -228,12 +232,69 @@ footer {
       }
     }
   }
-
-  .below-about-page {
-    height: 100vh;
-  }
 }
 
+
+
+
+
+// ABOUT PAGE STYLES
+
+
+
+#about-container {
+  .header {
+    grid-row-start: 1;
+    margin: unset;
+    margin-left: 4%;
+    z-index: 2;
+  }
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 8% 1fr 1fr;
+  #about-skills-container {
+    grid-row-start: 2;
+    .profile-container-card {
+      width: 80%;
+      height: unset;
+      grid-template-rows: unset;
+      padding: 2%;
+      // height: max-content;
+      .about-profile-container-card-header {
+        h2 {
+          font-size: 1em;
+          margin: 3% 0 3% 3%;
+        }
+      }
+      .about-profile-container-card-icons {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        .dev-icon-text-container {
+          margin-top: 2%;
+        }
+      }
+    }
+  }
+  #about-me-text {
+    grid-row-start: 3;
+    grid-template-rows: 20% 1fr;
+    #about-me-text-content {
+      text-align: justify;
+      padding: 0 9%;
+      color: black;
+
+    }
+  }
+
+
+}
+
+
+
+
+
+
+
+// MEDIA QUERIES
 
 
 

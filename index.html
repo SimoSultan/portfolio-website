@@ -23,73 +23,152 @@
 </head>
 <body>
 
-  <div id="home-container" class="grid body-container page-container">
+  <div id="home-about-container" class="home-about-container page-container">
 
-    <section id="home-profile-container-profile" class="profile-container">
-      <div id="home-profile-container-card" class="grid profile-container-card">
-        <div id="home-profile-container-card-header" class="profile-container-card-header">
-          <h2>SIMON CURRAN</h2>
-          <p>full stack web dev: loading...</p>
-        </div>
+    <div id="home-container" class="grid body-container">
 
-        <img src="./img/profile-img-square.jpg" alt="" class="circle-img card-profile-img">
-        <div id="home-profile-container-social" class="grid profile-container-social">
-          <a target="_blank" class="social-link" href="https://twitter.com/simo_sultan"><i class="icons social-icons fab fa-twitter"></i></a>
-          <a target="_blank" class="social-link" href="https://www.linkedin.com/in/simon-curran-sultan/"><i class="icons social-icons fab fa-linkedin"></i></a>
-          <a target="_blank" class="social-link" href="https://github.com/SimoSultan"><i class="icons social-icons fab fa-github"></i></a>
-          <a target="_blank" class="social-link" href="https://medium.com/@simo_sultan"><i class="icons social-icons fab fa-medium"></i></a>
-          <a target="_blank" class="social-link" href="https://open.spotify.com/user/1231189291"><i class="icons social-icons fab fa-spotify"></i></a>
+      <section id="home-profile-container-profile" class="profile-container">
+        <div id="home-profile-container-card" class="grid profile-container-card">
+          <div  class="profile-container-card-header">
+            <h2>SIMON CURRAN</h2>
+            <p id="home-profile-container-card-header-subtext">full stack web dev: loading...</p>
+          </div>
+  
+          <img src="./img/profile-img-square.jpg" alt="" class="circle-img card-profile-img">
+          <div id="home-profile-container-social" class="grid profile-container-social">
+            <a target="_blank" class="social-link" href="https://twitter.com/simo_sultan"><i class="icons social-icons fab fa-twitter"></i></a>
+            <a target="_blank" class="social-link" href="https://www.linkedin.com/in/simon-curran-sultan/"><i class="icons social-icons fab fa-linkedin"></i></a>
+            <a target="_blank" class="social-link" href="https://github.com/SimoSultan"><i class="icons social-icons fab fa-github"></i></a>
+            <a target="_blank" class="social-link" href="https://medium.com/@simo_sultan"><i class="icons social-icons fab fa-medium"></i></a>
+            <a target="_blank" class="social-link" href="https://open.spotify.com/user/1231189291"><i class="icons social-icons fab fa-spotify"></i></a>
+          </div>
         </div>
+      </section>
+  
+      <section class="nav-container grid">
+        <!-- <a id="scroll-to-about" class="nav-tooltip" href="about.html"> -->
+        <div id="scroll-to-about" onclick="scrollToAbout()" class="nav-tooltip">
+        <!-- <a id="scroll-to-about" class="nav-tooltip" href=""> -->
+          <p id="downArrow-tooltip">find out more</p>
+          <div class="arrow bounce"><i class="fa fa-chevron-down fa-2x" aria-hidden="true"></i></div>
+        <!-- </a> -->
+        </div>
+        <nav class="nav-links grid">
+          <!-- <div class="nav-text"><a href="work.html">STUFF I'VE MADE</a></div> -->
+          <a class="nav-text" href="work.html">STUFF I'VE MADE</a>
+          <div class="nav-links-tooltip">my portfolio</div>
+          <!-- <div class="nav-text"><a href="blogs.html">STUFF I'VE WRITTEN</a></div> -->
+          <a class="nav-text" href="blogs.html">STUFF I'VE WRITTEN</a>
+          <div class="nav-links-tooltip">my blogs</div>
+          <!-- <div class="nav-text"><a href="about.html">FIND OUT MORE</a></div>
+          <div class="nav-links-tooltip">about me</div> -->
+          <!-- <div class="nav-text"><a href="contact.html">MSG ME STUFF</a></div> -->
+          <a class="nav-text" href="contact.html">MSG ME STUFF</a>
+          <div class="nav-links-tooltip">with simo_sultan</div>
+        </nav>
+        <div class="footer-copyright">© Simon Curran</div>
+      </section>
+  
+  
+    </div>
+  
+    <div id="about-container" class="about-container">
+  
+      <div class="header">
+        <h2>MORE STUFF</h2>
       </div>
-    </section>
+  
+      <section id="about-skills-container" class="about-skills-container">
 
-    <section class="nav-container grid">
-      <!-- <a id="scroll-to-about" class="nav-tooltip" href="about.html"> -->
-      <a id="scroll-to-about" class="nav-tooltip" href="">
-        <p id="downArrow-tooltip">find out more</p>
-        <div class="arrow bounce"><i class="fa fa-chevron-down fa-2x" aria-hidden="true"></i></div>
-      </a>
-      <nav class="nav-links grid">
-        <div class="nav-text"><a href="work.html">STUFF I'VE MADE</a></div>
-        <div class="nav-links-tooltip">my portfolio</div>
-        <div class="nav-text"><a href="blogs.html">STUFF I'VE WRITTEN</a></div>
-        <div class="nav-links-tooltip">my blogs</div>
-        <!-- <div class="nav-text"><a href="about.html">FIND OUT MORE</a></div>
-        <div class="nav-links-tooltip">about me</div> -->
-        <div class="nav-text"><a href="contact.html">MSG ME STUFF</a></div>
-        <div class="nav-links-tooltip">with simo_sultan</div>
-      </nav>
-    </section>
+        <div id="about-profile-container-profile" class="profile-container">
+          <div class="grid profile-container-card">
+            <div id="about-profile-container-card-header-learnt" class="about-profile-container-card-header">
+              <h2>SKILLS I'VE PICKED UP</h2>
+            </div>
+    
+            <div id="about-profile-container-card-icons-learnt" class="grid about-profile-container-card-icons">
+              <div class="dev-icon-text-container">
+                <i class="dev-icons devicon-html5-plain"></i>
+                <p class="dev-icon-text">HTML</p>
+              </div>
 
-    <div class="footer-copyright">© Simon Curran</div>
+              <div class="dev-icon-text-container">
+                <i class="dev-icons devicon-css3-plain"></i>
+                <p class="dev-icon-text">SASS</p>
+              </div>
+
+              <div class="dev-icon-text-container">
+                <i class="dev-icons devicon-ruby-plain"></i>
+                <p class="dev-icon-text">RUBY</p>
+              </div>
+              <div class="dev-icon-text-container">
+                <i class="dev-icons devicon-javascript-plain"></i>
+                <p class="dev-icon-text">JavaScript</p>
+              </div>
+              <div class="dev-icon-text-container">
+                <i class="dev-icons devicon-jquery-plain"></i>
+                <p class="dev-icon-text">jQuery</p>
+              </div>
+              <div class="dev-icon-text-container">
+                <i class="dev-icons devicon-github-plain"></i>
+                <p class="dev-icon-text">GitHub</p>
+              </div>
+
+            </div>
+
+            <div id="about-profile-container-card-header-learning" class="about-profile-container-card-header">
+              <h2>LANGUAGES IN DEVELOPMENT</h2>
+            </div>
+
+            <div id="about-profile-container-card-icons-learning" class="grid  about-profile-container-card-icons">
+
+              <div class="dev-icon-text-container">
+                
+              <i class="dev-icons devicon-react-original"></i>
+              <p class="dev-icon-text">React</p>
+              </div>
+              <div class="dev-icon-text-container">
+                <i class="dev-icons devicon-mongodb-plain"></i>
+                <p class="dev-icon-text">MondoDB</p>
+              </div>
+              <div class="dev-icon-text-container">
+                <i class="dev-icons devicon-nodejs-plain"></i>
+                <p class="dev-icon-text">NodeJS</p>
+              </div>
+              <div class="dev-icon-text-container">
+                <i class="dev-icons devicon-rails-plain"></i>
+                <p class="dev-icon-text">Rails</p>
+              </div>
+              <div class="dev-icon-text-container">
+                <i class="dev-icons devicon-express-original"></i>
+                <p class="dev-icon-text">Express</p>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about-me-text" class="grid">
+        
+        <div id="about-me-text-header" class="header about-me-text-header">
+          <h2>A LITTLE EXTRA</h2>
+        </div>
+
+        <div id="about-me-text-content">
+
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </div>
+
+      </section>
+
+      <footer>
+        <div class="footer-copyright">© Simon Curran</div>
+      </footer>
+
+    </div>
 
   </div>
-
-  <!-- <div id="about-container" class="about-container">
-
-    <div class="header">
-      <h2>A BRIEF HISTORY OF MY TIME</h2>
-    </div>
-
-    <div>
-      SKILLS and STUFF
-    </div>
-
-    <div>
-      HISTORY STUFF
-    </div>
-
-    <div>
-      CURRENT STUFF
-    </div>
-
-    <div>
-      FUTURE STUFF
-    </div>
-
-    <div class="footer-copyright">© Simon Curran</div>
-
-  </div> -->
 
 </body>
 </html>
