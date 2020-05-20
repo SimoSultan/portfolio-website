@@ -6,6 +6,7 @@
   display: block;
   background-color: $input-background-color;
   border-radius: 5px;
+  border: none;
 }
 
 .contact-form {
@@ -105,33 +106,57 @@
   
 
   .footer-resume-social-container {
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 30% 40% 30%;
   // grid-template-rows: 70% 30%;
     .resume-container {
-      // * {
-      //   color: $font-light-color;
-      //   display: block;
-      // }
+      grid-template-columns: 20% 60% 20%;
+      grid-template-rows: 1fr 1fr;
+      color: $footer-text-color;
       .email-helper-text {
-        margin-left: 4%;
+        grid-column-start: 2;
+        grid-row-start: 1;
+        font-style: italic;
+        // margin-left: 4%;
       }
       .resume-helper-text {
+        grid-column-start: 2;
+        grid-row-start: 2;
         text-align: right;
-        margin-right: 9%;
-        margin-top: -7px;
+        font-style: italic;
+        // margin-right: 9%;
+        // margin-top: -7px;
       }
       .resume-container-icons {
-        font-size: 1.2em;
+        font-size: 2em;
         color: $secondary-light-color;
       }
-      .email-icon {
-        margin-right: 5%;
-        cursor: pointer;
+      .email-icon-link {
+        grid-column-start: 1;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        place-self: center;
+        position: relative;
+        top: 20%;
+        .email-icon {
+          // margin-right: 5%;
+          cursor: pointer;
+        }
       }
-      .arrow-icon {
-        margin-top: 10px;
-        margin-left: 9%;
+      
+      .download-icon-link {
+        grid-column-start: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        place-self: center;
+        position: relative;
+        top: 20%;
+        // grid-row-start: span 2;
+        .download-icon {
+          // margin-top: 10px;
+          // margin-left: 5%;
+        }
       }
+
       grid-row-start: 2;
       label {
         font-weight: 300;

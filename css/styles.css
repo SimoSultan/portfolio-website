@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;400&display=swap");
 @-webkit-keyframes animateRightIn {
   from {
@@ -237,6 +236,7 @@ i {
   display: block;
   background-color: whitesmoke;
   border-radius: 5px;
+  border: none;
 }
 
 .contact-form .input-message {
@@ -320,38 +320,66 @@ i {
 }
 
 .footer-container .footer-resume-social-container {
-  -ms-grid-rows: 1fr 1fr 1fr;
-      grid-template-rows: 1fr 1fr 1fr;
+  -ms-grid-rows: 30% 40% 30%;
+      grid-template-rows: 30% 40% 30%;
 }
 
 .footer-container .footer-resume-social-container .resume-container {
+  -ms-grid-columns: 20% 60% 20%;
+      grid-template-columns: 20% 60% 20%;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+  color: #acb5be;
   -ms-grid-row: 2;
       grid-row-start: 2;
 }
 
 .footer-container .footer-resume-social-container .resume-container .email-helper-text {
-  margin-left: 4%;
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  font-style: italic;
 }
 
 .footer-container .footer-resume-social-container .resume-container .resume-helper-text {
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  -ms-grid-row: 2;
+      grid-row-start: 2;
   text-align: right;
-  margin-right: 9%;
-  margin-top: -7px;
+  font-style: italic;
 }
 
 .footer-container .footer-resume-social-container .resume-container .resume-container-icons {
-  font-size: 1.2em;
+  font-size: 2em;
   color: #ffd100;
 }
 
-.footer-container .footer-resume-social-container .resume-container .email-icon {
-  margin-right: 5%;
+.footer-container .footer-resume-social-container .resume-container .email-icon-link {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  grid-row-end: 2;
+  place-self: center;
+  position: relative;
+  top: 20%;
+}
+
+.footer-container .footer-resume-social-container .resume-container .email-icon-link .email-icon {
   cursor: pointer;
 }
 
-.footer-container .footer-resume-social-container .resume-container .arrow-icon {
-  margin-top: 10px;
-  margin-left: 9%;
+.footer-container .footer-resume-social-container .resume-container .download-icon-link {
+  -ms-grid-column: 3;
+      grid-column-start: 3;
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  grid-row-end: 2;
+  place-self: center;
+  position: relative;
+  top: 20%;
 }
 
 .footer-container .footer-resume-social-container .resume-container label {
@@ -494,7 +522,7 @@ body {
   overflow: auto;
   height: 100vh;
   width: 100vw;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   font-weight: 400;
   letter-spacing: 1.5px;
   cursor: default;
@@ -568,7 +596,7 @@ footer {
   -ms-flex-item-align: end;
       align-self: flex-end;
   z-index: 5;
-  position: absolute;
+  position: fixed;
   bottom: 0;
   right: 0;
 }
@@ -709,7 +737,7 @@ footer {
 
 .page-container .nav-container .nav-tooltip .nav-text, .page-container .nav-container .nav-links .nav-text {
   text-align: right;
-  margin-right: 12%;
+  padding-right: 12%;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;

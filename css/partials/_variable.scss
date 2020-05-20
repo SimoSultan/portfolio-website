@@ -1,6 +1,7 @@
   
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;400&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+$main-font: 'Source Sans Pro', sans-serif;
+
 $bkgd-color: rgb(0,154,254);
 $bkgd-img: url(./../img/bkgds/bkgd-cable.jpg);
 // $bkgd-img: url(./../img/bkgd-cable.jpg) no-repeat -100px/cover;
