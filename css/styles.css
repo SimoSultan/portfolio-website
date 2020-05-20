@@ -766,8 +766,10 @@ footer {
   display: -ms-flexbox;
   display: flex;
   position: relative;
-  top: 30%;
-  right: 31%;
+  top: 26%;
+  right: 35%;
+  font-family: "Quattrocento Sans", sans-serif;
+  font-size: 1.1rem;
 }
 
 .page-container .nav-container .nav-tooltip .nav-text, .page-container .nav-container .nav-links .nav-text {
