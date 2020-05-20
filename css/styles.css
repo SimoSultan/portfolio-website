@@ -246,6 +246,10 @@ i {
   resize: none;
 }
 
+.contact-form .input-label {
+  font-family: "Quattrocento Sans", sans-serif;
+}
+
 .button {
   padding: 10px 23px;
   width: -webkit-max-content;
