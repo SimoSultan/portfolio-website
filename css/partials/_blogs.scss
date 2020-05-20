@@ -35,6 +35,8 @@
         text-align: left;
         margin: 5px 0 5px 10px;
         font-size: 1.2em;
+        font-family: $small-font;
+
       }
       .list-item-img {
         width: fit-content;
@@ -51,8 +53,11 @@
         text-align: justify;
         font-size: 0.9em;
         font-style: italic;
+        font-family: $small-font;
         .list-item-date {
           text-align: right;
+          font-family: $small-font;
+          // font-weight: 600;
           font-style: normal;
         }
       }

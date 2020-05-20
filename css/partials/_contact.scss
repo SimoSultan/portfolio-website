@@ -24,14 +24,8 @@
   width: max-content;
   height: max-content;
   place-self: end;
-  // margin: 20px;
-  // margin: 0px 20px 20px 0;
-  // background: $card-bkgd-color;
   background: $secondary-dark-color;
-  // border: 2px solid $secondary-light-color;
   border: 2px solid black;
-  // border: 2px solid $card-bkgd-color;
-  // border: 2px solid $primary-dark-color;
   
   border-radius: 5px;
   color: $font-light-color;
@@ -44,24 +38,13 @@
   }
 }
 
-// .button {
-//   padding: 10px 23px;
-//   width: max-content;
-//   height: max-content;
-//   place-self: end;
-//   margin: 0px 20px 20px 0;
-//   background: $secondary-dark-color;
-//   border: 2px solid $secondary-dark-color;
-//   border-radius: 5px;
-//   color: $font-dark-color;
-// }
+
 
 
 #contact-container {
   grid-template-rows: 80% 20%;
 
   .profile-container-card {
-    // grid-template-rows: 15% 65% 20%;
     grid-template-rows: 12% 88%;
     width: 80%;
     .contact-form {
@@ -82,21 +65,14 @@
           margin-right: 9%;
         }
       }
-
     }
-
   }
-  // footer {
-  //   background-color: $primary-dark-color;
-  // }
 }
 
 
 .footer-container {
   grid-row-start: 2;
   grid-column-start: 1;
-  // grid-template-columns: 60% 40%;
-  // grid-template-rows: 1fr 1fr 1fr;
   width: 100%;
   height: 100%;
 
@@ -107,8 +83,8 @@
 
   .footer-resume-social-container {
     grid-template-rows: 30% 40% 30%;
-  // grid-template-rows: 70% 30%;
     .resume-container {
+      grid-row-start: 2;
       grid-template-columns: 20% 60% 20%;
       grid-template-rows: 1fr 1fr;
       color: $footer-text-color;
@@ -116,15 +92,16 @@
         grid-column-start: 2;
         grid-row-start: 1;
         font-style: italic;
-        // margin-left: 4%;
+        font-weight: 400;
+        font-family: $small-font;
       }
       .resume-helper-text {
         grid-column-start: 2;
         grid-row-start: 2;
         text-align: right;
+        font-weight: 400;
+        font-family: $small-font;
         font-style: italic;
-        // margin-right: 9%;
-        // margin-top: -7px;
       }
       .resume-container-icons {
         font-size: 2em;
@@ -138,7 +115,6 @@
         position: relative;
         top: 20%;
         .email-icon {
-          // margin-right: 5%;
           cursor: pointer;
         }
       }
@@ -150,14 +126,11 @@
         place-self: center;
         position: relative;
         top: 20%;
-        // grid-row-start: span 2;
         .download-icon {
-          // margin-top: 10px;
-          // margin-left: 5%;
+          cursor: pointer;
         }
       }
 
-      grid-row-start: 2;
       label {
         font-weight: 300;
         margin-left: 20px;
@@ -192,10 +165,11 @@
 
   .nav-links {
     height: 100%;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 24% 24% 24% 28%;
     grid-row-start: 1;
     .nav-text {
-      font-weight: 600;
+      font-weight: 400;
+      font-family: $nav-font;
       text-align: center;
       align-self: center;
       letter-spacing: 2px;
