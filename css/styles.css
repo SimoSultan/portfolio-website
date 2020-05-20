@@ -230,6 +230,10 @@ i {
   }
 }
 
+body {
+  height: 100vh;
+}
+
 .input {
   width: 80%;
   height: 30px;
@@ -452,10 +456,6 @@ i {
   font-style: normal;
 }
 
-#work-container .nav-text > * {
-  color: #202020;
-}
-
 body {
   padding: 0;
   margin: 0;
@@ -541,14 +541,6 @@ footer {
 .header {
   color: white;
   margin: 3% 0 -3% 4%;
-}
-
-body {
-  height: 200vh;
-}
-
-#home-container {
-  height: 100vh;
 }
 
 .page-container {
