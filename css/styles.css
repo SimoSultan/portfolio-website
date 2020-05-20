@@ -248,6 +248,7 @@ i {
 
 .contact-form .input-label {
   font-family: "Quattrocento Sans", sans-serif;
+  font-weight: 400;
 }
 
 .button {
@@ -310,6 +311,7 @@ i {
 #contact-container .profile-container-card .contact-form div button {
   margin-top: 7%;
   margin-right: 9%;
+  font-family: "Roboto", sans-serif;
 }
 
 .footer-container {
