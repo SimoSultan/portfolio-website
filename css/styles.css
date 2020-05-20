@@ -379,8 +379,8 @@ i {
   cursor: pointer;
 }
 
-#about-container .nav-text > * {
-  color: #202020;
+#about-container {
+  height: 100vh;
 }
 
 #blogs-container {
@@ -541,6 +541,14 @@ footer {
 .header {
   color: white;
   margin: 3% 0 -3% 4%;
+}
+
+body {
+  height: 200vh;
+}
+
+#home-container {
+  height: 100vh;
 }
 
 .page-container {
