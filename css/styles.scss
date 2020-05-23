@@ -531,6 +531,8 @@ footer {
 
   #home-container {
     #home-profile-container-profile {
+      min-height: unset;
+      height: 75%;
       .profile-container-card {
         width: 66%;
         #home-profile-container-card-header-subtext {
@@ -880,6 +882,7 @@ footer {
   #home-container {
     #home-profile-container-profile {
       max-height: 550px;
+      min-height: 440px;
       #home-profile-container-card {
         .profile-container-card-header {
           h2 {

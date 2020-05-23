@@ -1004,6 +1004,10 @@ footer {
   .card-profile-img {
     width: 65%;
   }
+  #home-container #home-profile-container-profile {
+    min-height: unset;
+    height: 75%;
+  }
   #home-container #home-profile-container-profile .profile-container-card {
     width: 66%;
   }
@@ -1187,6 +1191,7 @@ footer {
   }
   #home-container #home-profile-container-profile {
     max-height: 550px;
+    min-height: 440px;
   }
   #home-container #home-profile-container-profile #home-profile-container-card .profile-container-card-header h2 {
     font-size: 2.5em;
