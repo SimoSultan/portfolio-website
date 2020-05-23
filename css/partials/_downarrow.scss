@@ -74,30 +74,30 @@ i {
 }
 
 
-@media screen and (min-height: 560px) and (orientation: portrait)  {
-  .arrow {
-    bottom: -14%;
-  }
-}
+// @media screen and (min-height: 560px) and (orientation: portrait)  {
+//   .arrow {
+//     bottom: -14%;
+//   }
+// }
 
-@media screen and (min-height: 640px) and (orientation: portrait)  {
-  .arrow {
-    bottom: 0%;
-  }
-}
-
-
-@media screen and (min-width: 768px) and (orientation: portrait) {
-
-  .arrow {
-    bottom: 1%;
-  }
-}
+// @media screen and (min-height: 640px) and (orientation: portrait)  {
+//   .arrow {
+//     bottom: 0%;
+//   }
+// }
 
 
-@media screen and (min-width: 568px) and (orientation: landscape)  {
-  .arrow {
-    grid-column-start: 2;
-    margin-left: 4.4%;
-  }
-}
+// @media screen and (min-width: 768px) and (orientation: portrait) {
+
+//   .arrow {
+//     bottom: 1%;
+//   }
+// }
+
+
+// @media screen and (min-width: 568px) and (orientation: landscape)  {
+//   .arrow {
+//     grid-column-start: 2;
+//     margin-left: 4.4%;
+//   }
+// }

@@ -7,11 +7,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/styles.css">
   <!-- ADD INTEGRITY TO STYLESHEET BEFORE SUBMITTAL -->
-  
+
   <!-- JS & jQuery -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="js/app.js"></script>
 
+  <!-- SCROLLBAR -->
+  <link rel="stylesheet" media="screen and (min-width: 1200px)" href="css/scrollbar.css">
+  <script src="js/scrollbar.min.js"></script>
+
+
+  
   <!-- FAVICON -->
   <link rel="shortcut icon" href="./img/favicon/favicon-32x32.png" type="image/x-icon"/>
   <!-- SOCIAL ICONS -->
@@ -21,9 +27,12 @@
   <!-- MATERIAL ICONS -->
   <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"> -->
 </head>
-<body>
+<body ss-container>
+<!-- <body> -->
 
-  <div id="home-about-container" class="home-about-container page-container">
+  <div id="home-about-container" class="home-about-container page-container" >
+
+    
     <img class="background" src="./img/bkgds/bkgd-cable.jpg" alt="">
     <div id="home-container" class="grid body-container">
     <!-- <div id="home-container" class="body-container"> -->
@@ -34,8 +43,9 @@
             <h2>SIMON CURRAN</h2>
             <p id="home-profile-container-card-header-subtext">full stack web dev: loading...</p>
           </div>
-  
-          <img src="./img/profile-img-square.jpg" alt="" class="circle-img card-profile-img">
+          <div id="home-profile-image-container">
+            <img src="./img/profile-img-square.jpg" alt="" class="circle-img card-profile-img">
+          </div>
           <div id="home-profile-container-social" class="grid profile-container-social">
             <a target="_blank" class="social-link" href="https://twitter.com/simo_sultan"><i class="icons social-icons fab fa-twitter"></i></a>
             <a target="_blank" class="social-link" href="https://www.linkedin.com/in/simon-curran-sultan/"><i class="icons social-icons fab fa-linkedin"></i></a>
@@ -57,7 +67,7 @@
           <a class="nav-text" href="blogs.html">STUFF I'VE WRITTEN</a>
           <div class="nav-links-tooltip">my blogs</div>
           <a class="nav-text" href="contact.html">MSG ME STUFF</a>
-          <div class="nav-links-tooltip">with simo_sultan</div>
+          <div class="nav-links-tooltip">and ask a question</div>
         </nav>
         <div class="footer-copyright">© Simon Curran</div>
       </section>

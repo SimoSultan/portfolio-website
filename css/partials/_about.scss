@@ -2,12 +2,9 @@
   .header {
     grid-row-start: 1;
     margin: unset;
-    // margin-left: 4%;
     z-index: 2;
   }
   height: 100vh;
-  // display: grid;
-  // grid-template-rows: 8% 1fr 1fr;
   #about-skills-container {
     grid-row-start: 2;
     .profile-container-card {
@@ -15,7 +12,6 @@
       height: unset;
       grid-template-rows: unset;
       padding: 2%;
-      // height: max-content;
       .about-profile-container-card-header {
         h2 {
           font-size: 1em;
@@ -38,7 +34,6 @@
   }
   #about-me-text {
     grid-row-start: 3;
-    // grid-template-rows: 20% 1fr;
     #about-me-text-content {
       text-align: justify;
       padding: 0 9% 3% 9%;
@@ -47,10 +42,5 @@
       font-weight: 400;
       line-height: 1.3em;
     }
-    // .footer-copyright {
-    //   color: $font-dark-color;
-    // }
   }
-
-
 }

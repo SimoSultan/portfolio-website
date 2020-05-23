@@ -25,6 +25,8 @@ body {
   font-weight: 400;
   letter-spacing: 1.5px;
   cursor: default;
+  min-width: 320px;
+  min-height: 568px;
 }
 
 p {
@@ -39,12 +41,13 @@ a {
 }
 
 .background {
+  object-fit: cover;
+  width: 100%;
+  height: stretch;
   z-index: -10;
-  max-width: fit-content;
-  max-height: stretch;
-  // max-height: -webkit-fill-available;
   position: fixed;
   filter: brightness(85%);
+
 }
 
 .social-icons { 
@@ -149,7 +152,7 @@ footer {
   .profile-container {
     height: 75%;
     align-self: center;
-    min-height: 386px;
+    min-height: 440px;
     max-height: 515px;
 
     .profile-container-card {
@@ -190,17 +193,27 @@ footer {
         }
       }
 
-      img {
+      #home-profile-image-container {
         grid-row-start: 2;
         justify-self: center;
         align-self: center;
-        border: 0.5px solid rgb(1,121,181);
-        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
-        animation: fadeImgShadowOut 1s forwards;
-        &:hover {
-          animation: fadeImgShadowIn 0.5s forwards;
+        width: 95%;
+        margin: 0 auto;
+        img {
+          border: 0.5px solid rgb(1,121,181);
+          box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+          animation: fadeImgShadowOut 1s forwards;
+          &:hover {
+            animation: fadeImgShadowIn 0.5s forwards;
+          }
         }
       }
+
+      // img {
+
+        
+
+      // }
       .profile-container-social {
         grid-row-start: 3;
         // display: grid;
@@ -275,6 +288,7 @@ footer {
 // MEDIA QUERIES
 
 
+// IPHONE 5/SE
 
 @media screen and (min-width: 320px) and (orientation: portrait)  {
   #home-container {
@@ -288,7 +302,8 @@ footer {
         #downArrow-tooltip {
           font-size: 1em;
           letter-spacing: 2px;
-          right: 17%;
+          right: 21%;
+          top: 12%;
         }
       }
     }
@@ -316,22 +331,62 @@ footer {
 }
 
 
-@media screen and (min-height: 640px) and (orientation: portrait)  {
-  .page-container {
-    .profile-container {
-      height: 90%;
-      min-width: 356px;
-    }
-    #downArrow-tooltip {
-      margin-top: -25px;
+// GALAXY S5 / MOTO G4
+
+@media screen and (min-width: 360px) and (orientation: portrait)  {
+  #home-container {
+    .nav-container {
+      .nav-tooltip {
+        #downArrow-tooltip {
+          right: 14%;
+        }
+      }
     }
   }
 }
 
-@media screen and (min-height: 800px) and (orientation: portrait)  {
+
+
+// IPHONE X
+
+@media screen 
+  and (min-width: 375px) 
+  and (min-height: 375px) 
+  and (orientation: portrait) {
+    #home-container {
+      .nav-container {
+        .nav-tooltip {
+          #downArrow-tooltip {
+            right: 22%;
+            font-size: 1.1em;
+            letter-spacing: 3px;
+            top: 19%;
+          }
+        }
+      }
+    }
+}
+
+
+
+// PIXEL 2
+
+@media screen and (min-width: 411px) and (orientation: portrait)  {
   .page-container {
     .profile-container {
-      height: 80%;
+      height: 86%;
+    }
+  }
+  #home-container {
+    .nav-container {
+      .nav-tooltip {
+        #downArrow-tooltip {
+          right: 18%;
+          font-size: 1.1em;
+          letter-spacing: 3px;
+          top: 19%;
+        }
+      }
     }
   }
 
@@ -354,14 +409,16 @@ footer {
 }
 
 
+
+
+
+
 // MOBILE LANDSCAPE
 
+// IPHONE 5/SE
 
 @media screen and (min-width: 568px) and (orientation: landscape)  {
-  .background {
-    max-width: stretch;
-    max-height: fit-content;
-  }
+
   #home-container {
     grid-template-rows: none;
     grid-template-columns: 55% 45%;
@@ -369,7 +426,7 @@ footer {
       grid-column-start: 2;
       height: 85%;
       max-height: 350px;
-      min-height: 250px;
+      // min-height: 250px;
       .profile-container-card {
         width: 80%;
         .profile-container-card-header {
@@ -397,10 +454,11 @@ footer {
         grid-row-start: 1;
         #downArrow-tooltip {
           top: 60%;
-          right: 75%;
+          right: 43%;
         }
       }
       .nav-links {
+        height: 80%;
         grid-column-start: 1;
         grid-row-start: 1;
         .nav-text {
@@ -416,9 +474,6 @@ footer {
     grid-template-rows: 1fr;
     background-position-x: 0;
     min-height: 360px;
-    .profile-container {
-      min-height: unset;
-    }
 
     .footer-copyright {
       grid-column-start: 2;
@@ -442,6 +497,8 @@ footer {
 }
 
 
+// GALAXY S5 / MOTO G4
+
 @media screen and (min-width: 640px) and (orientation: landscape)  {
 
   #home-container {
@@ -456,14 +513,18 @@ footer {
       #scroll-to-about {
         #downArrow-tooltip {
           top: 75%;
-          right: 60%;
+          right: 30%;
         }
       }
     }
   } 
 }
 
-@media screen and (min-width: 730px) and (orientation: landscape)  {
+
+
+// PIXEL 2
+
+@media screen and (min-width: 731px) and (orientation: landscape)  {
   .card-profile-img {
     width: 65%;
   }
@@ -483,8 +544,8 @@ footer {
     .nav-container {
       #scroll-to-about {
         #downArrow-tooltip {
-          top: 85%;
-          right: 50%;
+          top: 80%;
+          right: 18%;
         }
       }
     }
@@ -492,6 +553,7 @@ footer {
 }
 
 
+// PIXEL 2XL
 
 @media screen and (min-width: 800px) and (orientation: landscape)  {
   .card-profile-img {
@@ -510,12 +572,13 @@ footer {
       #scroll-to-about {
         #downArrow-tooltip {
           top: 72%;
-          right: 38%;
+          right: 7%;
         }
       }
     }
   }
 }
+
 
 
 
@@ -523,191 +586,337 @@ footer {
 
 // TABLET PORTRAIT
 
+// IPAD PORTRAIT 
 
 @media screen and (min-width: 768px) and (orientation: portrait) {
+
+
   #home-container {
+    #home-profile-container-profile {
+      #home-profile-container-card {
+        .profile-container-card-header {
+          h2 {
+            font-size: 1.8em;
+          }
+          #home-profile-container-card-header-subtext {
+            font-size: 1.2em;
+          }
+        }
+      }
+
+    }
     .nav-container {
+      .nav-links {
+        .nav-text {
+          font-size: 1.5em;
+        }
+      }
       .nav-tooltip {
         #downArrow-tooltip {
           font-size: 1.2em;
           letter-spacing: 5px;
-          right: 33%;
-      
+          right: 4%;
         }
       }
     }
   }
 
-  // .page-container {
-  //   background-position-x: 0;
-
-  //   .profile-container {
-  //     height: 85%;
-  //     .profile-container-card {
-  //       width: 55%;
-  //     }
-  //   }
-
-  //   .nav-container {
-  //     height: 85%;
-  //     .nav-links {
-  //       .nav-text {
-  //         font-size: 1.5em;
-  //       }
-  //     }
-  //     .nav-tooltip {
-  //       #downArrow-tooltip {
-  //         margin-top: 3%;
-  //         margin-left: 27%;
-  //         font-size: 1.5em;
-  //       }
-  //     }
-  //   }
-
-  //   .footer-copyright {
-  //     margin-bottom: 1%;
-  //   }
-  // }
+  #about-container {
+    #about-skills-container {
+      .profile-container {
+        max-height: unset;
+      }
+      .profile-container-card {
+        max-width: unset;
+        width: 65%;
+        .about-profile-container-card-header {
+          h2 {
+            font-size: 1.3em;
+          }
+        }
+        .about-profile-container-card-icons {
+          .dev-icon-text-container {
+            margin-top: 18%;
+            .dev-icons {
+              font-size: 4em;
+            }
+            .dev-icon-text {
+              font-size: 1.2em;
+            }
+          }
+        }
+      }
+    }
+    #about-me-text {
+      #about-me-text-content {
+        font-size: 1.3em;
+      }
+    }
+  }
 }
 
 
 
+// IPAD PRO PORTRAIT
 
-@media screen and (min-width: 1024px) and (orientation: portrait) {
+@media screen 
+  and (min-width: 1024px) 
+  and (max-device-width: 1024px) 
+  and (orientation: portrait) {
 
-  .page-container {
-    background-position-x: 0;
-
+  .social-link {
+    font-size: 3.5em;
+  }
+  .footer-copyright {
+    font-size: 1.4em;
+  }
+  #home-container {
+    #home-profile-container-profile {
+      max-height: unset;
+      #home-profile-container-card {
+        max-width: 500px;
+        .profile-container-card-header {
+          h2 {
+            font-size: 2.4em;
+          }
+          #home-profile-container-card-header-subtext{
+            font-size: 1.5em;
+          }
+        }
+      }
+    }
     .nav-container {
       .nav-tooltip {
         #downArrow-tooltip {
-          margin-top: 26%;
+          font-size: 1.6em;
+          letter-spacing: 6px;
+          right: 6%;
         }
       }
     }
   }
+
+  #about-container {
+    #about-skills-container {
+      .profile-container-card {
+        .about-profile-container-card-icons {
+          .dev-icon-text-container {
+            .dev-icon-text {
+              font-size: 1.6em;
+            }
+          }
+        }
+      }
+    }
+    #about-me-text {
+      #about-me-text-content {
+        padding: 0 10%;
+        font-size: 1.6em;
+      }
+    }
+  }
+
 }
 
 
 // TABLET LANDSCAPE
 
+// IPAD LANDSCAPE
 
 @media screen and (min-width: 1024px) and (orientation: landscape) {
 
-  .page-container {
-    grid-template-columns: 40% 60%;
-    grid-template-rows: 1fr;
-    background-position-x: 0;
+  #home-container {
+    #home-profile-container-profile {
+      max-height: 465px;
+      #home-profile-container-card {
+        max-width: 350px;
+        .profile-container-card-header {
+          h2 {
+            font-size: 2em;
+          }
+          #home-profile-container-card-header-subtext {
+            font-size: 1.3em;
+          }
+        }
+      }
 
-    .profile-container {
-      height: 60%;
-      min-height: calc(100vh - 350px);
+      .social-link {
+        font-size: 2.4em;
+      }
     }
-
     .nav-container {
-      height: 50%;
-      width: 90%;
-      margin: auto 5%;
+      height: 30%;
+      margin: 27% 5% auto 5%;
+      #scroll-to-about {
+        #downArrow-tooltip {
+          top: 160%;
+          right: -8%;
+        }
+      }
     }
+  }
 
-    .footer-copyright {
-      grid-column-start: 2;
+  #about-container {
+    #about-skills-container {
+      .profile-container-card {
+        .about-profile-container-card-header {
+          h2 {
+            font-size: 1.2em;
+            margin: 1% 0 3% 3%;
+          }
+        }
+        .about-profile-container-card-icons {
+          .dev-icon-text-container {
+            margin-bottom: 10%;
+            margin-top: 0;
+          }
+        }
+      }
+    }
+    #about-me-text {
+      #about-me-text-content {
+        padding: 0 12%;
+        font-size: 1.2em;
+      }
     }
   }
 }
 
 
 
+// IPAD PRO LANDSCAPE
 
-// DESKTOP & lAPTOPS
+@media screen 
+  and (min-width: 1366px) 
+  and (max-device-width: 1366px) 
+  and (orientation: landscape) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+    .footer-copyright {
+      font-size: 1.4em;
+    }
+  
+    #home-container {
+      #home-profile-container-profile {
+        max-height: 550px;
+
+        #home-profile-container-card {
+          .profile-container-card-header {
+            h2 {
+              font-size: 2.5em;
+            }
+          }
+        }
+        .social-link {
+          font-size: 2.6em;
+        }
+      }
+      .nav-container {
+        .nav-links {
+          .nav-text {
+            font-size: 1.4rem;
+          }
+        }
+        #scroll-to-about {
+          #downArrow-tooltip {
+            top: 170%;
+            right: 27%;
+            font-size: 1.7rem;
+          }
+        }
+      }
+    }
+  
+    #about-container {
+      .dev-icons {
+        font-size: 5em;
+      }
+      #about-skills-container {
+        .profile-container-card {
+          .about-profile-container-card-header {
+            h2 {
+              font-size: 1.5em;
+            }
+          }
+          .about-profile-container-card-icons {
+            .dev-icon-text-container {
+              .dev-icon-text {
+                font-size: 1.5em;
+              }
+            }
+          }
+        }
+      }
+      #about-me-text {
+        #about-me-text-content {
+          font-size: 1.4em;
+        }
+      }
+    }
+
+
+  }
+
+
+
+// DESKTOPS, lAPTOPS
 
 
 /* ----------- Non-Retina Screens ----------- */
+
 @media screen 
   and (min-device-width: 1200px) 
-  // and (max-device-width: 1600px) 
-  // and (-webkit-min-device-pixel-ratio: 1) 
-{ 
-  
-  .page-container {
-    grid-template-columns: 40% 60%;
-    grid-template-rows: 1fr;
-    background-position-x: 0;
-    
-    .profile-container {
-      grid-column-start: 2;
-      // height: 60%;
-      min-height: 430px;
-      max-height: 650px;
-      max-width: inherit;
-      .profile-container-card {
-        height: 100%;
-        width: 45%;
-        min-width: 325px;
-        max-width: 420px;
-        h2 {
-          font-size: xx-large;
-        }
-        p {
-          font-size: 1.3rem;
+  and (max-device-width: 3000px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+
+  body {
+    overflow-x: hidden;
+  }
+
+  .footer-copyright {
+    font-size: 1.4em;
+  }
+
+  #home-container {
+    #home-profile-container-profile {
+      max-height: 550px;
+      #home-profile-container-card {
+        .profile-container-card-header {
+          h2 {
+            font-size: 2.5em;
+          }
         }
         .profile-container-social > * {
           position: relative;
         }
         .profile-container-social > *:before {
-          @include underlineProperties(63%, 1px, 14px)
+          @include underlineProperties(66%, -1px, 11px)
         }
         .profile-container-social > *:hover:before,
         .profile-container-social > *:focus:before {
           @include underlineHover()
         }
       }
-      .social-icons {
-        width: inherit;
-      }
-
       .social-link {
-        font-size: 43px;
+        font-size: 2.6em;
       }
     }
-
     .nav-container {
-      grid-template-columns: 1fr;
-      grid-row-start: 1;
-      grid-column-start: 1;
-      height: 15%;
-      margin: 25% 0;
-      .nav-tooltip {
-        // grid-row-start: 1;
-        // grid-column-start: 2;
-        #downArrow-tooltip {
-          font-size: 1.6em;
-          position: absolute;
-          bottom: 110px;
-          margin-left: 4.5%;
-        }
-        .text-tooltip {
-          display: none;
-          text-align: left;
-          margin: 0;
-          .active {
-            display: block;
-          }
-        }
-      }
+      margin: 23% 5% auto 5%;
       .nav-links {
         grid-row-start: 1;
         grid-column-start: 1;
         .nav-text {
-          text-align: left;
-          margin: 10px 0 10px 10%;
+          font-size: 1.4rem;
+          padding: 0;
           position: relative;
           width: max-content;
+          height: unset;
         }
         .nav-links-tooltip {
           display: block;
           opacity: 0%;
-          margin-top: 10px;
+          align-self: center;
           grid-column-start: 2;
           animation: animateRightOut 0.5s forwards;
         }
@@ -723,25 +932,106 @@ footer {
           animation: animateRightIn 0.5s forwards;
         }
       }
-    }
+      #scroll-to-about {
+        #downArrow-tooltip {
+          top: 160%;
+          right: 0;
+          font-size: 1.7rem;
+          &:hover {
+            cursor: pointer;
+          }
+        }
+        .arrow:hover {
+          cursor: pointer;
+        }
+      }
 
-    .footer-copyright {
-      grid-column-start: 2;
-    }
+      .nav-tooltip {
+        grid-row-start: 1;
+        grid-column-start: 2;
 
+        .text-tooltip {
+          display: none;
+          text-align: left;
+          margin: 0;
+          .active {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+
+  #about-container {
+
+    #about-skills-container {
+      .profile-container-card {
+        .about-profile-container-card-header {
+          h2 {
+            font-size: 1.5em;
+          }
+        }
+        .about-profile-container-card-icons {
+          .dev-icon-text-container {
+            .dev-icons {
+              font-size: 4em;
+            }
+            .dev-icon-text {
+              font-size: 1.3em;
+            }
+          }
+        }
+      }
+    }
+    #about-me-text {
+      #about-me-text-content {
+        font-size: 1.2em;
+        line-height: 1.4em;
+      }
+    }
   }
 }
 
 /* ----------- Retina Screens ----------- */
-// @media screen 
-//   and (min-device-width: 1200px) 
-//   and (max-device-width: 1600px) 
-//   and (-webkit-min-device-pixel-ratio: 2)
-//   and (min-resolution: 192dpi) { 
 
-//   .nav-container {
-//     float: left;
-//   }
-// }
+@media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 3000px) 
+  and (-webkit-min-device-pixel-ratio: 2) 
+  and (min-resolution: 192dpi) { 
+  
+  #home-container {
+    .nav-container {
+      #scroll-to-about {
+        #downArrow-tooltip {
+          right: -7%;
+        }
+      }
+    }
+  }
+
+  #about-container {
+    #about-skills-container {
+      .profile-container-card {
+        .about-profile-container-card-icons {
+          .dev-icon-text-container {
+            .dev-icons {
+              font-size: 5em;
+            }
+            .dev-icon-text {
+                font-size: 1.5em;
+            }
+          }
+        }
+      }
+    }
+    #about-me-text {
+      #about-me-text-content {
+        font-size: 1.3em;
+        line-height: 1.6em;
+      }
+    }
+  }
+}
 
 
