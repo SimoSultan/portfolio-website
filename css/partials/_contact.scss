@@ -184,3 +184,346 @@
     }
   }
 }
+
+
+// MEDIA QUERIES
+
+
+// // IPHONE 5/SE
+
+// @media screen and (min-width: 320px) and (orientation: portrait)  {
+
+// }
+
+
+// // GALAXY S5 / MOTO G4
+
+// @media screen and (min-width: 360px) and (orientation: portrait)  {
+
+// }
+
+
+
+// // IPHONE X
+
+// @media screen 
+//   and (min-width: 375px) 
+//   and (min-height: 375px) 
+//   and (orientation: portrait) {
+
+// }
+
+
+
+// // PIXEL 2
+
+// @media screen and (min-width: 411px) and (orientation: portrait)  {
+
+// }
+
+
+
+
+
+
+// MOBILE LANDSCAPE
+
+// IPHONE 5/SE
+
+@media screen and (min-width: 568px) and (orientation: landscape)  {
+
+  #blogs-container, #contact-container {
+    footer {
+      width: 40%;
+      height: 100%;
+
+      .footer-container {
+        .footer-resume-social-container {
+          .nav-links {
+            grid-template-columns: 45% 1fr;
+            grid-row-start: 3;
+            .nav-text {
+              &:nth-child(even) {
+                border-right: none;;
+              }
+            }
+          }
+          .resume-container {
+            grid-template-columns: 30% 70%;
+            text-align: left;
+            .email-icon-link {
+              top: unset;
+              align-self: center;
+            }
+            .download-icon-link {
+              top: unset;
+              align-self: center;
+              grid-column-start: 1;
+              grid-row-start: 2;
+            }
+            .email-helper-text {
+              line-height: 0;
+              text-indent: -9999px;
+              align-self: center;
+              &::after {
+                line-height: initial;
+                content: "...email me";
+                text-indent: 0;
+                display: block;
+              }
+            }
+            .resume-helper-text {
+              text-align: left;
+              line-height: 0;
+              text-indent: -9999px;
+              align-self: center;
+              &::after {
+                // text-align: left;
+                line-height: initial;
+                content: "...or grab my CV";
+                text-indent: 0;
+                display: block;
+              }
+            }
+          }
+          .profile-container-social {
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-row-start: 1;
+            .social-link {
+              height: unset;
+              margin-bottom: unset;
+            }
+          }
+        }
+      }
+    }
+  
+    .list-container {
+      width: 60%;
+      grid-column-start: 2;
+      position: absolute;
+      right: 0;
+    }
+  }
+}
+
+
+// GALAXY S5 / MOTO G4
+
+@media screen and (min-width: 640px) and (orientation: landscape)  {
+
+  #blogs-container, #contact-container {
+    footer {
+      .footer-container {
+        .footer-resume-social-container {
+          .resume-container {
+            .email-helper-text {
+              line-height: initial;
+              text-indent: 0;
+              align-self: center;
+              &::after {
+                display: none;
+              }
+            }
+          }
+        }
+      }
+    }
+
+  }
+}
+
+
+
+// PIXEL 2
+
+@media screen and (min-width: 731px) and (orientation: landscape)  {
+
+  #blogs-container, #contact-container {
+    footer {
+      .footer-container {
+        .footer-resume-social-container {
+          .resume-container {
+            .resume-helper-text {
+              line-height: initial;
+              text-indent: 0;
+              &::after {
+                display: none;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+// PIXEL 2XL
+
+// @media screen and (min-width: 800px) and (orientation: landscape)  {
+
+// }
+
+
+
+
+
+
+// TABLET PORTRAIT
+
+// IPAD PORTRAIT 
+
+@media screen and (min-width: 768px) and (orientation: portrait) {
+
+  #blogs-container, #contact-container {
+    grid-template-rows: 80% 20%;
+    footer {
+      height: 20%;
+      .footer-container {
+        .footer-resume-social-container {
+          .resume-container {
+            grid-template-rows: 1fr;
+            align-items: center;
+            p {
+              font-size: 1.2em;
+            }
+            a {
+              top: unset;
+              font-size: 1.2em;
+            }
+            .resume-helper-text {
+              grid-row-start: 1;
+            }
+          }
+          .nav-links {
+            .nav-text {
+              font-size: 1.4em;
+            }
+          }
+          .profile-container-social {
+            .social-link {
+              font-size: 3em;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+// IPAD PRO PORTRAIT
+
+@media screen 
+  and (min-width: 1024px) 
+  and (max-device-width: 1024px) 
+  and (orientation: portrait) {
+
+    #blogs-container, #contact-container {
+      footer {
+        .footer-container {
+          .footer-resume-social-container {
+            .resume-container {
+              p {
+                font-size: 1.4em;
+              }
+            }
+          }
+        }
+      }
+    }
+
+}
+
+
+
+
+
+// TABLET LANDSCAPE
+
+// IPAD LANDSCAPE
+
+@media screen and (min-width: 1024px) and (orientation: landscape) {
+
+  #blogs-container, #contact-container {
+    footer {
+      .footer-container {
+        .footer-resume-social-container {
+          .resume-container {
+            p {
+              font-size: 1.2em;
+            }
+            a {
+              font-size: 1.2em;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+// IPAD PRO LANDSCAPE
+
+@media screen 
+  and (min-width: 1366px) 
+  and (max-device-width: 1366px) 
+  and (orientation: landscape) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+    #blogs-container, #contact-container {
+      footer {
+        .footer-container {
+          .footer-resume-social-container {
+            .resume-container {
+              p {
+                font-size: 1.4em;
+              }
+              a {
+                font-size: 1.5em;
+              }
+            }
+            .profile-container-social {
+              .social-link {
+                font-size: 4em;
+              }
+            }
+          }
+          .nav-links {
+            .nav-text {
+              font-size: 1.5em;
+            }
+          }
+        }
+      }
+    }
+
+}
+
+// DESKTOPS, lAPTOPS
+
+
+/* ----------- Non-Retina Screens ----------- */
+
+@media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 3000px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+
+
+}
+
+/* ----------- Retina Screens ----------- */
+
+@media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 3000px) 
+  and (-webkit-min-device-pixel-ratio: 2) 
+  and (min-resolution: 192dpi) { 
+  
+
+}

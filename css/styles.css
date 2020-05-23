@@ -432,6 +432,176 @@ i {
   border: none;
 }
 
+@media screen and (min-width: 568px) and (orientation: landscape) {
+  #blogs-container footer, #contact-container footer {
+    width: 40%;
+    height: 100%;
+  }
+  #blogs-container footer .footer-container .footer-resume-social-container .nav-links, #contact-container footer .footer-container .footer-resume-social-container .nav-links {
+    -ms-grid-columns: 45% 1fr;
+        grid-template-columns: 45% 1fr;
+    -ms-grid-row: 3;
+        grid-row-start: 3;
+  }
+  #blogs-container footer .footer-container .footer-resume-social-container .nav-links .nav-text:nth-child(even), #contact-container footer .footer-container .footer-resume-social-container .nav-links .nav-text:nth-child(even) {
+    border-right: none;
+  }
+  #blogs-container footer .footer-container .footer-resume-social-container .resume-container, #contact-container footer .footer-container .footer-resume-social-container .resume-container {
+    -ms-grid-columns: 30% 70%;
+        grid-template-columns: 30% 70%;
+    text-align: left;
+  }
+  #blogs-container footer .footer-container .footer-resume-social-container .resume-container .email-icon-link, #contact-container footer .footer-container .footer-resume-social-container .resume-container .email-icon-link {
+    top: unset;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  #blogs-container footer .footer-container .footer-resume-social-container .resume-container .download-icon-link, #contact-container footer .footer-container .footer-resume-social-container .resume-container .download-icon-link {
+    top: unset;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    -ms-grid-row: 2;
+        grid-row-start: 2;
+  }
+  #blogs-container footer .footer-container .footer-resume-social-container .resume-container .email-helper-text, #contact-container footer .footer-container .footer-resume-social-container .resume-container .email-helper-text {
+    line-height: 0;
+    text-indent: -9999px;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  #blogs-container footer .footer-container .footer-resume-social-container .resume-container .email-helper-text::after, #contact-container footer .footer-container .footer-resume-social-container .resume-container .email-helper-text::after {
+    line-height: initial;
+    content: "...email me";
+    text-indent: 0;
+    display: block;
+  }
+  #blogs-container footer .footer-container .footer-resume-social-container .resume-container .resume-helper-text, #contact-container footer .footer-container .footer-resume-social-container .resume-container .resume-helper-text {
+    text-align: left;
+    line-height: 0;
+    text-indent: -9999px;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  #blogs-container footer .footer-container .footer-resume-social-container .resume-container .resume-helper-text::after, #contact-container footer .footer-container .footer-resume-social-container .resume-container .resume-helper-text::after {
+    line-height: initial;
+    content: "...or grab my CV";
+    text-indent: 0;
+    display: block;
+  }
+  #blogs-container footer .footer-container .footer-resume-social-container .profile-container-social, #contact-container footer .footer-container .footer-resume-social-container .profile-container-social {
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    -ms-grid-row: 1;
+        grid-row-start: 1;
+  }
+  #blogs-container footer .footer-container .footer-resume-social-container .profile-container-social .social-link, #contact-container footer .footer-container .footer-resume-social-container .profile-container-social .social-link {
+    height: unset;
+    margin-bottom: unset;
+  }
+  #blogs-container .list-container, #contact-container .list-container {
+    width: 60%;
+    -ms-grid-column: 2;
+        grid-column-start: 2;
+    position: absolute;
+    right: 0;
+  }
+}
+
+@media screen and (min-width: 640px) and (orientation: landscape) {
+  #blogs-container footer .footer-container .footer-resume-social-container .resume-container .email-helper-text, #contact-container footer .footer-container .footer-resume-social-container .resume-container .email-helper-text {
+    line-height: initial;
+    text-indent: 0;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  #blogs-container footer .footer-container .footer-resume-social-container .resume-container .email-helper-text::after, #contact-container footer .footer-container .footer-resume-social-container .resume-container .email-helper-text::after {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 731px) and (orientation: landscape) {
+  #blogs-container footer .footer-container .footer-resume-social-container .resume-container .resume-helper-text, #contact-container footer .footer-container .footer-resume-social-container .resume-container .resume-helper-text {
+    line-height: initial;
+    text-indent: 0;
+  }
+  #blogs-container footer .footer-container .footer-resume-social-container .resume-container .resume-helper-text::after, #contact-container footer .footer-container .footer-resume-social-container .resume-container .resume-helper-text::after {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) and (orientation: portrait) {
+  #blogs-container, #contact-container {
+    -ms-grid-rows: 80% 20%;
+        grid-template-rows: 80% 20%;
+  }
+  #blogs-container footer, #contact-container footer {
+    height: 20%;
+  }
+  #blogs-container footer .footer-container .footer-resume-social-container .resume-container, #contact-container footer .footer-container .footer-resume-social-container .resume-container {
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #blogs-container footer .footer-container .footer-resume-social-container .resume-container p, #contact-container footer .footer-container .footer-resume-social-container .resume-container p {
+    font-size: 1.2em;
+  }
+  #blogs-container footer .footer-container .footer-resume-social-container .resume-container a, #contact-container footer .footer-container .footer-resume-social-container .resume-container a {
+    top: unset;
+    font-size: 1.2em;
+  }
+  #blogs-container footer .footer-container .footer-resume-social-container .resume-container .resume-helper-text, #contact-container footer .footer-container .footer-resume-social-container .resume-container .resume-helper-text {
+    -ms-grid-row: 1;
+        grid-row-start: 1;
+  }
+  #blogs-container footer .footer-container .footer-resume-social-container .nav-links .nav-text, #contact-container footer .footer-container .footer-resume-social-container .nav-links .nav-text {
+    font-size: 1.4em;
+  }
+  #blogs-container footer .footer-container .footer-resume-social-container .profile-container-social .social-link, #contact-container footer .footer-container .footer-resume-social-container .profile-container-social .social-link {
+    font-size: 3em;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-device-width: 1024px) and (orientation: portrait) {
+  #blogs-container footer .footer-container .footer-resume-social-container .resume-container p, #contact-container footer .footer-container .footer-resume-social-container .resume-container p {
+    font-size: 1.4em;
+  }
+}
+
+@media screen and (min-width: 1024px) and (orientation: landscape) {
+  #blogs-container footer .footer-container .footer-resume-social-container .resume-container p, #contact-container footer .footer-container .footer-resume-social-container .resume-container p {
+    font-size: 1.2em;
+  }
+  #blogs-container footer .footer-container .footer-resume-social-container .resume-container a, #contact-container footer .footer-container .footer-resume-social-container .resume-container a {
+    font-size: 1.2em;
+  }
+}
+
+@media screen and (min-width: 1366px) and (max-device-width: 1366px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+  #blogs-container footer .footer-container .footer-resume-social-container .resume-container p, #contact-container footer .footer-container .footer-resume-social-container .resume-container p {
+    font-size: 1.4em;
+  }
+  #blogs-container footer .footer-container .footer-resume-social-container .resume-container a, #contact-container footer .footer-container .footer-resume-social-container .resume-container a {
+    font-size: 1.5em;
+  }
+  #blogs-container footer .footer-container .footer-resume-social-container .profile-container-social .social-link, #contact-container footer .footer-container .footer-resume-social-container .profile-container-social .social-link {
+    font-size: 4em;
+  }
+  #blogs-container footer .footer-container .nav-links .nav-text, #contact-container footer .footer-container .nav-links .nav-text {
+    font-size: 1.5em;
+  }
+}
+
+/* ----------- Non-Retina Screens ----------- */
+/* ----------- Retina Screens ----------- */
 #about-container {
   height: 100vh;
 }
@@ -560,6 +730,33 @@ i {
   text-align: right;
   font-family: "Quattrocento Sans", sans-serif;
   font-style: normal;
+}
+
+@media screen and (min-width: 411px) and (orientation: portrait) {
+  #blogs-container {
+    -ms-grid-rows: 77% 23%;
+        grid-template-rows: 77% 23%;
+  }
+}
+
+@media screen and (min-width: 768px) and (orientation: portrait) {
+  #blogs-container {
+    -ms-grid-rows: 80% 20%;
+        grid-template-rows: 80% 20%;
+  }
+  #blogs-container #blog-list-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+  #blogs-container #blog-list-container .list-container .list {
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+  }
+  #blogs-container footer {
+    height: 20%;
+  }
 }
 
 body {
@@ -903,10 +1100,6 @@ footer {
   }
   footer .footer-container .footer-resume-social-container .nav-links .nav-text {
     font-size: 1.1em;
-  }
-  #blogs-container {
-    -ms-grid-rows: 77% 23%;
-        grid-template-rows: 77% 23%;
   }
 }
 

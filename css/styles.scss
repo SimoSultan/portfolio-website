@@ -403,9 +403,9 @@ footer {
     }
   }
 
-  #blogs-container {
-    grid-template-rows: 77% 23%;
-  }
+  // #blogs-container {
+  //   grid-template-rows: 77% 23%;
+  // }
 }
 
 
@@ -794,70 +794,71 @@ footer {
   and (orientation: landscape) 
   and (-webkit-min-device-pixel-ratio: 2) {
 
-    .footer-copyright {
-      font-size: 1.4em;
-    }
+  .footer-copyright {
+    font-size: 1.4em;
+  }
   
-    #home-container {
-      #home-profile-container-profile {
-        max-height: 550px;
+  #home-container {
+    #home-profile-container-profile {
+      max-height: 550px;
 
-        #home-profile-container-card {
-          .profile-container-card-header {
-            h2 {
-              font-size: 2.5em;
-            }
+      #home-profile-container-card {
+        .profile-container-card-header {
+          h2 {
+            font-size: 2.5em;
           }
-        }
-        .social-link {
-          font-size: 2.6em;
         }
       }
-      .nav-container {
-        .nav-links {
-          .nav-text {
-            font-size: 1.4rem;
-          }
+      .social-link {
+        font-size: 2.6em;
+      }
+    }
+    .nav-container {
+      .nav-links {
+        .nav-text {
+          font-size: 1.4rem;
         }
-        #scroll-to-about {
-          #downArrow-tooltip {
-            top: 170%;
-            right: 27%;
-            font-size: 1.7rem;
-          }
+      }
+      #scroll-to-about {
+        #downArrow-tooltip {
+          top: 170%;
+          right: 27%;
+          font-size: 1.7rem;
         }
       }
     }
-  
-    #about-container {
-      .dev-icons {
-        font-size: 5em;
-      }
-      #about-skills-container {
-        .profile-container-card {
-          .about-profile-container-card-header {
-            h2 {
+  }
+
+  #about-container {
+    .dev-icons {
+      font-size: 5em;
+    }
+    #about-skills-container {
+      .profile-container-card {
+        .about-profile-container-card-header {
+          h2 {
+            font-size: 1.5em;
+          }
+        }
+        .about-profile-container-card-icons {
+          .dev-icon-text-container {
+            .dev-icon-text {
               font-size: 1.5em;
             }
           }
-          .about-profile-container-card-icons {
-            .dev-icon-text-container {
-              .dev-icon-text {
-                font-size: 1.5em;
-              }
-            }
-          }
-        }
-      }
-      #about-me-text {
-        #about-me-text-content {
-          font-size: 1.4em;
         }
       }
     }
-
-
+    #about-me-text {
+      #about-me-text-content {
+        font-size: 1.4em;
+      }
+    }
   }
+
+
+}
+
 
 
 
@@ -964,6 +965,7 @@ footer {
       }
     }
   }
+  
 
   #about-container {
 
