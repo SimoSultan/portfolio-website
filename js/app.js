@@ -13,22 +13,13 @@ $(window).scroll(function(){
 });
 
 function scrollToAbout() {
-  $('#scroll-to-about').on('click', function(e) {
-    e.preventDefault();
-    $ ('html, body').animate({ scrollTop: $('#about-container').offset().top}, 700, 'swing');
-    // $("#home-container > *").animate({opacity: 0}, 600);
-    // $("#about-container > *").animate({opacity: 1}, 600)
-  });
+  var element = document.getElementById("about-container");
+  element.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
 }
 
-// function goToTopPage() {
-//   $('#scroll-to-top').on('click', function(e) {
-//   // $('#scroll-to-top').on('click', function() {
-//     e.preventDefault();
-//     $ ('html, body').animate({ scrollTop: 0}, 500, 'linear');
-//     $("#about-container > *").animate({opacity: 0}, 600);
-//     $("#home-container > *").animate({opacity: 1}, 600)
-//   });
-// }
+function scrollToTop() {
+  var element = document.getElementById("home-container");
+  element.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+}
 
 

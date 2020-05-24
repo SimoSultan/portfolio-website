@@ -191,9 +191,24 @@
 
 // // IPHONE 5/SE
 
-// @media screen and (min-width: 320px) and (orientation: portrait)  {
+@media screen and (min-width: 320px) and (orientation: portrait)  {
+  #contact-container {
+    #contact-profile-container {
+      height: 83%;
+      align-self: flex-start;
+      margin-top: 6%;
 
-// }
+      #contact-profile-container-card {
+        .contact-form {
+          height: fit-content;
+          #contact-input-message {
+            height: 7em;
+          }
+        }
+      }
+    }
+  }
+}
 
 
 // // GALAXY S5 / MOTO G4
@@ -206,20 +221,36 @@
 
 // // IPHONE X
 
-// @media screen 
-//   and (min-width: 375px) 
-//   and (min-height: 375px) 
-//   and (orientation: portrait) {
+@media screen 
+  and (min-width: 375px) 
+  and (min-height: 812px) 
+  and (orientation: portrait) {
+  
+  #contact-container {
+    #contact-profile-container {
+      align-self: center;
+      height: 75%;
+      margin-top: 0;
 
-// }
+      #contact-profile-container-card {
+        .contact-form {
+          height: fit-content;
+          #contact-input-message {
+            height: 12em;
+          }
+        }
+      }
+    }
+  }
+}
 
 
 
-// // PIXEL 2
+// // PIXEL 2XL
 
-// @media screen and (min-width: 411px) and (orientation: portrait)  {
+@media screen and (min-width: 411px) and (orientation: portrait)  {
 
-// }
+}
 
 
 
@@ -231,6 +262,23 @@
 // IPHONE 5/SE
 
 @media screen and (min-width: 568px) and (orientation: landscape)  {
+
+  #contact-container {
+    #contact-profile-container {
+      grid-column-start: 2;
+      align-self: flex-start;
+      margin-top: 6%;
+
+      #contact-profile-container-card {
+        .contact-form {
+          height: fit-content;
+          #contact-input-message {
+            height: 5em;
+          }
+        }
+      }
+    }
+  }
 
   #blogs-container, #contact-container, #work-container {
     footer {
@@ -434,8 +482,34 @@
 
 @media screen 
   and (min-width: 1024px) 
-  and (max-device-width: 1024px) 
   and (orientation: portrait) {
+
+  #contact-container {
+    #contact-profile-container {
+      height: 60%;
+      max-height: unset;
+
+      #contact-profile-container-card {
+        max-width: 500px;
+        #contact-profile-container-card-header {
+          h2 {
+            font-size: 2.2em;
+          }
+        }
+        .contact-form {
+          margin-top: 3%;
+          .input {
+            height: 3em;
+            margin-bottom: 5%;
+          }
+          .input-label {
+            font-size: 1.4em;
+          }
+        }
+      }
+    }
+  }
+
 
     #blogs-container, #contact-container, #work-container {
       footer {
@@ -530,9 +604,38 @@
 
 @media screen 
   and (min-width: 1366px) 
-  and (max-device-width: 1366px) 
+  // and (max-device-width: 1366px) 
   and (orientation: landscape) 
   and (-webkit-min-device-pixel-ratio: 2) {
+
+  #contact-container {
+    grid-template-rows: unset;
+    #contact-profile-container {
+      height: 60%;
+      max-height: unset;
+      align-self: center;
+      margin-top: 0;
+
+      #contact-profile-container-card {
+        max-width: 500px;
+        #contact-profile-container-card-header {
+          h2 {
+            font-size: 2.2em;
+          }
+        }
+        .contact-form {
+          margin-top: 3%;
+          .input {
+            height: 3em;
+            margin-bottom: 5%;
+          }
+          .input-label {
+            font-size: 1.4em;
+          }
+        }
+      }
+    }
+  }
 
   #blogs-container, #contact-container {
     footer {
@@ -575,19 +678,56 @@
 
 @media screen 
   and (min-device-width: 1200px) 
-  and (max-device-width: 3000px) 
+  // and (max-device-width: 3000px) 
   and (-webkit-min-device-pixel-ratio: 1) { 
+
+    
+  #contact-container {
+    grid-template-rows: unset;
+    grid-template-columns: 20% 80%;
+    #contact-profile-container {
+      height: 60%;
+      max-height: unset;
+      align-self: center;
+      margin-top: 0;
+
+      #contact-profile-container-card {
+        max-width: 500px;
+        #contact-profile-container-card-header {
+          h2 {
+            font-size: 2.2em;
+          }
+        }
+        .contact-form {
+          margin-top: 3%;
+          .input {
+            height: 3em;
+            margin-bottom: 5%;
+          }
+          .input-label {
+            font-size: 1.4em;
+          }
+          #contact-input-message {
+            height: 8em;
+          }
+          button {
+            margin-top: 0;
+          }
+        }
+      }
+    }
+  }
 
 
 }
 
 /* ----------- Retina Screens ----------- */
 
-@media screen 
-  and (min-device-width: 1200px) 
-  and (max-device-width: 3000px) 
-  and (-webkit-min-device-pixel-ratio: 2) 
-  and (min-resolution: 192dpi) { 
+// @media screen 
+//   and (min-device-width: 1200px) 
+//   and (max-device-width: 3000px) 
+//   and (-webkit-min-device-pixel-ratio: 2) 
+//   and (min-resolution: 192dpi) { 
   
 
-}
+// }

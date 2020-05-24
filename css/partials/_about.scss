@@ -45,4 +45,22 @@
       line-height: 1.3em;
     }
   }
+  #scroll-to-top {
+    place-self: center;
+    cursor: pointer;
+    position: relative;
+    // right: 45%;
+    display: inline-block;
+    &::before {
+      // content: "homepage";
+      color: lightgrey;
+      top: 17px;
+      position: relative;
+      left: 60px;
+    }
+    .fas {
+      color: $secondary-light-color
+    }
+  }
+
 }

@@ -292,16 +292,6 @@ footer {
         height: 90%;
       }
     }
-    // .nav-container {
-    //   .nav-tooltip {
-    //     #downArrow-tooltip {
-    //       font-size: 1em;
-    //       letter-spacing: 2px;
-    //       right: 21%;
-    //       top: 12%;
-    //     }
-    //   }
-    // }
   }
   .dev-icons {
     font-size: 2.5em;
@@ -326,42 +316,6 @@ footer {
 }
 
 
-// GALAXY S5 / MOTO G4
-
-@media screen and (min-width: 360px) and (orientation: portrait)  {
-  // #home-container {
-  //   .nav-container {
-  //     .nav-tooltip {
-  //       #downArrow-tooltip {
-  //         right: 14%;
-  //       }
-  //     }
-  //   }
-  // }
-}
-
-
-
-// IPHONE X
-
-@media screen 
-  and (min-width: 375px) 
-  and (min-height: 375px) 
-  and (orientation: portrait) {
-    // #home-container {
-    //   .nav-container {
-    //     .nav-tooltip {
-    //       #downArrow-tooltip {
-    //         right: 22%;
-    //         font-size: 1.1em;
-    //         letter-spacing: 3px;
-    //         top: 19%;
-    //       }
-    //     }
-    //   }
-    // }
-}
-
 
 
 // PIXEL 2
@@ -374,18 +328,6 @@ footer {
       height: 86%;
     }
   }
-  // #home-container {
-  //   .nav-container {
-  //     .nav-tooltip {
-  //       #downArrow-tooltip {
-  //         right: 18%;
-  //         font-size: 1.1em;
-  //         letter-spacing: 3px;
-  //         top: 19%;
-  //       }
-  //     }
-  //   }
-  // }
 
   footer {
     height: 23%;
@@ -399,10 +341,6 @@ footer {
       }
     }
   }
-
-  // #blogs-container {
-  //   grid-template-rows: 77% 23%;
-  // }
 }
 
 
@@ -436,7 +374,6 @@ footer {
       grid-column-start: 2;
       height: 85%;
       max-height: 350px;
-      // min-height: 250px;
       .profile-container-card {
         width: 80%;
         .profile-container-card-header {
@@ -462,10 +399,6 @@ footer {
       #scroll-to-about {
         grid-column-start: 2;
         grid-row-start: 1;
-        // #downArrow-tooltip {
-        //   top: 60%;
-        //   right: 43%;
-        // }
       }
       .nav-links {
         height: 80%;
@@ -519,14 +452,6 @@ footer {
         }
       }
     }
-    // .nav-container {
-    //   #scroll-to-about {
-    //     #downArrow-tooltip {
-    //       top: 75%;
-    //       right: 30%;
-    //     }
-    //   }
-    // }
   } 
 }
 
@@ -553,14 +478,6 @@ footer {
         font-size: 28px;
       }
     }
-    // .nav-container {
-    //   #scroll-to-about {
-    //     #downArrow-tooltip {
-    //       top: 80%;
-    //       right: 18%;
-    //     }
-    //   }
-    // }
   } 
 }
 
@@ -580,14 +497,6 @@ footer {
         }
       }
     }
-    // .nav-container {
-    //   #scroll-to-about {
-    //     #downArrow-tooltip {
-    //       top: 72%;
-    //       right: 7%;
-    //     }
-    //   }
-    // }
   }
 }
 
@@ -623,13 +532,6 @@ footer {
           font-size: 1.5em;
         }
       }
-      // .nav-tooltip {
-      //   #downArrow-tooltip {
-      //     font-size: 1.2em;
-      //     letter-spacing: 5px;
-      //     right: 4%;
-      //   }
-      // }
     }
   }
 
@@ -918,8 +820,8 @@ footer {
   and (min-device-width: 1200px) 
   // and (max-device-width: 6000px) 
   // and (orientation: landscape)  
-  // and (-webkit-min-device-pixel-ratio: 1) { 
-   { 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+  //  { 
 
 
   body {
@@ -986,7 +888,7 @@ footer {
           align-self: center;
           grid-column-start: 2;
           position: relative;
-          right: -30%;
+          right: -95px;
           animation: animateRightOut 0.5s forwards;
           width: max-content;
         }
@@ -1003,14 +905,6 @@ footer {
         }
       }
       #scroll-to-about {
-        // #downArrow-tooltip {
-        //   top: 160%;
-        //   right: 0;
-        //   font-size: 1.7rem;
-        //   &:hover {
-        //     cursor: pointer;
-        //   }
-        // }
         .arrow:hover {
           cursor: pointer;
         }
@@ -1075,10 +969,8 @@ footer {
   and (min-device-width: 1200px) 
   // and (max-device-width: 6000px)
   // and (orientation: landscape)  
-  // and (-webkit-min-device-pixel-ratio: 2) 
-  // and (-webkit-min-device-pixel-ratio: 2) 
+  and (-webkit-min-device-pixel-ratio: 2) {
   // and (min-resolution: 192dpi) { 
-   { 
   
   #home-container {
     width: 80%;

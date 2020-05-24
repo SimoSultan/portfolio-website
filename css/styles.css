@@ -219,8 +219,43 @@ i {
   animation: bounce 2s infinite;
 }
 
+.bounceReverse {
+  -webkit-animation: bounceReverse 2s infinite;
+  animation: bounceReverse 2s infinite;
+}
+
 .fa {
   color: #ffd100;
+}
+
+@-webkit-keyframes bounceReverse {
+  0%, 20%, 50%, 80%, 100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+  60% {
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+
+@keyframes bounceReverse {
+  0%, 20%, 50%, 80%, 100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+  60% {
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
 }
 
 .input {
@@ -450,7 +485,57 @@ i {
   border: none;
 }
 
+@media screen and (min-width: 320px) and (orientation: portrait) {
+  #contact-container #contact-profile-container {
+    height: 83%;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    margin-top: 6%;
+  }
+  #contact-container #contact-profile-container #contact-profile-container-card .contact-form {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  #contact-container #contact-profile-container #contact-profile-container-card .contact-form #contact-input-message {
+    height: 7em;
+  }
+}
+
+@media screen and (min-width: 375px) and (min-height: 812px) and (orientation: portrait) {
+  #contact-container #contact-profile-container {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    height: 75%;
+    margin-top: 0;
+  }
+  #contact-container #contact-profile-container #contact-profile-container-card .contact-form {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  #contact-container #contact-profile-container #contact-profile-container-card .contact-form #contact-input-message {
+    height: 12em;
+  }
+}
+
 @media screen and (min-width: 568px) and (orientation: landscape) {
+  #contact-container #contact-profile-container {
+    -ms-grid-column: 2;
+        grid-column-start: 2;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    margin-top: 6%;
+  }
+  #contact-container #contact-profile-container #contact-profile-container-card .contact-form {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  #contact-container #contact-profile-container #contact-profile-container-card .contact-form #contact-input-message {
+    height: 5em;
+  }
   #blogs-container footer, #contact-container footer, #work-container footer {
     width: 40%;
     height: 100%;
@@ -602,7 +687,27 @@ i {
   }
 }
 
-@media screen and (min-width: 1024px) and (max-device-width: 1024px) and (orientation: portrait) {
+@media screen and (min-width: 1024px) and (orientation: portrait) {
+  #contact-container #contact-profile-container {
+    height: 60%;
+    max-height: unset;
+  }
+  #contact-container #contact-profile-container #contact-profile-container-card {
+    max-width: 500px;
+  }
+  #contact-container #contact-profile-container #contact-profile-container-card #contact-profile-container-card-header h2 {
+    font-size: 2.2em;
+  }
+  #contact-container #contact-profile-container #contact-profile-container-card .contact-form {
+    margin-top: 3%;
+  }
+  #contact-container #contact-profile-container #contact-profile-container-card .contact-form .input {
+    height: 3em;
+    margin-bottom: 5%;
+  }
+  #contact-container #contact-profile-container #contact-profile-container-card .contact-form .input-label {
+    font-size: 1.4em;
+  }
   #blogs-container footer .footer-container .footer-resume-social-container .resume-container p, #contact-container footer .footer-container .footer-resume-social-container .resume-container p, #work-container footer .footer-container .footer-resume-social-container .resume-container p {
     font-size: 1.4em;
   }
@@ -664,7 +769,35 @@ i {
   }
 }
 
-@media screen and (min-width: 1366px) and (max-device-width: 1366px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+@media screen and (min-width: 1366px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+  #contact-container {
+    -ms-grid-rows: unset;
+        grid-template-rows: unset;
+  }
+  #contact-container #contact-profile-container {
+    height: 60%;
+    max-height: unset;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    margin-top: 0;
+  }
+  #contact-container #contact-profile-container #contact-profile-container-card {
+    max-width: 500px;
+  }
+  #contact-container #contact-profile-container #contact-profile-container-card #contact-profile-container-card-header h2 {
+    font-size: 2.2em;
+  }
+  #contact-container #contact-profile-container #contact-profile-container-card .contact-form {
+    margin-top: 3%;
+  }
+  #contact-container #contact-profile-container #contact-profile-container-card .contact-form .input {
+    height: 3em;
+    margin-bottom: 5%;
+  }
+  #contact-container #contact-profile-container #contact-profile-container-card .contact-form .input-label {
+    font-size: 1.4em;
+  }
   #blogs-container footer .footer-container .footer-resume-social-container .resume-container p, #contact-container footer .footer-container .footer-resume-social-container .resume-container p {
     font-size: 1.4em;
   }
@@ -684,6 +817,45 @@ i {
 }
 
 /* ----------- Non-Retina Screens ----------- */
+@media screen and (min-device-width: 1200px) and (-webkit-min-device-pixel-ratio: 1) {
+  #contact-container {
+    -ms-grid-rows: unset;
+        grid-template-rows: unset;
+    -ms-grid-columns: 20% 80%;
+        grid-template-columns: 20% 80%;
+  }
+  #contact-container #contact-profile-container {
+    height: 60%;
+    max-height: unset;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    margin-top: 0;
+  }
+  #contact-container #contact-profile-container #contact-profile-container-card {
+    max-width: 500px;
+  }
+  #contact-container #contact-profile-container #contact-profile-container-card #contact-profile-container-card-header h2 {
+    font-size: 2.2em;
+  }
+  #contact-container #contact-profile-container #contact-profile-container-card .contact-form {
+    margin-top: 3%;
+  }
+  #contact-container #contact-profile-container #contact-profile-container-card .contact-form .input {
+    height: 3em;
+    margin-bottom: 5%;
+  }
+  #contact-container #contact-profile-container #contact-profile-container-card .contact-form .input-label {
+    font-size: 1.4em;
+  }
+  #contact-container #contact-profile-container #contact-profile-container-card .contact-form #contact-input-message {
+    height: 8em;
+  }
+  #contact-container #contact-profile-container #contact-profile-container-card .contact-form button {
+    margin-top: 0;
+  }
+}
+
 /* ----------- Retina Screens ----------- */
 #about-container {
   width: 100%;
@@ -743,6 +915,24 @@ i {
   font-family: "Quattrocento Sans", sans-serif;
   font-weight: 400;
   line-height: 1.3em;
+}
+
+#about-container #scroll-to-top {
+  place-self: center;
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+}
+
+#about-container #scroll-to-top::before {
+  color: lightgrey;
+  top: 17px;
+  position: relative;
+  left: 60px;
+}
+
+#about-container #scroll-to-top .fas {
+  color: #ffd100;
 }
 
 #blogs-container {
@@ -1389,7 +1579,7 @@ footer {
 }
 
 /* ----------- Non-Retina Screens ----------- */
-@media screen and (min-device-width: 1200px) {
+@media screen and (min-device-width: 1200px) and (-webkit-min-device-pixel-ratio: 1) {
   body {
     overflow-x: hidden;
   }
@@ -1469,7 +1659,7 @@ footer {
     -ms-grid-column: 2;
         grid-column-start: 2;
     position: relative;
-    right: -30%;
+    right: -95px;
     -webkit-animation: animateRightOut 0.5s forwards;
             animation: animateRightOut 0.5s forwards;
     width: -webkit-max-content;
@@ -1538,7 +1728,7 @@ footer {
 }
 
 /* ----------- Retina Screens ----------- */
-@media screen and (min-device-width: 1200px) {
+@media screen and (min-device-width: 1200px) and (-webkit-min-device-pixel-ratio: 2) {
   #home-container {
     width: 80%;
     margin: 0 auto;
