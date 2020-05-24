@@ -798,19 +798,19 @@ i {
   #contact-container #contact-profile-container #contact-profile-container-card .contact-form .input-label {
     font-size: 1.4em;
   }
-  #blogs-container footer .footer-container .footer-resume-social-container .resume-container p, #contact-container footer .footer-container .footer-resume-social-container .resume-container p {
+  #blogs-container footer .footer-container .footer-resume-social-container .resume-container p, #contact-container footer .footer-container .footer-resume-social-container .resume-container p, #work-container footer .footer-container .footer-resume-social-container .resume-container p {
     font-size: 1.4em;
   }
-  #blogs-container footer .footer-container .footer-resume-social-container .resume-container a, #contact-container footer .footer-container .footer-resume-social-container .resume-container a {
+  #blogs-container footer .footer-container .footer-resume-social-container .resume-container a, #contact-container footer .footer-container .footer-resume-social-container .resume-container a, #work-container footer .footer-container .footer-resume-social-container .resume-container a {
     font-size: 1.5em;
   }
-  #blogs-container footer .footer-container .footer-resume-social-container .profile-container-social .social-link, #contact-container footer .footer-container .footer-resume-social-container .profile-container-social .social-link {
+  #blogs-container footer .footer-container .footer-resume-social-container .profile-container-social .social-link, #contact-container footer .footer-container .footer-resume-social-container .profile-container-social .social-link, #work-container footer .footer-container .footer-resume-social-container .profile-container-social .social-link {
     font-size: 4em;
   }
-  #blogs-container footer .footer-container .nav-links .nav-text, #contact-container footer .footer-container .nav-links .nav-text {
+  #blogs-container footer .footer-container .nav-links .nav-text, #contact-container footer .footer-container .nav-links .nav-text, #work-container footer .footer-container .nav-links .nav-text {
     font-size: 1.5em;
   }
-  #blogs-container .list-container .list, #contact-container .list-container .list {
+  #blogs-container .list-container .list, #contact-container .list-container .list, #work-container .list-container .list {
     width: 85%;
     margin: 0 auto;
   }
@@ -831,6 +831,7 @@ i {
         -ms-grid-row-align: center;
         align-self: center;
     margin-top: 0;
+    min-height: 500px;
   }
   #contact-container #contact-profile-container #contact-profile-container-card {
     max-width: 500px;

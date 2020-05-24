@@ -637,7 +637,7 @@
     }
   }
 
-  #blogs-container, #contact-container {
+  #blogs-container, #contact-container, #work-container {
     footer {
       .footer-container {
         .footer-resume-social-container {
@@ -650,12 +650,16 @@
             }
           }
           .profile-container-social {
+            // grid-row-start: 3;
+
             .social-link {
               font-size: 4em;
             }
           }
         }
         .nav-links {
+          // grid-row-start: 1;
+
           .nav-text {
             font-size: 1.5em;
           }
@@ -669,7 +673,25 @@
       }
     }
   }
+
+  // #blogs-container, #contact-container, #work-container {
+  //   footer {
+  //     .footer-container {
+  //       .footer-resume-social-container {
+  //         .nav-links {
+  //           grid-row-start: 1;
+  //           }
+  //         }
+  //         .profile-container-social {
+  //           grid-row-start: 3;
+  //         }
+  //       }
+  //     }
+  //   }
 }
+
+
+
 
 // DESKTOPS, lAPTOPS
 
@@ -678,7 +700,6 @@
 
 @media screen 
   and (min-device-width: 1200px) 
-  // and (max-device-width: 3000px) 
   and (-webkit-min-device-pixel-ratio: 1) { 
 
     
@@ -690,6 +711,7 @@
       max-height: unset;
       align-self: center;
       margin-top: 0;
+      min-height: 500px;
 
       #contact-profile-container-card {
         max-width: 500px;
@@ -719,7 +741,28 @@
   }
 
 
+
+  // #blogs-container, #contact-container, #work-container {
+  //   footer {
+  //     .footer-container {
+  //       .footer-resume-social-container {
+  //         .nav-links {
+  //           grid-row-start: 1;
+  //           }
+  //         }
+  //         .profile-container-social {
+  //           grid-row-start: 3;
+  //         }
+  //       }
+  //     }
+  //   }
+
+
 }
+
+
+
+
 
 /* ----------- Retina Screens ----------- */
 
