@@ -232,7 +232,7 @@
 
 @media screen and (min-width: 568px) and (orientation: landscape)  {
 
-  #blogs-container, #contact-container {
+  #blogs-container, #contact-container, #work-container {
     footer {
       width: 40%;
       height: 100%;
@@ -303,6 +303,11 @@
       grid-column-start: 2;
       position: absolute;
       right: 0;
+      .list {
+        .list-item {
+          width: 75%;
+        }
+      }
     }
   }
 }
@@ -376,8 +381,8 @@
 
 @media screen and (min-width: 768px) and (orientation: portrait) {
 
-  #blogs-container, #contact-container {
-    grid-template-rows: 80% 20%;
+  #blogs-container, #contact-container, #work-container {
+    // grid-template-rows: 80% 20%;
     footer {
       height: 20%;
       .footer-container {
@@ -409,6 +414,17 @@
         }
       }
     }
+    .list-container {
+      width: 100%;
+      height: fit-content;
+      .list {
+        grid-column-start: 1;
+        grid-template-columns: 1fr 1fr;
+        .list-item {
+          max-width: 400px;
+        }
+      }
+    }
   }
 }
 
@@ -421,7 +437,7 @@
   and (max-device-width: 1024px) 
   and (orientation: portrait) {
 
-    #blogs-container, #contact-container {
+    #blogs-container, #contact-container, #work-container {
       footer {
         .footer-container {
           .footer-resume-social-container {
@@ -430,8 +446,20 @@
                 font-size: 1.4em;
               }
             }
+            .nav-links {
+              .nav-text {
+                font-size: 1.9em;
+              }
+            }
+            .social-link {
+              font-size: 3.4em;
+            }
           }
         }
+      }
+      .list-container {
+        width: 90%;
+        margin: 0 auto;
       }
     }
 
@@ -447,18 +475,45 @@
 
 @media screen and (min-width: 1024px) and (orientation: landscape) {
 
-  #blogs-container, #contact-container {
+  #blogs-container, #contact-container, #work-container {
+    grid-template-columns: unset;
     footer {
+      width: 30%;
       .footer-container {
         .footer-resume-social-container {
           .resume-container {
             p {
-              font-size: 1.2em;
+              font-size: 1.1em;
             }
             a {
               font-size: 1.2em;
             }
           }
+          .nav-links {
+            grid-template-columns: 1fr;
+            place-self: flex-start;
+            margin-left: 5%;
+            .nav-text {
+              text-align: left;
+              padding: 10px;
+              border-right: none;
+              border-left: 2px solid $secondary-dark-color;
+            }
+          }
+        }
+      }
+    }
+    .list-container {
+      width: 70%;
+
+      // grid-column-start: 2;
+      // position: absolute;
+      // right: 0;
+      .list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        .list-item {
+          width: 85%;
         }
       }
     }
@@ -475,33 +530,38 @@
   and (orientation: landscape) 
   and (-webkit-min-device-pixel-ratio: 2) {
 
-    #blogs-container, #contact-container {
-      footer {
-        .footer-container {
-          .footer-resume-social-container {
-            .resume-container {
-              p {
-                font-size: 1.4em;
-              }
-              a {
-                font-size: 1.5em;
-              }
+  #blogs-container, #contact-container {
+    footer {
+      .footer-container {
+        .footer-resume-social-container {
+          .resume-container {
+            p {
+              font-size: 1.4em;
             }
-            .profile-container-social {
-              .social-link {
-                font-size: 4em;
-              }
-            }
-          }
-          .nav-links {
-            .nav-text {
+            a {
               font-size: 1.5em;
             }
+          }
+          .profile-container-social {
+            .social-link {
+              font-size: 4em;
+            }
+          }
+        }
+        .nav-links {
+          .nav-text {
+            font-size: 1.5em;
           }
         }
       }
     }
-
+    .list-container {
+      .list {
+        width: 85%;
+        margin: 0 auto;
+      }
+    }
+  }
 }
 
 // DESKTOPS, lAPTOPS

@@ -136,7 +136,8 @@ footer {
 #home-container {
   height: 100vh;
   grid-template-rows: 70% 30%;
-  // @include addBackground();
+  width: 100%;
+  margin: initial;
 }
 
 
@@ -144,7 +145,6 @@ footer {
 
 .page-container {
   grid-template-rows: 2fr 1fr;
-  // @include addBackground();
 
   min-height: 568px;
   min-width: 320px;
@@ -152,8 +152,8 @@ footer {
   .profile-container {
     height: 75%;
     align-self: center;
-    min-height: 440px;
-    max-height: 515px;
+    min-height: 350px;
+    min-width: 320px;
 
     .profile-container-card {
       grid-template-rows: 15% 73% 12%;
@@ -190,6 +190,7 @@ footer {
           margin: 02% 5% 0 0;
           color: $font-dark-color;
           font-family: $small-font;
+          font-size: 0.9em;
         }
       }
 
@@ -209,17 +210,10 @@ footer {
         }
       }
 
-      // img {
-
-        
-
-      // }
       .profile-container-social {
         grid-row-start: 3;
-        // display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
         align-self: center;
-        // place-self: center;
       }
     }
   }
@@ -237,20 +231,21 @@ footer {
       // grid-template-rows: 1fr 1fr 1fr 1fr;
       @include debugBorder($debug, $debugGreen);
 
-      #downArrow-tooltip {
-        letter-spacing: 6px;
-        margin-top: 0;
-        // color: $font-dark-color;
-        color: lightgrey;
-        transform: rotate(270deg);
-        width: max-content;
-        display: flex;
-        position: relative;
-        top: 26%;
-        right: 35%;
-        font-family: $small-font;
-        font-size: 1.1rem;
-      }
+      // #downArrow-tooltip {
+      //   letter-spacing: 6px;
+      //   position: relative;
+      //   margin-top: 0;
+      //   // color: $font-dark-color;
+      //   color: lightgrey;
+      //   transform: rotate(270deg);
+      //   width: max-content;
+      //   display: flex;
+      //   position: relative;
+      //   top: 26%;
+      //   right: 35%;
+      //   font-family: $small-font;
+      //   font-size: 1.1rem;
+      // }
 
       .nav-text {
         text-align: right;
@@ -297,16 +292,16 @@ footer {
         height: 90%;
       }
     }
-    .nav-container {
-      .nav-tooltip {
-        #downArrow-tooltip {
-          font-size: 1em;
-          letter-spacing: 2px;
-          right: 21%;
-          top: 12%;
-        }
-      }
-    }
+    // .nav-container {
+    //   .nav-tooltip {
+    //     #downArrow-tooltip {
+    //       font-size: 1em;
+    //       letter-spacing: 2px;
+    //       right: 21%;
+    //       top: 12%;
+    //     }
+    //   }
+    // }
   }
   .dev-icons {
     font-size: 2.5em;
@@ -334,15 +329,15 @@ footer {
 // GALAXY S5 / MOTO G4
 
 @media screen and (min-width: 360px) and (orientation: portrait)  {
-  #home-container {
-    .nav-container {
-      .nav-tooltip {
-        #downArrow-tooltip {
-          right: 14%;
-        }
-      }
-    }
-  }
+  // #home-container {
+  //   .nav-container {
+  //     .nav-tooltip {
+  //       #downArrow-tooltip {
+  //         right: 14%;
+  //       }
+  //     }
+  //   }
+  // }
 }
 
 
@@ -353,18 +348,18 @@ footer {
   and (min-width: 375px) 
   and (min-height: 375px) 
   and (orientation: portrait) {
-    #home-container {
-      .nav-container {
-        .nav-tooltip {
-          #downArrow-tooltip {
-            right: 22%;
-            font-size: 1.1em;
-            letter-spacing: 3px;
-            top: 19%;
-          }
-        }
-      }
-    }
+    // #home-container {
+    //   .nav-container {
+    //     .nav-tooltip {
+    //       #downArrow-tooltip {
+    //         right: 22%;
+    //         font-size: 1.1em;
+    //         letter-spacing: 3px;
+    //         top: 19%;
+    //       }
+    //     }
+    //   }
+    // }
 }
 
 
@@ -374,21 +369,23 @@ footer {
 @media screen and (min-width: 411px) and (orientation: portrait)  {
   .page-container {
     .profile-container {
+      min-height: 440px;
+      max-height: 515px;
       height: 86%;
     }
   }
-  #home-container {
-    .nav-container {
-      .nav-tooltip {
-        #downArrow-tooltip {
-          right: 18%;
-          font-size: 1.1em;
-          letter-spacing: 3px;
-          top: 19%;
-        }
-      }
-    }
-  }
+  // #home-container {
+  //   .nav-container {
+  //     .nav-tooltip {
+  //       #downArrow-tooltip {
+  //         right: 18%;
+  //         font-size: 1.1em;
+  //         letter-spacing: 3px;
+  //         top: 19%;
+  //       }
+  //     }
+  //   }
+  // }
 
   footer {
     height: 23%;
@@ -418,6 +415,19 @@ footer {
 // IPHONE 5/SE
 
 @media screen and (min-width: 568px) and (orientation: landscape)  {
+
+  body {
+    #home-about-container {
+      #home-container {
+        width: 100%;
+        margin: 0 auto;
+      }
+      #about-container {
+        width: 100%;
+        margin: 0 auto;
+      }
+    }
+  }
 
   #home-container {
     grid-template-rows: none;
@@ -452,10 +462,10 @@ footer {
       #scroll-to-about {
         grid-column-start: 2;
         grid-row-start: 1;
-        #downArrow-tooltip {
-          top: 60%;
-          right: 43%;
-        }
+        // #downArrow-tooltip {
+        //   top: 60%;
+        //   right: 43%;
+        // }
       }
       .nav-links {
         height: 80%;
@@ -509,14 +519,14 @@ footer {
         }
       }
     }
-    .nav-container {
-      #scroll-to-about {
-        #downArrow-tooltip {
-          top: 75%;
-          right: 30%;
-        }
-      }
-    }
+    // .nav-container {
+    //   #scroll-to-about {
+    //     #downArrow-tooltip {
+    //       top: 75%;
+    //       right: 30%;
+    //     }
+    //   }
+    // }
   } 
 }
 
@@ -543,14 +553,14 @@ footer {
         font-size: 28px;
       }
     }
-    .nav-container {
-      #scroll-to-about {
-        #downArrow-tooltip {
-          top: 80%;
-          right: 18%;
-        }
-      }
-    }
+    // .nav-container {
+    //   #scroll-to-about {
+    //     #downArrow-tooltip {
+    //       top: 80%;
+    //       right: 18%;
+    //     }
+    //   }
+    // }
   } 
 }
 
@@ -570,14 +580,14 @@ footer {
         }
       }
     }
-    .nav-container {
-      #scroll-to-about {
-        #downArrow-tooltip {
-          top: 72%;
-          right: 7%;
-        }
-      }
-    }
+    // .nav-container {
+    //   #scroll-to-about {
+    //     #downArrow-tooltip {
+    //       top: 72%;
+    //       right: 7%;
+    //     }
+    //   }
+    // }
   }
 }
 
@@ -613,13 +623,13 @@ footer {
           font-size: 1.5em;
         }
       }
-      .nav-tooltip {
-        #downArrow-tooltip {
-          font-size: 1.2em;
-          letter-spacing: 5px;
-          right: 4%;
-        }
-      }
+      // .nav-tooltip {
+      //   #downArrow-tooltip {
+      //     font-size: 1.2em;
+      //     letter-spacing: 5px;
+      //     right: 4%;
+      //   }
+      // }
     }
   }
 
@@ -672,6 +682,17 @@ footer {
   .footer-copyright {
     font-size: 1.4em;
   }
+
+  .arrow {
+    &::before {
+      content: "find out more";
+      letter-spacing: 7px;
+      font-family: $small-font;
+      font-size: 1.4em;
+      top: -130px;
+      right: 100px;
+    }
+  }
   #home-container {
     #home-profile-container-profile {
       max-height: unset;
@@ -687,15 +708,15 @@ footer {
         }
       }
     }
-    .nav-container {
-      .nav-tooltip {
-        #downArrow-tooltip {
-          font-size: 1.6em;
-          letter-spacing: 6px;
-          right: 6%;
-        }
-      }
-    }
+    // .nav-container {
+    //   .nav-tooltip {
+    //     #downArrow-tooltip {
+    //       font-size: 1.6em;
+    //       letter-spacing: 6px;
+    //       right: 6%;
+    //     }
+    //   }
+    // }
   }
 
   #about-container {
@@ -727,11 +748,14 @@ footer {
 
 @media screen and (min-width: 1024px) and (orientation: landscape) {
 
+
+
   #home-container {
     #home-profile-container-profile {
       max-height: 465px;
       #home-profile-container-card {
         max-width: 350px;
+        min-width: 330px;
         .profile-container-card-header {
           h2 {
             font-size: 2em;
@@ -748,13 +772,14 @@ footer {
     }
     .nav-container {
       height: 30%;
+      max-height: 20%;
       margin: 27% 5% auto 5%;
-      #scroll-to-about {
-        #downArrow-tooltip {
-          top: 160%;
-          right: -8%;
-        }
-      }
+      // #scroll-to-about {
+      //   #downArrow-tooltip {
+      //     top: 160%;
+      //     right: -8%;
+      //   }
+      // }
     }
   }
 
@@ -794,8 +819,30 @@ footer {
   and (orientation: landscape) 
   and (-webkit-min-device-pixel-ratio: 2) {
 
+    body {
+      #home-about-container {
+        #home-container {
+          width: 70%;
+        }
+        #about-container {
+          width: 70%;
+        }
+      }
+    }
+
   .footer-copyright {
     font-size: 1.4em;
+  }
+
+  .arrow {
+    &::before {
+      content: "find out more";
+      letter-spacing: 7px;
+      font-family: $small-font;
+      font-size: 1.4em;
+      top: -130px;
+      right: 95px;
+    }
   }
   
   #home-container {
@@ -819,13 +866,13 @@ footer {
           font-size: 1.4rem;
         }
       }
-      #scroll-to-about {
-        #downArrow-tooltip {
-          top: 170%;
-          right: 27%;
-          font-size: 1.7rem;
-        }
-      }
+      // #scroll-to-about {
+      //   #downArrow-tooltip {
+      //     top: 170%;
+      //     right: 27%;
+      //     font-size: 1.7rem;
+      //   }
+      // }
     }
   }
 
@@ -869,18 +916,33 @@ footer {
 
 @media screen 
   and (min-device-width: 1200px) 
-  // and (max-device-width: 3000px) 
+  and (max-device-width: 6000px) 
+  // and (orientation: landscape)  
   and (-webkit-min-device-pixel-ratio: 1) { 
+
 
   body {
     overflow-x: hidden;
+    #home-about-container {
+      #home-container {
+        width: 60%;
+        margin: 0 auto;
+      }
+      #about-container {
+        width: 60%;
+        margin: 0 auto;
+      }
+    }
   }
 
   .footer-copyright {
     font-size: 1.4em;
   }
 
+   
   #home-container {
+    width: 80%;
+    margin: 0 auto;
     #home-profile-container-profile {
       max-height: 550px;
       min-height: 440px;
@@ -922,7 +984,10 @@ footer {
           opacity: 0%;
           align-self: center;
           grid-column-start: 2;
+          position: relative;
+          right: -30%;
           animation: animateRightOut 0.5s forwards;
+          width: max-content;
         }
         .nav-text:before {
           @include underlineProperties(100%, -5px, 0)
@@ -937,14 +1002,14 @@ footer {
         }
       }
       #scroll-to-about {
-        #downArrow-tooltip {
-          top: 160%;
-          right: 0;
-          font-size: 1.7rem;
-          &:hover {
-            cursor: pointer;
-          }
-        }
+        // #downArrow-tooltip {
+        //   top: 160%;
+        //   right: 0;
+        //   font-size: 1.7rem;
+        //   &:hover {
+        //     cursor: pointer;
+        //   }
+        // }
         .arrow:hover {
           cursor: pointer;
         }
@@ -968,7 +1033,8 @@ footer {
   
 
   #about-container {
-
+    width: 80%;
+    margin: 0 auto;
     #about-skills-container {
       .profile-container-card {
         .about-profile-container-card-header {
@@ -1001,21 +1067,26 @@ footer {
 
 @media screen 
   and (min-device-width: 1200px) 
-  // and (max-device-width: 3000px) 
+  and (max-device-width: 6000px)
+  // and (orientation: landscape)  
   and (-webkit-min-device-pixel-ratio: 2) 
   and (min-resolution: 192dpi) { 
   
   #home-container {
-    .nav-container {
-      #scroll-to-about {
-        #downArrow-tooltip {
-          right: -7%;
-        }
-      }
-    }
+    width: 80%;
+    margin: 0 auto;
+    // .nav-container {
+    //   #scroll-to-about {
+    //     #downArrow-tooltip {
+    //       right: -7%;
+    //     }
+    //   }
+    // }
   }
 
   #about-container {
+    width: 80%;
+    margin: 0 auto;
     #about-skills-container {
       .profile-container-card {
         .about-profile-container-card-icons {
@@ -1038,5 +1109,3 @@ footer {
     }
   }
 }
-
-

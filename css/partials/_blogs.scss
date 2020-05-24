@@ -1,5 +1,5 @@
 #blogs-container {
-  grid-template-rows: 74% 26%;
+  // grid-template-rows: 74% 26%;
   overflow: hidden;
   .footer-copyright {
     grid-row-start: 2;
@@ -9,17 +9,20 @@
 
 
 .list-container {
-  overflow-y: auto;
+  // overflow-y: auto;
   .list {
     list-style: none;
     padding: 0;
     place-items: center;
     grid-row-start: 1;
-    height: max-content;
+    height: fit-content;
+    display: grid;
+    // grid-template-columns: 1fr;
     .list-item {
       margin: 7% auto;
       padding-bottom: 1%;
-      width: 84%;
+      width: 85%;
+      height: 85%;
       @include cardBorderRadius(13px);
       background: whitesmoke;
       box-shadow: $card-box-shadow;
@@ -38,6 +41,8 @@
         img {
           border-radius: 13px 13px 0 0;
           width: 100%;
+          height: 175px;
+          object-fit: cover;
         }
       }
       .list-item-content {
@@ -59,41 +64,3 @@
   }
 }
 
-
-// MOBILE LANDSCAPE
-
-// PIXEL 2
-
-
-@media screen and (min-width: 411px) and (orientation: portrait)  {
-  #blogs-container {
-    grid-template-rows: 77% 23%;
-  }
-}
-
-
-
-
-// TABLET PORTRAIT
-
-// IPAD PORTRAIT 
-
-@media screen and (min-width: 768px) and (orientation: portrait) {
-
-  #blogs-container {
-    grid-template-rows: 80% 20%;
-    #blog-list-container {
-      display: grid;
-      // grid-template-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
-      .list-container {
-        .list {
-          grid-column-start: 1;
-        }
-      }
-    }
-    footer {
-      height: 20%;
-    }
-  }
-}

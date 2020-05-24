@@ -1,22 +1,22 @@
 @keyframes animateRightIn {
   from {
     opacity: 0%;
-    transform: translateX(10px);
+    transform: translateY(-30px);
   }
   to {
     opacity: 100%;
-    transform: translateX(-20px);
+    transform: translateY(0px);
   }
 }
 
 @keyframes animateRightOut {
   from {
     opacity: 100%;
-    transform: translateX(-20px);
+    transform: translateX(0px);
   }
   to {
     opacity: 0%;
-    transform: translateX(10px);
+    transform: translateX(30px);
   }
 }
 
