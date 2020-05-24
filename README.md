@@ -7,7 +7,7 @@
 ![Twitter Follow](https://img.shields.io/twitter/follow/simo_sultan?style=social)
 
 
-Source code: [https://github.com/SimoSultan/ca-assignments/tree/master/t1a3](https://github.com/SimoSultan/ca-assignments/tree/master/t1a3)
+Source code: [https://github.com/SimoSultan/portfolio-website](https://github.com/SimoSultan/portfolio-website)
 
 
 
@@ -25,7 +25,7 @@ Source code: [https://github.com/SimoSultan/ca-assignments/tree/master/t1a3](htt
 - [**Screenshots**](##Screenshots) - brief
 - [**Presentation**](##Presentation) - brief
 - [**Resources**](##Resources) - brief
-- [**Copyright**](##Copyright) - brief
+- [**Copyright**](##Copyright,-ethical,-social-issues) - brief
 
 
 
@@ -85,34 +85,34 @@ JS was used to jump to a certain section of the home page for quick navigation f
 
 ### Trello
 [My Trello Board](https://trello.com/b/5zC6lx3A/simosultans-portfolio-website)  
-![My Trello Board Screenshot](https://github.com/SimoSultan/ca-assignments/blob/master/t1a3/docs/trello/portfolio-trello-screenshot.jpg)
+![My Trello Board Screenshot](https://github.com/SimoSultan/portfolio-website/blob/master/docs/trello/portfolio-trello-screenshot.jpg)
 
 
 ### Sitemap
 
 To write something here
 
-![My Site Map](https://github.com/SimoSultan/ca-assignments/blob/master/t1a3/docs/wireframe-screenshot.jpg)
+![My Site Map](https://github.com/SimoSultan/portfolio-website/blob/master/docs/sitemap/Portfolio_Sitemap.jpg)
 
 
 ### Inspiration 
 
-![Inspiration Screenshot](https://github.com/SimoSultan/ca-assignments/blob/master/t1a3/docs/wireframes/inspiration.png)
+![Inspiration Screenshot](https://github.com/SimoSultan/portfolio-website/blob/master/docs/wireframes/inspiration.png)
 
 
 
 ### Wireframes
 #### Mobile
 
-![Mobile Wireframe Screenshot](https://github.com/SimoSultan/ca-assignments/blob/master/t1a3/docs/wireframes/Mobile.png)
+![Mobile Wireframe Screenshot](https://github.com/SimoSultan/portfolio-website/blob/master/docs/wireframes/Mobile.png)
 
 #### Tablet
 
-![Tablet Wireframe Screenshot](https://github.com/SimoSultan/ca-assignments/blob/master/t1a3/docs/wireframes/Tablet.png)
+![Tablet Wireframe Screenshot](https://github.com/SimoSultan/portfolio-website/blob/master/docs/wireframes/Tablet.png)
 
 #### Desktop
 
-![Desktop Wireframe Screenshot](https://github.com/SimoSultan/ca-assignments/blob/master/t1a3/docs/wireframes/Desktop.png)
+![Desktop Wireframe Screenshot](https://github.com/SimoSultan/portfolio-website/blob/master/docs/wireframes/Desktop.png)
 
 
 ### Screenshots
@@ -120,15 +120,15 @@ To write something here
 
 #### Mobile Homepage
 
-![Mobile Wireframe Screenshot](https://github.com/SimoSultan/ca-assignments/blob/master/t1a3/docs/wireframes/Mobile.png)
+![Mobile Wireframe Screenshot](https://github.com/SimoSultan/portfolio-website/blob/master/docs/screens/mobile-homepage-screenshot.jpg)
 
 #### Tablet Portfolio
 
-![Tablet Wireframe Screenshot](https://github.com/SimoSultan/ca-assignments/blob/master/t1a3/docs/wireframes/Tablet.png)
+![Tablet Wireframe Screenshot](https://github.com/SimoSultan/portfolio-website/blob/master/docs/screens/tablet-portfolio-screenshot.jpg)
 
 #### Desktop Contact Me
 
-![Desktop Wireframe Screenshot](https://github.com/SimoSultan/ca-assignments/blob/master/t1a3/docs/wireframes/Desktop.png)
+![Desktop Wireframe Screenshot](https://github.com/SimoSultan/portfolio-website/blob/master/docs/screens/desktop-contact-screenshot.jpg)
 
 ---
 
