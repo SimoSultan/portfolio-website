@@ -587,7 +587,7 @@
       .list {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        width: 70%;
+        // width: 70%;
         margin: 0 auto;
         .list-item {
           width: 85%;
@@ -737,6 +737,12 @@
           }
         }
       }
+    }
+  }
+
+  .list-container {
+    .list {
+      width: 70%;
     }
   }
 

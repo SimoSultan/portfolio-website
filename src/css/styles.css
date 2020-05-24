@@ -760,7 +760,6 @@ i {
     display: grid;
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
-    width: 70%;
     margin: 0 auto;
   }
   #blogs-container .list-container .list .list-item, #contact-container .list-container .list .list-item, #work-container .list-container .list .list-item {
@@ -854,6 +853,9 @@ i {
   }
   #contact-container #contact-profile-container #contact-profile-container-card .contact-form button {
     margin-top: 0;
+  }
+  .list-container .list {
+    width: 70%;
   }
 }
 
