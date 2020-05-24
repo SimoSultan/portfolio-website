@@ -145,7 +145,7 @@ More screenshots can be found [here](https://github.com/SimoSultan/portfolio-web
 
 #### Tablet Portfolio
 
-![Tablet Wireframe Screenshot](https://github.com/SimoSultan/portfolio-website/blob/master/docs/screens/tablet-portfolio-screenshot.jpg)
+![Tablet Wireframe Screenshot](https://github.com/SimoSultan/portfolio-website/blob/master/docs/screens/tablet-portfolio-portrait-screenshot.jpg)
 
 #### Desktop Contact Me
 
