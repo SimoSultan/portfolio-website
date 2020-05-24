@@ -479,6 +479,7 @@
     grid-template-columns: unset;
     footer {
       width: 30%;
+      max-width: 300px;
       .footer-container {
         .footer-resume-social-container {
           .resume-container {
@@ -507,13 +508,16 @@
       width: 70%;
 
       // grid-column-start: 2;
-      // position: absolute;
-      // right: 0;
+      position: relative;
+      margin: 0 300px;
       .list {
         display: grid;
         grid-template-columns: 1fr 1fr;
+        width: 70%;
+        margin: 0 auto;
         .list-item {
           width: 85%;
+          max-width: 400px;
         }
       }
     }

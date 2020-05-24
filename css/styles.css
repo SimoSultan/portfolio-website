@@ -625,6 +625,7 @@ i {
   }
   #blogs-container footer, #contact-container footer, #work-container footer {
     width: 30%;
+    max-width: 300px;
   }
   #blogs-container footer .footer-container .footer-resume-social-container .resume-container p, #contact-container footer .footer-container .footer-resume-social-container .resume-container p, #work-container footer .footer-container .footer-resume-social-container .resume-container p {
     font-size: 1.1em;
@@ -646,15 +647,20 @@ i {
   }
   #blogs-container .list-container, #contact-container .list-container, #work-container .list-container {
     width: 70%;
+    position: relative;
+    margin: 0 300px;
   }
   #blogs-container .list-container .list, #contact-container .list-container .list, #work-container .list-container .list {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
+    width: 70%;
+    margin: 0 auto;
   }
   #blogs-container .list-container .list .list-item, #contact-container .list-container .list .list-item, #work-container .list-container .list .list-item {
     width: 85%;
+    max-width: 400px;
   }
 }
 
@@ -1383,7 +1389,7 @@ footer {
 }
 
 /* ----------- Non-Retina Screens ----------- */
-@media screen and (min-device-width: 1200px) and (max-device-width: 6000px) and (-webkit-min-device-pixel-ratio: 1) {
+@media screen and (min-device-width: 1200px) {
   body {
     overflow-x: hidden;
   }
@@ -1532,7 +1538,7 @@ footer {
 }
 
 /* ----------- Retina Screens ----------- */
-@media screen and (min-device-width: 1200px) and (max-device-width: 6000px) and (-webkit-min-device-pixel-ratio: 2) and (-webkit-min-device-pixel-ratio: 2), screen and (min-device-width: 1200px) and (max-device-width: 6000px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
+@media screen and (min-device-width: 1200px) {
   #home-container {
     width: 80%;
     margin: 0 auto;
