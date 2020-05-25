@@ -170,6 +170,9 @@ More screenshots can be found [here](https://github.com/SimoSultan/portfolio-web
 This external code I used in my site was for the scroll bar and the 404 page. I find the default scrollbars hideous so for most modern sites, so it was a must for me to include. Also, a simple and fun 404 page was something I didn't want to reinvent the wheel on, so I decided to use a free template.
 - [My Simple Scrollbar](https://github.com/buzinas/simple-scrollbar)
 - [My 404 Page](https://colorlib.com/wp/free-404-error-page-templates/)
+- [My Social Icons](https://fontawesome.com/)
+- [My Dev Icons](https://konpa.github.io/devicon/)
+
 
 ---
 
