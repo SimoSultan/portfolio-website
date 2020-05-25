@@ -67,7 +67,6 @@ Anyone at all. I didn't want to target anyone as this site should be able to be 
 
 ### Future features:
 
-- More hover animations for desktop
 - More click animations for mobile and tablet devices
 - Page to be redesigned as 1 continuous scroll-able page with navigation anchors
 - More accessibility design
