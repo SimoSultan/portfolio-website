@@ -27,7 +27,8 @@
           
           .dev-icon-text {
             font-family: $small-font;
-            color: lightgrey;
+            // color: $primary-dark-color;
+            color: $secondary-light-color;
             margin-top: 5%;
           }
         }
@@ -39,7 +40,7 @@
     #about-me-text-content {
       text-align: justify;
       padding: 0 9% 3% 9%;
-      color: lightgrey;
+      color: $primary-dark-color;
       font-family: $small-font;
       font-weight: 400;
       line-height: 1.3em;

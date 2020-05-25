@@ -51,7 +51,7 @@ a {
 }
 
 .social-icons { 
-  color: $primary-dark-color;
+  color: white;
 }
 
 .social-link {
@@ -62,7 +62,8 @@ a {
 .dev-icons {
   font-size: 3em;
   margin: 2%;
-  color: $primary-dark-color;
+  color: white;
+  // color: $secondary-dark-color;
 }
 .dev-icon-text {
   text-align: center;
@@ -117,7 +118,7 @@ footer {
 }
 
 .header {
-  color: $font-light-color;
+  color: black;
   margin: 3% 0 -3% 4%;
   height: fit-content;
   h2 {
@@ -189,7 +190,7 @@ footer {
         h2 {
           text-align: left;
           margin: 7% 0 0% 6%;
-          color: $font-light-color;
+          color: black;
           font-family: $header-font;
         }
         #home-profile-container-card-header-subtext {
@@ -241,7 +242,7 @@ footer {
         text-align: right;
         padding-right: 12%;
         align-self: center;
-        color: $font-light-color;
+        color: black;
         letter-spacing: 2px;
         font-size: 1rem;
         cursor: pointer;
@@ -534,6 +535,7 @@ footer {
         max-width: unset;
         width: 65%;
         .about-profile-container-card-header {
+          color: white;
           h2 {
             font-size: 1.3em;
           }

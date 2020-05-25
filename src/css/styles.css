@@ -198,7 +198,7 @@ i {
   content: "find out more";
   letter-spacing: 6px;
   margin-top: 0;
-  color: lightgrey;
+  color: black;
   -webkit-transform: rotate(270deg);
           transform: rotate(270deg);
   width: -webkit-max-content;
@@ -425,7 +425,7 @@ i {
   cursor: pointer;
 }
 
-.footer-container .footer-resume-social-container .resume-container label {
+.footer-container .footer-resume-social-container .resume-container .dev-icon-text {
   font-weight: 300;
   margin-left: 20px;
   margin-top: 5%;
@@ -1045,7 +1045,7 @@ i {
 
 #about-container #about-skills-container .profile-container-card .about-profile-container-card-icons .dev-icon-text-container .dev-icon-text {
   font-family: "Quattrocento Sans", sans-serif;
-  color: lightgrey;
+  color: #ffd100;
   margin-top: 5%;
 }
 
@@ -1057,7 +1057,7 @@ i {
 #about-container #about-me-text #about-me-text-content {
   text-align: justify;
   padding: 0 9% 3% 9%;
-  color: lightgrey;
+  color: #003966;
   font-family: "Quattrocento Sans", sans-serif;
   font-weight: 400;
   line-height: 1.3em;
@@ -1194,7 +1194,7 @@ a {
 }
 
 .social-icons {
-  color: #003966;
+  color: white;
 }
 
 .social-link {
@@ -1205,7 +1205,7 @@ a {
 .dev-icons {
   font-size: 3em;
   margin: 2%;
-  color: #003966;
+  color: white;
 }
 
 .dev-icon-text {
@@ -1263,7 +1263,7 @@ footer {
 }
 
 .header {
-  color: white;
+  color: black;
   margin: 3% 0 -3% 4%;
   height: -webkit-fit-content;
   height: -moz-fit-content;
@@ -1342,7 +1342,7 @@ footer {
 .page-container .profile-container .profile-container-card .profile-container-card-header h2 {
   text-align: left;
   margin: 7% 0 0% 6%;
-  color: white;
+  color: black;
   font-family: "Source Sans Pro", sans-serif;
 }
 
@@ -1414,7 +1414,7 @@ footer {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  color: white;
+  color: black;
   letter-spacing: 2px;
   font-size: 1rem;
   cursor: pointer;
@@ -1603,6 +1603,9 @@ footer {
   #about-container #about-skills-container .profile-container-card {
     max-width: unset;
     width: 65%;
+  }
+  #about-container #about-skills-container .profile-container-card .about-profile-container-card-header {
+    color: white;
   }
   #about-container #about-skills-container .profile-container-card .about-profile-container-card-header h2 {
     font-size: 1.3em;
