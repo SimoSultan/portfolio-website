@@ -746,22 +746,115 @@
     }
   }
 
-
-
-  // #blogs-container, #contact-container, #work-container {
-  //   footer {
-  //     .footer-container {
-  //       .footer-resume-social-container {
-  //         .nav-links {
-  //           grid-row-start: 1;
-  //           }
-  //         }
-  //         .profile-container-social {
-  //           grid-row-start: 3;
-  //         }
-  //       }
-  //     }
+  // body {
+  //   overflow-x: hidden;
+  //   #blogs-container, #contact-container, #work-container {
+  //     width: 60%;
+  //     margin: 0 auto;
   //   }
+  // }
+
+
+  #blogs-container, #contact-container, #work-container {
+    grid-template-columns: 30% 1fr;
+
+    footer {
+      display: none;
+    }
+
+    .socials-container {
+      display: grid;
+      grid-column-start: 1;
+      grid-row-start: 1;
+      place-content: flex-end;
+      justify-content: flex-start;
+      margin-left: 5%;
+      margin-bottom: 15%;
+      .profile-container-social {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        .social-link {
+          font-size: 2.7em;
+          margin: 0 10%;
+        }
+      }
+      .profile-container-social > * {
+        position: relative;
+      }
+      .profile-container-social > *:before {
+        @include underlineProperties(100%, -3px, 0px)
+      }
+      .profile-container-social > *:hover:before,
+      .profile-container-social > *:focus:before {
+        @include underlineHover()
+      }
+    }
+
+    .list-container {
+      width: unset;
+      position: unset;
+      margin: unset;
+    }
+
+    .nav-container {
+      display: grid;
+      grid-template-columns: unset;
+      grid-column-start: 1;
+      grid-row-start: 1;
+      margin: 23% 5% auto 5%;
+      height: 25%;
+      width: 100%;
+      .nav-links {
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        .nav-text {
+          font-size: 1.4rem;
+          padding: 0;
+          position: relative;
+          width: max-content;
+          height: unset;
+        }
+        .nav-links-tooltip {
+          display: block;
+          opacity: 0%;
+          align-self: center;
+          grid-column-start: 2;
+          position: relative;
+          right: -65px;
+          animation: animateRightOut 0.5s forwards;
+          width: max-content;
+        }
+        .nav-text:before {
+          @include underlineProperties(100%, -5px, 0)
+        }
+        .nav-text:hover:before,
+        .nav-text:focus:before {
+          @include underlineHover()
+        }
+
+        .nav-text:hover + .nav-links-tooltip {
+          animation: animateRightIn 0.5s forwards;
+        }
+      }
+      // #scroll-to-about {
+      //   .arrow:hover {
+      //     cursor: pointer;
+      //   }
+      // }
+
+      .nav-tooltip {
+        grid-row-start: 1;
+        grid-column-start: 2;
+
+        .text-tooltip {
+          display: none;
+          text-align: left;
+          margin: 0;
+          .active {
+            display: block;
+          }
+        }
+      }
+    }
+  }
 
 
 }
