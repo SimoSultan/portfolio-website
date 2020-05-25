@@ -1,6 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,700;0,900;1,200;1,300;1,400&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Quattrocento+Sans:ital@0;1&family=Source+Sans+Pro:ital,wght@0,400;0,700;0,900;1,200;1,300;1,400&display=swap");
+.test {
+  font-family: Comic;
+}
+
 @-webkit-keyframes animateRightIn {
   from {
     opacity: 0%;
@@ -13,6 +14,7 @@
             transform: translateY(0px);
   }
 }
+
 @keyframes animateRightIn {
   from {
     opacity: 0%;
@@ -210,7 +212,7 @@ i {
   position: relative;
   top: -100px;
   right: 75px;
-  font-family: "Quattrocento Sans", sans-serif;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
   font-size: 1.1rem;
 }
 
@@ -274,7 +276,7 @@ i {
 }
 
 .contact-form .input-label {
-  font-family: "Quattrocento Sans", sans-serif;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
   font-weight: 400;
 }
 
@@ -338,7 +340,7 @@ i {
 #contact-container .profile-container-card .contact-form div button {
   margin-top: 7%;
   margin-right: 9%;
-  font-family: "Roboto", sans-serif;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
 }
 
 .footer-container {
@@ -376,7 +378,7 @@ i {
       grid-row-start: 1;
   font-style: italic;
   font-weight: 400;
-  font-family: "Quattrocento Sans", sans-serif;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
 }
 
 .footer-container .footer-resume-social-container .resume-container .resume-helper-text {
@@ -386,7 +388,7 @@ i {
       grid-row-start: 2;
   text-align: right;
   font-weight: 400;
-  font-family: "Quattrocento Sans", sans-serif;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
   font-style: italic;
 }
 
@@ -470,7 +472,7 @@ i {
 
 .footer-container .nav-links .nav-text {
   font-weight: 400;
-  font-family: "Roboto", sans-serif;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
   text-align: center;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
@@ -1044,7 +1046,7 @@ i {
 }
 
 #about-container #about-skills-container .profile-container-card .about-profile-container-card-icons .dev-icon-text-container .dev-icon-text {
-  font-family: "Quattrocento Sans", sans-serif;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
   color: lightgrey;
   margin-top: 5%;
 }
@@ -1058,7 +1060,7 @@ i {
   text-align: justify;
   padding: 0 9% 3% 9%;
   color: lightgrey;
-  font-family: "Quattrocento Sans", sans-serif;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
   font-weight: 400;
   line-height: 1.3em;
 }
@@ -1119,7 +1121,7 @@ i {
   text-align: left;
   margin: 5px 0 5px 10px;
   font-size: 1.2em;
-  font-family: "Quattrocento Sans", sans-serif;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
 }
 
 .list-container .list .list-item .list-item-img {
@@ -1144,12 +1146,12 @@ i {
   text-align: justify;
   font-size: 0.9em;
   font-style: italic;
-  font-family: "Quattrocento Sans", sans-serif;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
 }
 
 .list-container .list .list-item .list-item-content .list-item-date {
   text-align: right;
-  font-family: "Quattrocento Sans", sans-serif;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
   font-style: normal;
 }
 
@@ -1161,7 +1163,7 @@ body {
   overflow: auto;
   height: 100vh;
   width: 100vw;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
   font-weight: 400;
   letter-spacing: 1.5px;
   cursor: default;
@@ -1253,7 +1255,7 @@ footer {
   position: fixed;
   bottom: 0;
   right: 0;
-  font-family: "Quattrocento Sans", sans-serif;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
 }
 
 .name-link {
@@ -1336,21 +1338,21 @@ footer {
 .page-container .profile-container .profile-container-card .profile-container-card-header {
   -ms-grid-row: 1;
       grid-row-start: 1;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
 }
 
 .page-container .profile-container .profile-container-card .profile-container-card-header h2 {
   text-align: left;
   margin: 7% 0 0% 6%;
   color: white;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
 }
 
 .page-container .profile-container .profile-container-card .profile-container-card-header #home-profile-container-card-header-subtext {
   text-align: right;
   margin: 02% 5% 0 0;
   color: #202020;
-  font-family: "Quattrocento Sans", sans-serif;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
   font-size: 0.9em;
 }
 
@@ -1419,7 +1421,7 @@ footer {
   font-size: 1rem;
   cursor: pointer;
   height: 100%;
-  font-family: "Roboto", sans-serif;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
 }
 
 .page-container .nav-container .nav-tooltip .nav-links-tooltip, .page-container .nav-container .nav-links .nav-links-tooltip {
@@ -1631,7 +1633,7 @@ footer {
   .arrow::before {
     content: "find out more";
     letter-spacing: 7px;
-    font-family: "Quattrocento Sans", sans-serif;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
     font-size: 1.4em;
     top: -130px;
     right: 100px;
@@ -1706,7 +1708,7 @@ footer {
   .arrow::before {
     content: "find out more";
     letter-spacing: 7px;
-    font-family: "Quattrocento Sans", sans-serif;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
     font-size: 1.4em;
     top: -130px;
     right: 95px;
