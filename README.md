@@ -172,6 +172,7 @@ This external code I used in my site was for the scroll bar and the 404 page. I 
 - [My 404 Page](https://colorlib.com/wp/free-404-error-page-templates/)
 - [My Social Icons](https://fontawesome.com/)
 - [My Dev Icons](https://konpa.github.io/devicon/)
+- [My Bouncing Arrow](https://codepen.io/bewley/pen/revRQv)
 
 
 ---
