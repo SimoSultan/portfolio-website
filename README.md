@@ -11,21 +11,21 @@ Source code: [https://github.com/SimoSultan/portfolio-website](https://github.co
 
 
 #### Index:
-- [**Description**](##Description) - what the site is
-- [**Motivation**](##Motivation) - to develop the site
-- [**Target Audience**](##Target-Audience) - who will use the site
-- [**Features**](##Features) - what does the site do
-- [**Design**](##Design-and-Implementation-&-Project-Timeline) - my process
-- [**Tech Stack**](###Q7) - that languages I use
-- [**Trello**](###Trello) - my design outlook
-- [**Sitemap**](###Sitemap) - the navigation through the site
-- [**Inspiration**](###Inspiration) - what I used to come up with the design
-- [**Mood Board**](###Mood-Board) - what Unsplash pictures I liked
-- [**Wireframes**](###Wireframes) - what each page should look like
-- [**Screenshots**](##Screenshots) - what each page looks like
-- [**Presentation**](##Presentation) - on the dev process
-- [**Resources**](##Resources) - what external software I used
-- [**Copyright**](##Copyright,-ethical,-social-issues)
+- [**Description**](#Description) - what the site is
+- [**Motivation**](#Motivation) - to develop the site
+- [**Target Audience**](#Target-Audience) - who will use the site
+- [**Features**](#Features) - what does the site do
+- [**Design**](#Design-and-Implementation-&-Project-Timeline) - my process
+- [**Tech Stack**](#Tech-Stack) - that languages I use
+- [**Trello**](#Trello) - my design outlook
+- [**Sitemap**](#Sitemap) - the navigation through the site
+- [**Inspiration**](#Inspiration) - what I used to come up with the design
+- [**Mood Board**](#Mood-Board) - what Unsplash pictures I liked
+- [**Wireframes**](#Wireframes) - what each page should look like
+- [**Screenshots**](#Screenshots) - what each page looks like
+- [**Presentation**](#Presentation) - on the dev process
+- [**Resources**](#Resources) - what external software I used
+- [**Copyright**](#Copyright,-ethical,-social-issues)
 
 
 
