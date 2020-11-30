@@ -63,6 +63,9 @@ a {
   font-size: 3em;
   margin: 2%;
   color: $primary-dark-color;
+  &:hover {
+    
+  }
 }
 .dev-icon-text {
   text-align: center;
@@ -794,11 +797,11 @@ footer {
     overflow-x: hidden;
     #home-about-container {
       #home-container {
-        width: 60%;
+        width: 80%;
         margin: 0 auto;
       }
       #about-container {
-        width: 60%;
+        width: 80%;
         margin: 0 auto;
       }
     }
@@ -928,11 +931,35 @@ footer {
 
 
 
+/* ----------- Non-Retina Screens ----------- */
+
+// @media screen 
+//   and (min-device-width: 1600px) 
+//   // and (max-device-width: 6000px) 
+//   // and (orientation: landscape)  
+//   and (-webkit-min-device-pixel-ratio: 1) { 
+
+//   body {
+//     overflow-x: hidden;
+//     #home-about-container {
+//       #home-container {
+//         width: 90%;
+//         margin: 0 auto;
+//       }
+//       #about-container {
+//         width: 90%;
+//         margin: 0 auto;
+//       }
+//     }
+//   }
+// }
+
+
 
 /* ----------- Retina Screens ----------- */
 
 @media screen 
-  and (min-device-width: 1200px) 
+  and (min-device-width: 1600px) 
   and (-webkit-min-device-pixel-ratio: 2) {
   
   #home-container {
