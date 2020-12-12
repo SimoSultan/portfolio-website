@@ -34,3 +34,7 @@ function scrollToTop() {
 }
 
 
+function hideHeader() {
+    const header = document.getElementById("warning-header");
+    header.style.display = "none";
+}
